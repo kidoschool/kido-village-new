@@ -24,7 +24,7 @@ function Home(props) {
                             <a href="#" target='_blank' rel="noreferrer" className="my-btn center">Learn more</a>
                         </div>
                         </div>
-                        <div className="col-lg-6" data-aos="fade-left" data-aos-duration="2000">
+                        <div className="col-lg-6 pt-4" data-aos="fade-left" data-aos-duration="2000">
                             <img src={ParentsBanner} className="img-fluid"/>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ function Home(props) {
                                     <a href="#" target='_blank' rel="noreferrer" className="my-btn center">Learn more</a>
                                 </div>
                                 </div>
-                                <div className="col-lg-6" data-aos="fade-left" data-aos-duration="2000">
+                                <div className="col-lg-6 pt-4" data-aos="fade-left" data-aos-duration="2000">
                                     <img src={PreschoolsBanner} className="img-fluid"/>
                                 </div>
                             </div>
