@@ -1,19 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.551fe107.chunk.css",
-    "main.js": "/static/js/main.c7aeea6f.chunk.js",
-    "main.js.map": "/static/js/main.c7aeea6f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0d992d96.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0d992d96.js.map",
+    "main.css": "/static/css/main.9d52305b.chunk.css",
+    "main.js": "/static/js/main.4b525dab.chunk.js",
+    "main.js.map": "/static/js/main.4b525dab.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.9956ca8a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.9956ca8a.js.map",
     "static/css/2.ec02d681.chunk.css": "/static/css/2.ec02d681.chunk.css",
-    "static/js/2.a3d76a90.chunk.js": "/static/js/2.a3d76a90.chunk.js",
-    "static/js/2.a3d76a90.chunk.js.map": "/static/js/2.a3d76a90.chunk.js.map",
-    "static/js/3.6a020f07.chunk.js": "/static/js/3.6a020f07.chunk.js",
-    "static/js/3.6a020f07.chunk.js.map": "/static/js/3.6a020f07.chunk.js.map",
+    "static/js/2.0df4cb62.chunk.js": "/static/js/2.0df4cb62.chunk.js",
+    "static/js/2.0df4cb62.chunk.js.map": "/static/js/2.0df4cb62.chunk.js.map",
+    "static/js/3.ea9d3930.chunk.js": "/static/js/3.ea9d3930.chunk.js",
+    "static/js/3.ea9d3930.chunk.js.map": "/static/js/3.ea9d3930.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.551fe107.chunk.css.map": "/static/css/main.551fe107.chunk.css.map",
-    "static/js/2.a3d76a90.chunk.js.LICENSE.txt": "/static/js/2.a3d76a90.chunk.js.LICENSE.txt",
+    "static/css/main.9d52305b.chunk.css.map": "/static/css/main.9d52305b.chunk.css.map",
+    "static/js/2.0df4cb62.chunk.js.LICENSE.txt": "/static/js/2.0df4cb62.chunk.js.LICENSE.txt",
+    "static/media/POD-1.f89442fd.jpg": "/static/media/POD-1.f89442fd.jpg",
+    "static/media/POD-2.4082c83c.jpg": "/static/media/POD-2.4082c83c.jpg",
+    "static/media/POD-3.970688e8.jpg": "/static/media/POD-3.970688e8.jpg",
     "static/media/App.css": "/static/media/about-bg.5be4b984.jpg",
     "static/media/kid-play.668ab328.png": "/static/media/kid-play.668ab328.png",
     "static/media/kido-village-logo.141e9868.png": "/static/media/kido-village-logo.141e9868.png",
@@ -26,10 +29,10 @@
     "static/media/teachers-banner.b511500a.jpg": "/static/media/teachers-banner.b511500a.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0d992d96.js",
+    "static/js/runtime-main.9956ca8a.js",
     "static/css/2.ec02d681.chunk.css",
-    "static/js/2.a3d76a90.chunk.js",
-    "static/css/main.551fe107.chunk.css",
-    "static/js/main.c7aeea6f.chunk.js"
+    "static/js/2.0df4cb62.chunk.js",
+    "static/css/main.9d52305b.chunk.css",
+    "static/js/main.4b525dab.chunk.js"
   ]
 }

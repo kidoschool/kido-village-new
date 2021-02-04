@@ -12,37 +12,35 @@ function Home(props) {
 
     return(
         <>
-            <section className="banner-parent py-5" style={{backgroundColor : "#d0eaff"}}>
+            <section className="banner-parent py-5" style={{backgroundColor : "#fff"}}>
                 <div className="container">
                     <div className="parent row justify-content-center">
                         <div className="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
                             <h1 className="banner-head">I am a Parent</h1>
-                            <p>Ex esse exercitation mollit laboris et ipsum labore excepteur anim magna et ipsum labore excepteur anim magna.</p>
-                            <p>Ex esse exercitation mollit laboris et ipsum labore excepteur anim magna.</p>
-                            <p>Ex esse exercitation mollit laboris et ipsum labore excepteur anim magna et ipsum labore excepteur anim magna.</p>
+                            <p>At Kido Village, we hope to transform the future of our children by making early interventions in the form of lots of love, care and exceptional education. With our Kido Early Years Program that works as the framework for all our learning spaces, we are creating launchpads for your children under the age of six. </p>
+                            <p>Each Kido Village pod provides: the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning. All our learning spaces are structured around the fundamental values of Kido and offer the highest standards of safety, security, and quality control to ensure that your child gets nothing but the best. </p>
                             <div className="pt-3">
                             <a href="#" target='_blank' rel="noreferrer" className="my-btn center">Learn more</a>
                         </div>
                         </div>
-                        <div className="col-lg-6 pt-4" data-aos="fade-left" data-aos-duration="2000">
+                        <div className="col-lg-6 pt-5" data-aos="fade-left" data-aos-duration="2000">
                             <img src={ParentsBanner} className="img-fluid"/>
                         </div>
                     </div>
                     </div>
                     </section>
 
-                    <section className="banner-teacher py-5" style={{backgroundColor : "#fce8f4"}}>
+                    <section className="banner-teacher py-5" style={{backgroundColor : "#F0F0F0"}}>
                         <div className="container">
                             <div className="teacher row justify-content-center">
-                                <div className="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+                                <div className="col-lg-6 pt-5" data-aos="fade-right" data-aos-duration="2000">
                                     <img src={TeachersBanner} className="img-fluid"/>
                                 </div>
                                 <div className="col-lg-6">
                                     <h1 className="banner-head">I am a Teacher</h1>
                                     <div data-aos="fade-left" data-aos-duration="2000">
-                                    <p>Ex esse exercitation mollit laboris et ipsum labore excepteur anim magna et ipsum labore excepteur anim magna.</p>
-                                    <p>Ex esse exercitation mollit laboris et ipsum labore excepteur anim magna.</p>
-                                    <p>Ex esse exercitation mollit laboris et ipsum labore excepteur anim magna et ipsum labore excepteur anim magna.</p>
+                                    <p>To transform children into achievers and well-rounded members of the society, we need to change the way they’re taught and looked after. And it must start early. That’s where Kido comes in with an internationally recognized model and a whole team to support your dreams. </p>
+                                    <p>By becoming a Kido pod owner, you will not only transform the future of kids in the community by providing high-quality education and child care, but you will also maximize your earnings while retaining your flexibility by taking in as many or as few children as you like. </p>
                                     <div className="pt-3">
                                     <a href="#" target='_blank' rel="noreferrer" className="my-btn center">Learn more</a>
                                     </div>
@@ -52,19 +50,18 @@ function Home(props) {
                         </div>
                     </section>
 
-                    <section className="banner-pre-school py-5" style={{backgroundColor : "#e2fcff"}}>
+                    <section className="banner-pre-school py-5" style={{backgroundColor : "#fff"}}>
                         <div className="container">
                             <div className="pre-school row justify-content-center">
                                 <div className="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
-                                    <h1 className="banner-head">Start a Pre-School</h1>
-                                    <p>Ex esse exercitation mollit laboris et ipsum labore excepteur anim magna et ipsum labore excepteur anim magna.</p>
-                                    <p>Ex esse exercitation mollit laboris et ipsum labore excepteur anim magna.</p>
-                                    <p>Ex esse exercitation mollit laboris et ipsum labore excepteur anim magna et ipsum labore excepteur anim magna.</p>
+                                    <h1 className="banner-head">I want to start a pre-school </h1>
+                                    <p>Kido Village offers the best of both worlds - a globally recognized child care model that has served more than 15,000 families served along with the easy to set up franchise model that enables maximum flexibility with the highest earnings in the industry. </p>
+                                    <p>Joining Kido’s mission will enable your pre-school to enter a growth trajectory like no other. We offer world-class materials, training, support staff, and marketing partnership to transform your learning space into a high-performance venture. The parents trust us with their children because of our Kïdo Early Years Program, an international program running in preschools and nurseries across the USA, UK, UAE, India, and Hong Kong which follows the strictest health and safety protocols, in line with global best practices.</p>
                                     <div className="pt-3">
                                     <a href="#" target='_blank' rel="noreferrer" className="my-btn center">Learn more</a>
                                 </div>
                                 </div>
-                                <div className="col-lg-6 pt-4" data-aos="fade-left" data-aos-duration="2000">
+                                <div className="col-lg-6 pt-5" data-aos="fade-left" data-aos-duration="2000">
                                     <img src={PreschoolsBanner} className="img-fluid"/>
                                 </div>
                             </div>
@@ -99,7 +96,7 @@ function Home(props) {
                         </div>
                     </section>
 
-                    <section className="how-it-works bg-light py-5">
+                    <section className="how-it-works py-5" style={{backgroundColor : "#F0F0F0"}}>
                         <div className="container">
                             <div className="row justify-content-center">
                                 <div className="col-lg-4" data-aos="zoom-out-right" data-aos-duration="2000">
