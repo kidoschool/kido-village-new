@@ -9,7 +9,7 @@ import $ from "jquery";
 import "aos/dist/aos.css";
 
 
-function Parent(props) {
+function Teacher(props) {
 
     AOS.init();
         /* Set the width of the side navigation to 300px and the left margin of the page content to 250px */
@@ -34,7 +34,11 @@ function Parent(props) {
                         <div class="overlay1"></div>
                         <img src={PodBanner1} class="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
                         <div class="carousel-caption d-md-block">
-                            <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1>
+                            <h1 className="banner-head1 text-white">Help us reinvent early years education</h1>
+                            <i  className="banner-italic text-white">Become a Kido entrepreneur and help children unlock their potential </i>
+                            <div class="banner mt-4">
+                                <button onClick={openNav} class="btn my-btn center">GET STARTED</button>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -42,6 +46,9 @@ function Parent(props) {
                         <img src={PodBanner2} class="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
                         <div class="carousel-caption d-md-block">
                             <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1>
+                            <div class="banner mt-4">
+                                <button onClick={openNav} class="my-btn center">GET STARTED</button>
+                            </div>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -49,6 +56,9 @@ function Parent(props) {
                         <img src={PodBanner3} class="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
                         <div class="carousel-caption d-md-block">
                             <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1>
+                            <div class="banner mt-4">
+                                <button onClick={openNav} class="my-btn center">GET STARTED</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -78,72 +88,9 @@ function Parent(props) {
         <section className="how-it-works py-5" style={{backgroundColor : "#F0F0F0"}}>
             <div className="container">
                 <div className="row justify-content-center">
-                <h2 className="banner-head pb-2">Find a Kido pod near you today</h2>
-                    <div className="col-lg-10">
-                    <div className="search-pod-form bg-white p-4 my-4 border shadow">
-                        <h3>Quick Search</h3>
-                        <form>
-                        <div class="form-row">
-                            <div class="col-md-3">
-                            <label for="stateselect">Select State</label>
-                            <select name="state" value="" class="form-control" id="state">
-                            <option value="">Select any state</option>
-                            <option value="1">ANDHRA PRADESH</option>
-                            <option value="2">ASSAM</option>
-                            <option value="3">ARUNACHAL PRADESH</option>
-                            <option value="4">BIHAR</option>
-                            <option value="5">GUJRAT</option>
-                            <option value="6">HARYANA</option>
-                            <option value="7">HIMACHAL PRADESH</option>
-                            <option value="8">JAMMU &amp; KASHMIR</option>
-                            <option value="9">KARNATAKA</option>
-                            <option value="10">KERALA</option>
-                            <option value="11">MADHYA PRADESH</option>
-                            <option value="12">MAHARASHTRA</option>
-                            <option value="13">MANIPUR</option>
-                            <option value="14">MEGHALAYA</option>
-                            <option value="15">MIZORAM</option>
-                            <option value="16">NAGALAND</option>
-                            <option value="17">ORISSA</option>
-                            <option value="18">PUNJAB</option>
-                            <option value="19">RAJASTHAN</option>
-                            <option value="20">SIKKIM</option>
-                            <option value="21">TAMIL NADU</option>
-                            <option value="22">TRIPURA</option>
-                            <option value="23">UTTAR PRADESH</option>
-                            <option value="24">WEST BENGAL</option>
-                            <option value="25">DELHI</option>
-                            <option value="26">GOA</option>
-                            <option value="27">PONDICHERY</option>
-                            <option value="28">LAKSHDWEEP</option>
-                            <option value="29">DAMAN &amp; DIU</option>
-                            <option value="30">DADRA &amp; NAGAR</option>
-                            <option value="31">CHANDIGARH</option>
-                            <option value="32">ANDAMAN &amp; NICOBAR</option>
-                            <option value="33">UTTARANCHAL</option>
-                            <option value="34">JHARKHAND</option>
-                            <option value="35">CHATTISGARH</option>
-                            </select>
-                            </div>
-                            <div class="col-md-3">
-                            <label for="inputEmail4">Select City</label>
-                            <input type="text" class="form-control" placeholder="First name"/>
-                            </div>
-                            <div class="col-md-3">
-                            <label for="inputEmail4">Pin Code</label>
-                            <input type="text" class="form-control" placeholder="Enter Pin Code"/>
-                            </div>
-                            <div class="col-md-3 pod-search-now">
-                            <a href="#" class="my-btn center">Search Now</a>
-                            </div>
-                        </div>
-                        <div className="sm-text mt-4"><small>Note: You can enter Pin code in above mentioned field. In case if you are not aware about postcode then you can leave the field blank and it will automatically pick your location.</small></div>
-                        </form>
-                    </div>
-                    </div>
-                </div>
-                <div className="row justify-content-center">
                     <div className="col-lg-5" data-aos="zoom-out-right" data-aos-duration="2000">
+                    <h2 className="banner-head pb-2">Find a Kido pod near you today</h2>
+
                     <div class="card my-2">
                         <div class="row no-gutters">
                             <div class="col-md-4">
@@ -205,7 +152,7 @@ function Parent(props) {
                     </div>
 
                     </div>
-                    <div className="col-lg-5 mt-3" data-aos="zoom-out-left" data-aos-duration="2000">
+                    <div className="col-lg-5 mt-5" data-aos="zoom-out-left" data-aos-duration="2000">
                         <Map/>
                     </div>
                 </div>
@@ -222,12 +169,12 @@ function Parent(props) {
                         <ul className="list-unstyled">
                             <li className="list-group-item py-4 bg-primary text-white">Homely care - right in your neighbourhood</li>
                             <li className="list-group-item py-4 bg-info text-white">Small batches to ensure personal attention</li>
-                            <li className="list-group-item py-4 bg-secondary text-white">Highly customized approach for each child</li>
-                            <li className="list-group-item py-4 bg-primary text-white">Community events and regular parent-teacher communication</li>
-                            <li className="list-group-item py-4 bg-info text-white">Globally-recognized learning models</li>
-                            <li className="list-group-item py-4 bg-secondary text-white">Quality control checks with the highest standards</li>
-                            <li className="list-group-item py-4 bg-primary text-white">Safe and secure environment</li>
-                            <li className="list-group-item py-4 bg-info text-white">Interactive groups to foster creativity, learning and independent thinking </li>
+                            <li className="list-group-item py-4 bg-success text-white">Highly customized approach for each child</li>
+                            <li className="list-group-item py-4 bg-warning text-white">Community events and regular parent-teacher communication</li>
+                            <li className="list-group-item py-4 bg-danger text-white">Globally-recognized learning models</li>
+                            <li className="list-group-item py-4 bg-primary text-white">Quality control checks with the highest standards</li>
+                            <li className="list-group-item py-4 bg-info text-white">Safe and secure environment</li>
+                            <li className="list-group-item py-4 bg-success text-white">Interactive groups to foster creativity, learning and independent thinking </li>
                         </ul>
                     </div>
                 </div>
@@ -277,4 +224,4 @@ function Parent(props) {
 }
 
 
-export default Parent;
+export default Teacher;

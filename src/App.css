@@ -230,7 +230,7 @@ span.we-do-color{
 /*--------section banner end---------*/
 
 .parent-banner-img{
-  height: 500px;
+  height: 75vh;
 }
 
 .overlay1 {
@@ -252,6 +252,16 @@ h1.banner-head1{
   text-transform: none;
   font-size: 45px;
   font-weight: 800;
+}
+
+.banner-italic{
+  text-transform: none;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.pod-search-now{
+  margin-top: 38px;
 }
 
 /*--------footer-area start---------*/
@@ -317,6 +327,11 @@ a[rel="noopener"],.gmnoprint{
   h1.banner-head{
     font-family: 'Sriracha', cursive;
     font-size: 50px;
+    }
+
+    .carousel-caption {
+      position: absolute;
+      top: 35%;
     }
   
 }
