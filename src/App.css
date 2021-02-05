@@ -264,6 +264,25 @@ h1.banner-head1{
   margin-top: 38px;
 }
 
+.bg-blue{
+  background-color: #00356b;
+  height: 100%;
+  padding-top: 20%;
+}
+
+.k-advantage li{
+  padding-bottom: 2%;
+}
+
+.start_journey{
+  background-image: url(../src/assets/start-journey-bg.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+}
 /*--------footer-area start---------*/
 .footer-area{
   background-color: #00356b;

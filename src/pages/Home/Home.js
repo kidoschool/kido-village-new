@@ -2,13 +2,29 @@ import React from 'react';
 import ParentsBanner from '../../assets/parents-banner.jpg';
 import TeachersBanner from '../../assets/teachers-banner.jpg';
 import PreschoolsBanner from '../../assets/pre-schools-banner.jpg';
+import FormEnquiry from "../../components/FormEnquiry";
 import AOS from "aos";
+import $ from "jquery";
 import "aos/dist/aos.css";
 
 
 function Home(props) {
 
     AOS.init();
+
+         /* Set the width of the side navigation to 300px and the left margin of the page content to 250px */
+         function openNav() {
+            // document.getElementById("mySidenav").style.width = "360px";
+            $( "#mySidenav" ).css( "width", "360px" );
+          }
+        
+          /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+          function closeNav() {
+            // document.getElementById("mySidenav").style.width = "0";
+            $( "#mySidenav" ).css( "width", "0" );
+          } 
+
+
 
     return(
         <>
@@ -87,9 +103,11 @@ function Home(props) {
                         <div className="overlay py-5">
                         <div className="container">
                             <div className="row justify-content-center py-5">
-                            <h1 className="banner-head text-white pb-2">School Network</h1>
+                            <h1 className="banner-head text-white pb-2">Ready to begin your journey? Create your Kido pod today</h1>
                                 <div className="col-lg-10 text-center">
-                                    <p><span className="text-white">bring global best practices in curriculum, operations, health and safety to each Kïdo Village Pod.</span> </p>
+                                <div class="banner mt-4">
+                                    <button onClick={openNav} class="btn my-btn center">Sign Up Now</button>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -135,6 +153,14 @@ function Home(props) {
                             </div>
                         </div>
                     </section>
+
+                    <div id="mySidenav" class="sidenav bg-light border-right">
+                    <div class="p-3">
+                        <h5>Send your Enquiry</h5><a href="javascript:void(0)" class="closebtn" onClick={closeNav}>&times;</a>
+                        <hr/>
+                        <FormEnquiry/>
+                    </div>
+                    </div>
                     
         </>
     )

@@ -45,7 +45,8 @@ function Teacher(props) {
                         <div class="overlay1"></div>
                         <img src={PodBanner2} class="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
                         <div class="carousel-caption d-md-block">
-                            <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1>
+                            <h1 className="banner-head1 text-white">Help us reinvent early years education</h1>
+                            <i  className="banner-italic text-white">Become a Kido entrepreneur and help children unlock their potential </i>
                             <div class="banner mt-4">
                                 <button onClick={openNav} class="my-btn center">GET STARTED</button>
                             </div>
@@ -55,7 +56,8 @@ function Teacher(props) {
                         <div class="overlay1"></div>
                         <img src={PodBanner3} class="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
                         <div class="carousel-caption d-md-block">
-                            <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1>
+                            <h1 className="banner-head1 text-white">Help us reinvent early years education</h1>
+                            <i  className="banner-italic text-white">Become a Kido entrepreneur and help children unlock their potential </i>
                             <div class="banner mt-4">
                                 <button onClick={openNav} class="my-btn center">GET STARTED</button>
                             </div>
@@ -76,110 +78,128 @@ function Teacher(props) {
         <section className="What-we-do py-5">
             <div className="container">
                 <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
-                <h1 className="banner-head pb-2">It takes a village to raise a child </h1>
+                <h1 className="banner-head pb-2">Become an early childhood entrepreneur</h1>
                     <div className="col-lg-10">
-                        <p>At Kido Village, we hope to transform the future of our children by making early interventions in the form of lots of love, care and exceptional education. With our Kido Early Years Program that works as the framework for all our learning spaces, we are creating launchpads for your children under the age of six.</p>
-                        <p>Each Kido Village pod provides: the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning. All our learning spaces are structured around the fundamental values of Kido and offer the highest standards of safety, security, and quality control to ensure that your child gets nothing but the best. </p>
+                        <p>Starting a Kido Village pod is easy. Sign up on the form on our website and we’ll get you started on training modules and help you set up everything from your physical learning space to the marketing materials you will need to enroll children. Not just this, we also provide 24/7 support throughout your journey with us and we’ll help you every step of the way with whatever you need.</p>
+                        <p>For all this and more, we charge only 50% of the fee you charge from one child - no matter how many children you take in (you get to keep the rest!). </p>
+                        <p>Find out how you can earn Rs 50,000-Rs 1,00,000+ within a couple of months by just enrolling 8 students! </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section className="how-it-works py-5" style={{backgroundColor : "#F0F0F0"}}>
+
+        <section className="start_journey">
+            <div className="overlay py-5">
+            <div className="container">
+                <div className="row justify-content-center py-5">
+                <h1 className="banner-head text-white pb-2">Curious to learn more? Start your journey</h1>
+                    <div className="col-lg-10 text-center">
+                    <div class="banner mt-4">
+                        <button onClick={openNav} class="btn my-btn center">Sign Up Now</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section className="posible earning py-5" style={{backgroundColor : "#F0F0F0"}}>
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="col-lg-5" data-aos="zoom-out-right" data-aos-duration="2000">
-                    <h2 className="banner-head pb-2">Find a Kido pod near you today</h2>
-
-                    <div class="card my-2">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src={PodBanner1} width="200"class="find-pod-img img-fluid" alt=""/>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Description</p>
-                                    <a href="#" class="my-btn-info center">Schedule a Tour</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card my-2">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src={PodBanner2} width="200" class="find-pod-img img-fluid" alt=""/>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Description</p>
-                                    <a href="#" class="my-btn-info center">Schedule a Tour</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card my-2">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src={PodBanner3} width="200" class="find-pod-img img-fluid" alt=""/>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Description</p>
-                                    <a href="#" class="my-btn-info center">Schedule a Tour</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card my-2">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src={PodBanner1} width="200" class="find-pod-img img-fluid" alt=""/>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Description</p>
-                                    <a href="#" class="my-btn-info center">Schedule a Tour</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    </div>
-                    <div className="col-lg-5 mt-5" data-aos="zoom-out-left" data-aos-duration="2000">
-                        <Map/>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section className="What-we-do py-5">
-            <div className="container" data-aos="fade-right" data-aos-duration="2000">
-           
-                <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
                     <div className="col-lg-10">
-                    <h1 className="banner-head">The Kido advantage </h1>
-                    <div className="pb-4"><i>Give your children a head start! </i></div>
-                        <ul className="list-unstyled">
-                            <li className="list-group-item py-4 bg-primary text-white">Homely care - right in your neighbourhood</li>
-                            <li className="list-group-item py-4 bg-info text-white">Small batches to ensure personal attention</li>
-                            <li className="list-group-item py-4 bg-success text-white">Highly customized approach for each child</li>
-                            <li className="list-group-item py-4 bg-warning text-white">Community events and regular parent-teacher communication</li>
-                            <li className="list-group-item py-4 bg-danger text-white">Globally-recognized learning models</li>
-                            <li className="list-group-item py-4 bg-primary text-white">Quality control checks with the highest standards</li>
-                            <li className="list-group-item py-4 bg-info text-white">Safe and secure environment</li>
-                            <li className="list-group-item py-4 bg-success text-white">Interactive groups to foster creativity, learning and independent thinking </li>
-                        </ul>
+                        <div className="earning" data-aos="fade-up" data-aos-duration="2000">
+                            <h1 className="banner-head pb-2">Possible Earnings</h1>
+                            <p>We've crunched the numbers so you don't have to. This calculator gives an illustration of how much you could earn on a monthly basis depending on how much fees you charge, number of children you take care of at any point in time and the number of batches you want to run. Try it out and see for yourself!</p>
+                        </div>
+                        <div className="earning-data border shadow bg-white" data-aos="fade-right" data-aos-duration="2000">
+                            <div className="row">
+                                <div className="col-lg-8">
+                                <div className="earning-form p-4">
+                                    <form>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                            <label for="monthly_fees">Monthly Fees</label>
+                                            <select name="no_of_students" value="" class="form-control" id="monthly_fees">
+                                                <option value="3000" selected="">₹3,000</option>
+                                                <option value="4000">₹4,000</option>
+                                                <option value="5000">₹5,000</option>
+                                                <option value="6000">₹6,000</option>
+                                                <option value="7000">₹7,000</option>
+                                            </select>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                            <label for="no_of_students">No. of Students</label>
+                                            <select name="no_of_students" value="" class="form-control" id="no_of_students">
+                                                <option value="4">4</option>
+                                                <option value="6">6</option>
+                                                <option value="8" selected="">8</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                            <label for="day">Half Day/Full Day</label>
+                                            <select name="day" value="" class="form-control" id="day">
+                                                <option value="Half Day" selected="">Half Day</option>
+                                                <option value="Full Day">Full Day</option>
+                                            </select>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                            <label for="batches">No. of Batches</label>
+                                            <select name="batches" value="" class="form-control" id="batches">
+                                                <option value="1">1</option>
+                                                <option value="2" selected="">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    </div>
+                                </div>
+                                <div className="col-lg-4">
+                                    <div className="earning-total text-center bg-blue">
+                                        <h5 className="ex-earning text-white">Expected Earnings</h5>
+                                        <h1 className="total-earn banner-head text-white">₹48,000</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
+
+
+        <section className="how-it-works py-5">
+            <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-lg-4" data-aos="zoom-out-right" data-aos-duration="2000">
+                    <h1 className="banner-head pb-2">How It Works</h1>
+                        <p>Setting up your own Pod at home is easy. Within a few weeks, you can be all set up and ready to take your first batch of children. Depending on how many children you take, and what you charge, you could be earning ₹50,000 to ₹ 1 lakh+ per month within a couple of months! Watch the video to get a better understanding of the process.</p>
+                    </div>
+                    <div className="offset-lg-1 col-lg-5" data-aos="zoom-out-left" data-aos-duration="2000">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/lDNAbdm1Sh8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section className="school_network">
+            <div className="overlay py-5">
+            <div className="container">
+                <div className="row justify-content-center py-5">
+                <h1 className="banner-head text-white pb-2">Ready to begin your journey? Create your Kido pod today</h1>
+                    <div className="col-lg-10 text-center">
+                    <div class="banner mt-4">
+                        <button onClick={openNav} class="btn my-btn center">Sign Up Now</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
 
 
         <section className="video-card py-5">

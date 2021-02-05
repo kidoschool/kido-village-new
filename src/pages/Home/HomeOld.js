@@ -3,7 +3,7 @@ import kidsBall from '../../assets/kids-ball.png';
 import kidsplay from '../../assets/kid-play.png';
 import ParentBanner from '../../assets/parent-banner.jpg';
 import TeacherBanner from '../../assets/teacher-banner.jpg';
-import PreSchoolBanner from '../../assets/pre-school-banner.jpg';
+// import PreSchoolBanner from '../../assets/pre-school-banner.jpg';
 import {Link} from "react-router-dom";
 import $ from "jquery"
 import AOS from "aos";
@@ -100,7 +100,7 @@ function HomeOld(props) {
                   </div>
                   <div className="col-lg-5">
                     <div className="banner-image">
-                    <img src={PreSchoolBanner} className="banner-image-round img-fluid" width="500"/>
+                    {/* <img src={PreSchoolBanner} className="banner-image-round img-fluid" width="500"/> */}
                     </div>
                   </div>
                 </div>
