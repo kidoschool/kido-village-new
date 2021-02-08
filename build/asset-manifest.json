@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.d3314a21.chunk.css",
-    "main.js": "/static/js/main.bd3baa68.chunk.js",
-    "main.js.map": "/static/js/main.bd3baa68.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.9956ca8a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.9956ca8a.js.map",
+    "main.css": "/static/css/main.139f91aa.chunk.css",
+    "main.js": "/static/js/main.bc2fa5bf.chunk.js",
+    "main.js.map": "/static/js/main.bc2fa5bf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c9bb2e88.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c9bb2e88.js.map",
     "static/css/2.ec02d681.chunk.css": "/static/css/2.ec02d681.chunk.css",
-    "static/js/2.e0b79b3a.chunk.js": "/static/js/2.e0b79b3a.chunk.js",
-    "static/js/2.e0b79b3a.chunk.js.map": "/static/js/2.e0b79b3a.chunk.js.map",
-    "static/js/3.ea9d3930.chunk.js": "/static/js/3.ea9d3930.chunk.js",
-    "static/js/3.ea9d3930.chunk.js.map": "/static/js/3.ea9d3930.chunk.js.map",
+    "static/js/2.ffa735a6.chunk.js": "/static/js/2.ffa735a6.chunk.js",
+    "static/js/2.ffa735a6.chunk.js.map": "/static/js/2.ffa735a6.chunk.js.map",
+    "static/js/3.e10f44c0.chunk.js": "/static/js/3.e10f44c0.chunk.js",
+    "static/js/3.e10f44c0.chunk.js.map": "/static/js/3.e10f44c0.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.d3314a21.chunk.css.map": "/static/css/main.d3314a21.chunk.css.map",
-    "static/js/2.e0b79b3a.chunk.js.LICENSE.txt": "/static/js/2.e0b79b3a.chunk.js.LICENSE.txt",
+    "static/css/main.139f91aa.chunk.css.map": "/static/css/main.139f91aa.chunk.css.map",
+    "static/js/2.ffa735a6.chunk.js.LICENSE.txt": "/static/js/2.ffa735a6.chunk.js.LICENSE.txt",
     "static/media/POD-1.f89442fd.jpg": "/static/media/POD-1.f89442fd.jpg",
     "static/media/POD-2.4082c83c.jpg": "/static/media/POD-2.4082c83c.jpg",
     "static/media/POD-3.970688e8.jpg": "/static/media/POD-3.970688e8.jpg",
@@ -25,13 +25,14 @@
     "static/media/parents-banner.b2a617a1.jpg": "/static/media/parents-banner.b2a617a1.jpg",
     "static/media/pre-schools-banner.4b070d5d.jpg": "/static/media/pre-schools-banner.4b070d5d.jpg",
     "static/media/teacher-banner.e748de2c.jpg": "/static/media/teacher-banner.e748de2c.jpg",
-    "static/media/teachers-banner.b511500a.jpg": "/static/media/teachers-banner.b511500a.jpg"
+    "static/media/teachers-banner.b511500a.jpg": "/static/media/teachers-banner.b511500a.jpg",
+    "static/media/testi-profile1.222fec55.jpg": "/static/media/testi-profile1.222fec55.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9956ca8a.js",
+    "static/js/runtime-main.c9bb2e88.js",
     "static/css/2.ec02d681.chunk.css",
-    "static/js/2.e0b79b3a.chunk.js",
-    "static/css/main.d3314a21.chunk.css",
-    "static/js/main.bd3baa68.chunk.js"
+    "static/js/2.ffa735a6.chunk.js",
+    "static/css/main.139f91aa.chunk.css",
+    "static/js/main.bc2fa5bf.chunk.js"
   ]
 }

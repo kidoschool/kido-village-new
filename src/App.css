@@ -21,7 +21,7 @@ h4, .h4 {font-size: 1.1em;}
 h5, h6, .h5, .h6{font-size: 1em; }
 
 p,li {color: #666; font-size: 1em;}
-a {color: #444; text-decoration: none;  transition: 0.3s;}
+a {color: #444; text-decoration: none;  transition: 0.3s; cursor: pointer;}
 
 #myBtn {
     display: none;
@@ -261,7 +261,7 @@ h1.banner-head1{
 }
 
 .pod-search-now{
-  margin-top: 38px;
+  margin-top: 30px;
 }
 
 .bg-blue{
@@ -283,6 +283,23 @@ h1.banner-head1{
   background-size: cover;
   height: auto;
 }
+
+.carousel-indicators li {
+  background-color: #00356b!important;
+}
+
+.testimonial .pic:after{
+  content: "";
+  display: block;
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  border: 1px solid #000;
+}
+
+
 /*--------footer-area start---------*/
 .footer-area{
   background-color: #00356b;

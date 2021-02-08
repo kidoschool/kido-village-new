@@ -2,6 +2,7 @@ import React from 'react';
 import PodBanner1 from '../../assets/POD-1.jpg';
 import PodBanner2 from '../../assets/POD-2.jpg';
 import PodBanner3 from '../../assets/POD-3.jpg';
+import testiProfile1 from '../../assets/testi-profile1.jpg';
 import FormEnquiry from "../../components/FormEnquiry";
 import Map from "../../components/Map/Map";
 import AOS from "aos";
@@ -27,38 +28,38 @@ function Parent(props) {
     return(
         <>
            
-        <section class="main_banner">
-            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="overlay1"></div>
-                        <img src={PodBanner1} class="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
-                        <div class="carousel-caption d-md-block">
+        <section className="main_banner">
+            <div id="carouselExampleControls" className="carousel slide carousel-fade" data-ride="carousel">
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <div className="overlay1"></div>
+                        <img src={PodBanner1} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
+                        <div className="carousel-caption d-md-block">
                             <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="overlay1"></div>
-                        <img src={PodBanner2} class="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
-                        <div class="carousel-caption d-md-block">
+                    <div className="carousel-item">
+                        <div className="overlay1"></div>
+                        <img src={PodBanner2} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
+                        <div className="carousel-caption d-md-block">
                             <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <div class="overlay1"></div>
-                        <img src={PodBanner3} class="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
-                        <div class="carousel-caption d-md-block">
+                    <div className="carousel-item">
+                        <div className="overlay1"></div>
+                        <img src={PodBanner3} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
+                        <div className="carousel-caption d-md-block">
                             <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Next</span>
                 </a>
             </div>
         </section>
@@ -83,10 +84,10 @@ function Parent(props) {
                     <div className="search-pod-form bg-white p-4 my-4 border shadow"  data-aos="fade-right" data-aos-duration="2000">
                         <h3>Quick Search</h3>
                         <form>
-                        <div class="form-row">
-                            <div class="col-md-3">
+                        <div className="form-row">
+                            <div className="col-md-3">
                             <label for="stateselect">Select State</label>
-                            <select name="state" value="" class="form-control" id="state">
+                            <select name="state" className="form-control" id="state">
                                 <option value="">Select any state</option>
                                 <option value="1">ANDHRA PRADESH</option>
                                 <option value="2">ASSAM</option>
@@ -125,16 +126,16 @@ function Parent(props) {
                                 <option value="35">CHATTISGARH</option>
                             </select>
                             </div>
-                            <div class="col-md-3">
+                            <div className="col-md-3">
                             <label for="inputEmail4">Select City</label>
-                            <input type="text" class="form-control" placeholder="First name"/>
+                            <input type="text" className="form-control" placeholder="First name"/>
                             </div>
-                            <div class="col-md-3">
+                            <div className="col-md-3">
                             <label for="inputEmail4">Pin Code</label>
-                            <input type="text" class="form-control" placeholder="Enter Pin Code"/>
+                            <input type="text" className="form-control" placeholder="Enter Pin Code"/>
                             </div>
-                            <div class="col-md-3 pod-search-now">
-                            <a href="#" class="my-btn center">Search Now</a>
+                            <div className="col-md-3 pod-search-now">
+                            <a href="#" className="btn my-btn center">Search Now</a>
                             </div>
                         </div>
                         <div className="sm-text mt-4"><small>Note: You can enter Pin code in above mentioned field. In case if you are not aware about postcode then you can leave the field blank and it will automatically pick your location.</small></div>
@@ -144,61 +145,61 @@ function Parent(props) {
                 </div>
                 <div className="row justify-content-center">
                     <div className="col-lg-5" data-aos="zoom-out-right" data-aos-duration="2000">
-                    <div class="card my-2 shadow">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src={PodBanner1} width="200"class="find-pod-img img-fluid" alt=""/>
+                    <div className="card my-2 shadow">
+                        <div className="row no-gutters">
+                            <div className="col-md-4">
+                                <img src={PodBanner1} width="200"className="find-pod-img img-fluid" alt=""/>
                             </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Description</p>
-                                    <a href="#" class="my-btn-info center">Schedule a Tour</a>
+                            <div className="col-md-8">
+                                <div className="card-body">
+                                    <h4 className="card-title">Title</h4>
+                                    <p className="card-text">Description</p>
+                                    <a href="#" className="my-btn-info center">Schedule a Tour</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card my-2 shadow">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src={PodBanner2} width="200" class="find-pod-img img-fluid" alt=""/>
+                    <div className="card my-2 shadow">
+                        <div className="row no-gutters">
+                            <div className="col-md-4">
+                                <img src={PodBanner2} width="200" className="find-pod-img img-fluid" alt=""/>
                             </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Description</p>
-                                    <a href="#" class="my-btn-info center">Schedule a Tour</a>
+                            <div className="col-md-8">
+                                <div className="card-body">
+                                    <h4 className="card-title">Title</h4>
+                                    <p className="card-text">Description</p>
+                                    <a href="#" className="my-btn-info center">Schedule a Tour</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card my-2 shadow">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src={PodBanner3} width="200" class="find-pod-img img-fluid" alt=""/>
+                    <div className="card my-2 shadow">
+                        <div className="row no-gutters">
+                            <div className="col-md-4">
+                                <img src={PodBanner3} width="200" className="find-pod-img img-fluid" alt=""/>
                             </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Description</p>
-                                    <a href="#" class="my-btn-info center">Schedule a Tour</a>
+                            <div className="col-md-8">
+                                <div className="card-body">
+                                    <h4 className="card-title">Title</h4>
+                                    <p className="card-text">Description</p>
+                                    <a href="#" className="my-btn-info center">Schedule a Tour</a>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="card my-2 shadow">
-                        <div class="row no-gutters">
-                            <div class="col-md-4">
-                                <img src={PodBanner1} width="200" class="find-pod-img img-fluid" alt=""/>
+                    <div className="card my-2 shadow">
+                        <div className="row no-gutters">
+                            <div className="col-md-4">
+                                <img src={PodBanner1} width="200" className="find-pod-img img-fluid" alt=""/>
                             </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">Title</h4>
-                                    <p class="card-text">Description</p>
-                                    <a href="#" class="my-btn-info center">Schedule a Tour</a>
+                            <div className="col-md-8">
+                                <div className="card-body">
+                                    <h4 className="card-title">Title</h4>
+                                    <p className="card-text">Description</p>
+                                    <a href="#" className="my-btn-info center">Schedule a Tour</a>
                                 </div>
                             </div>
                         </div>
@@ -235,24 +236,108 @@ function Parent(props) {
         </section>
 
 
+        <section className="testimonial py-5" style={{backgroundColor : "#F0F0F0"}}>
+            <div className="container">
+                <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+                <h1 className="banner-head pb-4">What Our Parent Say About Our Kido Village</h1>
+                    <div className="col-lg-10 text-center">
+                    <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+                        <ol className="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                            <div className="row">
+                                <div className="col-lg-4">
+                                    <div className="pic">
+                                        <img src={testiProfile1} width="300" className="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div className="col-lg-7 pt-2">
+                                    <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
+                                    <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
+                                    </div>
+                                    <div className="text-right pt-4">
+                                        <h3>Teachers Name</h3>
+                                        <small className="text-primary"><i>-from Bandra</i></small>
+                                    </div>
+                                </div>
+                           </div>
+                            </div>
+                            <div className="carousel-item">
+                            <div className="row">
+                                <div className="col-lg-4">
+                                    <div className="pic">
+                                        <img src={testiProfile1} width="300" className="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div className="col-lg-7 pt-2">
+                                    <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
+                                    <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
+                                    </div>
+                                    <div className="text-right pt-4">
+                                        <h3>Teachers Name</h3>
+                                        <small className="text-primary"><i>-from Bandra</i></small>
+                                    </div>
+                                </div>
+                           </div>
+                            </div>
+                            <div className="carousel-item">
+                            <div className="row">
+                                <div className="col-lg-4">
+                                    <div className="pic">
+                                        <img src={testiProfile1} width="300" className="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div className="col-lg-7 pt-2">
+                                    <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
+                                    <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
+                                    </div>
+                                    <div className="text-right pt-4">
+                                        <h3>Teachers Name</h3>
+                                        <small className="text-primary"><i>-from Bandra</i></small>
+                                    </div>
+                                </div>
+                           </div>
+                            </div>
+                        </div>
+                        <a className="carousel-control-prev invisible" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="sr-only">Previous</span>
+                        </a>
+                        <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="sr-only">Next</span>
+                        </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
         <section className="video-card py-5">
             <div className="container">
             <h1 className="banner-head text-center pb-3">Hear from our Parent</h1>
                 <div className="row justify-content-center">
                     <div className="col-lg-12">
-                    <div class="card-deck">
-                        <div class="card" data-aos="zoom-in" data-aos-duration="2000">
-                            <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/I7euUBZq4sw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            {/* <div class="card-body">
-                            <h3 class="card-title">Kïdo Village Pod owner.</h3>
-                            <p class="card-text">Ms Arbin Banu, shares her experience of starting her own micro preschool in provided, she joins the ever expanding group of female eduprenuers who trust Kido Village platform to help them set up their own Micro Preschool from the convenience of their home.</p>
+                    <div className="card-deck">
+                        <div className="card" data-aos="zoom-in" data-aos-duration="2000">
+                            <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/I7euUBZq4sw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            {/* <div className="card-body">
+                            <h3 className="card-title">Kïdo Village Pod owner.</h3>
+                            <p className="card-text">Ms Arbin Banu, shares her experience of starting her own micro preschool in provided, she joins the ever expanding group of female eduprenuers who trust Kido Village platform to help them set up their own Micro Preschool from the convenience of their home.</p>
                             </div> */}
                         </div>
-                        <div class="card" data-aos="zoom-in" data-aos-duration="2000">
-                        <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/CbyUND4AvPY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            {/* <div class="card-body">
-                            <h3 class="card-title">Parent, Kïdo.</h3>
-                            <p class="card-text">Ms Sameera Reddy, Kïdo Parent talks to India CEO Mr Jeetu Karsan about parenting, Kïdo and more. The talk demonstrates our values, our principles and our commitment to educate young children in the best possible way everywhere.</p>
+                        <div className="card" data-aos="zoom-in" data-aos-duration="2000">
+                        <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/CbyUND4AvPY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            {/* <div className="card-body">
+                            <h3 className="card-title">Parent, Kïdo.</h3>
+                            <p className="card-text">Ms Sameera Reddy, Kïdo Parent talks to India CEO Mr Jeetu Karsan about parenting, Kïdo and more. The talk demonstrates our values, our principles and our commitment to educate young children in the best possible way everywhere.</p>
                             </div> */}
                         </div>
                         </div>
@@ -261,9 +346,9 @@ function Parent(props) {
             </div>
         </section>              
 
-        <div id="mySidenav" class="sidenav bg-light border-right">
-        <div class="p-3">
-            <h5>Send your Enquiry</h5><a href="javascript:void(0)" class="closebtn" onClick={closeNav}>&times;</a>
+        <div id="mySidenav" className="sidenav bg-light border-right">
+        <div className="p-3">
+            <h5>Send your Enquiry</h5><a href={null} className="closebtn" onClick={closeNav}>&times;</a>
             <hr/>
             <FormEnquiry/>
         </div>

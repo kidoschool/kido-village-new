@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import ParentsBanner from '../../assets/parents-banner.jpg';
 import TeachersBanner from '../../assets/teachers-banner.jpg';
 import PreschoolsBanner from '../../assets/pre-schools-banner.jpg';
@@ -36,11 +37,11 @@ function Home(props) {
                             <p>At Kido Village, we hope to transform the future of our children by making early interventions in the form of lots of love, care and exceptional education. With our Kido Early Years Program that works as the framework for all our learning spaces, we are creating launchpads for your children under the age of six. </p>
                             <p>Each Kido Village pod provides: the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning. All our learning spaces are structured around the fundamental values of Kido and offer the highest standards of safety, security, and quality control to ensure that your child gets nothing but the best. </p>
                             <div className="pt-3">
-                            <a href="#" target='_blank' rel="noreferrer" className="my-btn center">Learn more</a>
+                            <Link to="/parent" target='_blank' rel="noreferrer" className="my-btn center">Learn more</Link>
                         </div>
                         </div>
                         <div className="col-lg-6 pt-5" data-aos="fade-left" data-aos-duration="2000">
-                            <img src={ParentsBanner} className="img-fluid"/>
+                            <img src={ParentsBanner} className="img-fluid" alt="ParentsBanner"/>
                         </div>
                     </div>
                     </div>
@@ -50,7 +51,7 @@ function Home(props) {
                         <div className="container">
                             <div className="teacher row justify-content-center">
                                 <div className="col-lg-6 pt-5" data-aos="fade-right" data-aos-duration="2000">
-                                    <img src={TeachersBanner} className="img-fluid"/>
+                                    <img src={TeachersBanner} className="img-fluid" alt="TeachersBanner" />
                                 </div>
                                 <div className="col-lg-6">
                                     <h1 className="banner-head">I am a Teacher</h1>
@@ -58,7 +59,7 @@ function Home(props) {
                                     <p>To transform children into achievers and well-rounded members of the society, we need to change the way they’re taught and looked after. And it must start early. That’s where Kido comes in with an internationally recognized model and a whole team to support your dreams. </p>
                                     <p>By becoming a Kido pod owner, you will not only transform the future of kids in the community by providing high-quality education and child care, but you will also maximize your earnings while retaining your flexibility by taking in as many or as few children as you like. </p>
                                     <div className="pt-3">
-                                    <a href="#" target='_blank' rel="noreferrer" className="my-btn center">Learn more</a>
+                                    <Link to="/teacher" target='_blank' rel="noreferrer" className="my-btn center">Learn more</Link>
                                     </div>
                                     </div>
                                 </div>
@@ -72,13 +73,13 @@ function Home(props) {
                                 <div className="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
                                     <h1 className="banner-head">I want to start a pre-school </h1>
                                     <p>Kido Village offers the best of both worlds - a globally recognized child care model that has served more than 15,000 families served along with the easy to set up franchise model that enables maximum flexibility with the highest earnings in the industry. </p>
-                                    <p>Joining Kido’s mission will enable your pre-school to enter a growth trajectory like no other. We offer world-class materials, training, support staff, and marketing partnership to transform your learning space into a high-performance venture. The parents trust us with their children because of our Kïdo Early Years Program, an international program running in preschools and nurseries across the USA, UK, UAE, India, and Hong Kong which follows the strictest health and safety protocols, in line with global best practices.</p>
+                                    <p>Joining Kido’s mission will enable your pre-school to enter a growth trajectory like no other. We offer world-className materials, training, support staff, and marketing partnership to transform your learning space into a high-performance venture. The parents trust us with their children because of our Kïdo Early Years Program, an international program running in preschools and nurseries across the USA, UK, UAE, India, and Hong Kong which follows the strictest health and safety protocols, in line with global best practices.</p>
                                     <div className="pt-3">
-                                    <a href="#" target='_blank' rel="noreferrer" className="my-btn center">Learn more</a>
+                                    <Link to="/Pre-school" target='_blank' rel="noreferrer" className="my-btn center">Learn more</Link>
                                 </div>
                                 </div>
                                 <div className="col-lg-6 pt-5" data-aos="fade-left" data-aos-duration="2000">
-                                    <img src={PreschoolsBanner} className="img-fluid"/>
+                                    <img src={PreschoolsBanner} className="img-fluid" alt="PreschoolsBanner"/>
                                 </div>
                             </div>
                         </div>
@@ -105,8 +106,8 @@ function Home(props) {
                             <div className="row justify-content-center py-5">
                             <h1 className="banner-head text-white pb-2">Ready to begin your journey? Create your Kido pod today</h1>
                                 <div className="col-lg-10 text-center">
-                                <div class="banner mt-4">
-                                    <button onClick={openNav} class="btn my-btn center">Sign Up Now</button>
+                                <div className="banner mt-4">
+                                    <button onClick={openNav} className="btn my-btn center">Sign Up Now</button>
                                 </div>
                                 </div>
                             </div>
@@ -122,7 +123,7 @@ function Home(props) {
                                     <p>It's simple. If you want to set up a Kïdo Village Pod in your home, just sign up one the website and we'll be in touch with the next steps. If you're a parent, you can search and select a Pod near you, schedule tours and find one that suits you! Watch the video for an overview of how Kïdo Village works!</p>
                                 </div>
                                 <div className="offset-lg-1 col-lg-5" data-aos="zoom-out-left" data-aos-duration="2000">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/HB4Pn1BftpQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                <iframe width="480" height="265" src="https://www.youtube.com/embed/HB4Pn1BftpQ" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </div>
                             </div>
                         </div>
@@ -133,19 +134,19 @@ function Home(props) {
                         <h1 className="banner-head text-center pb-3">Hear from our Parent & Teacher</h1>
                             <div className="row justify-content-center">
                                 <div className="col-lg-12">
-                                <div class="card-deck">
-                                    <div class="card" data-aos="zoom-in" data-aos-duration="2000">
-                                        <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/Ncl3CgduXCg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        {/* <div class="card-body">
-                                        <h3 class="card-title">Kïdo Village Pod owner.</h3>
-                                        <p class="card-text">Ms Arbin Banu, shares her experience of starting her own micro preschool in provided, she joins the ever expanding group of female eduprenuers who trust Kido Village platform to help them set up their own Micro Preschool from the convenience of their home.</p>
+                                <div className="card-deck">
+                                    <div className="card" data-aos="zoom-in" data-aos-duration="2000">
+                                        <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/Ncl3CgduXCg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        {/* <div className="card-body">
+                                        <h3 className="card-title">Kïdo Village Pod owner.</h3>
+                                        <p className="card-text">Ms Arbin Banu, shares her experience of starting her own micro preschool in provided, she joins the ever expanding group of female eduprenuers who trust Kido Village platform to help them set up their own Micro Preschool from the convenience of their home.</p>
                                         </div> */}
                                     </div>
-                                    <div class="card" data-aos="zoom-in" data-aos-duration="2000">
-                                    <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/vglc5eR8HTM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                        {/* <div class="card-body">
-                                        <h3 class="card-title">Parent, Kïdo.</h3>
-                                        <p class="card-text">Ms Sameera Reddy, Kïdo Parent talks to India CEO Mr Jeetu Karsan about parenting, Kïdo and more. The talk demonstrates our values, our principles and our commitment to educate young children in the best possible way everywhere.</p>
+                                    <div className="card" data-aos="zoom-in" data-aos-duration="2000">
+                                    <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/vglc5eR8HTM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        {/* <div className="card-body">
+                                        <h3 className="card-title">Parent, Kïdo.</h3>
+                                        <p className="card-text">Ms Sameera Reddy, Kïdo Parent talks to India CEO Mr Jeetu Karsan about parenting, Kïdo and more. The talk demonstrates our values, our principles and our commitment to educate young children in the best possible way everywhere.</p>
                                         </div> */}
                                     </div>
                                     </div>
@@ -154,9 +155,9 @@ function Home(props) {
                         </div>
                     </section>
 
-                    <div id="mySidenav" class="sidenav bg-light border-right">
-                    <div class="p-3">
-                        <h5>Send your Enquiry</h5><a href="javascript:void(0)" class="closebtn" onClick={closeNav}>&times;</a>
+                    <div id="mySidenav" className="sidenav bg-light border-right">
+                    <div className="p-3">
+                        <h5>Send your Enquiry</h5><a href={null} className="closebtn" onClick={closeNav}>&times;</a>
                         <hr/>
                         <FormEnquiry/>
                     </div>

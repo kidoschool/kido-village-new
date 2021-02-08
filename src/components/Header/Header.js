@@ -18,13 +18,16 @@ function Header(props){
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto w-100 justify-content-end clearfix">
               <li className="nav-item">
-                <NavLink className="nav-link pl-4" activeclassname="selected" to="/home2">Home</NavLink>
+                <NavLink className="nav-link pl-4" activeclassname="selected" to="/home2">About</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link pl-4" to="/parent">Parents</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link pl-4" to="/teacher">Teachers</NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link pl-4" to="/Pre-school">Pre-School</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link pl-4" to="/contact-us">FAQs</NavLink>
