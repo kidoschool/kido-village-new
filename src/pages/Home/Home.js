@@ -1,8 +1,8 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import ParentsBanner from '../../assets/parents-banner.jpg';
-import TeachersBanner from '../../assets/teachers-banner.jpg';
-import PreschoolsBanner from '../../assets/pre-schools-banner.jpg';
+import TeachersBanner from '../../assets/teachers-banner-new.jpg';
+import PreschoolsBanner from '../../assets/pre-schools-banner-new.jpg';
 import FormEnquiry from "../../components/FormEnquiry";
 import AOS from "aos";
 import $ from "jquery";
@@ -33,11 +33,11 @@ function Home(props) {
                 <div className="container">
                     <div className="parent row justify-content-center">
                         <div className="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
-                            <h1 className="banner-head">I am a Parent</h1>
-                            <p>At Kido Village, we hope to transform the future of our children by making early interventions in the form of lots of love, care and exceptional education. With our Kido Early Years Program that works as the framework for all our learning spaces, we are creating launchpads for your children under the age of six. </p>
-                            <p>Each Kido Village pod provides: the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning. All our learning spaces are structured around the fundamental values of Kido and offer the highest standards of safety, security, and quality control to ensure that your child gets nothing but the best. </p>
+                            <h1 className="banner-head">Give your child the best in early education and care!</h1>
+                            <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment – a Kido Village pod is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods provide the right creative environment that helps learning and development of a young brain. </p>
+                            <p>Each of our pods provide the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning.</p>
                             <div className="pt-3">
-                            <Link to="/parent" target='_blank' rel="noreferrer" className="my-btn center">Learn more</Link>
+                            <Link to="/parent" target='_blank' rel="noreferrer" className="my-btn center">I am a parent</Link>
                         </div>
                         </div>
                         <div className="col-lg-6 pt-5" data-aos="fade-left" data-aos-duration="2000">
@@ -54,12 +54,13 @@ function Home(props) {
                                     <img src={TeachersBanner} className="img-fluid" alt="TeachersBanner" />
                                 </div>
                                 <div className="col-lg-6">
-                                    <h1 className="banner-head">I am a Teacher</h1>
+                                    <h1 className="banner-head">Looking to start your own pre-school?</h1>
+                                    <i><strong>Become a Kido entrepreneur and help us reinvent early years education!</strong></i>
                                     <div data-aos="fade-left" data-aos-duration="2000">
-                                    <p>To transform children into achievers and well-rounded members of the society, we need to change the way they’re taught and looked after. And it must start early. That’s where Kido comes in with an internationally recognized model and a whole team to support your dreams. </p>
-                                    <p>By becoming a Kido pod owner, you will not only transform the future of kids in the community by providing high-quality education and child care, but you will also maximize your earnings while retaining your flexibility by taking in as many or as few children as you like. </p>
+                                    <p>By becoming a Kido pod owner, you can help shape the future of kids in your community by providing them with high quality education and care, with the backing of Kido! Our internationally recognized model will help you set up a pod in your living space with an investment as little as Rs 6,000 and you can start monetizing it quickly by enrolling kids with complete flexibility.</p>
+                                    <p>Simply fill the form on our site and we’ll reach out to you with the next steps for onboarding and help you through the journey – be it education materials or marketing support!</p>
                                     <div className="pt-3">
-                                    <Link to="/teacher" target='_blank' rel="noreferrer" className="my-btn center">Learn more</Link>
+                                    <Link to="/teacher" target='_blank' rel="noreferrer" className="my-btn center">I am a teacher </Link>
                                     </div>
                                     </div>
                                 </div>
@@ -71,11 +72,12 @@ function Home(props) {
                         <div className="container">
                             <div className="pre-school row justify-content-center">
                                 <div className="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
-                                    <h1 className="banner-head">I want to start a pre-school </h1>
-                                    <p>Kido Village offers the best of both worlds - a globally recognized child care model that has served more than 15,000 families served along with the easy to set up franchise model that enables maximum flexibility with the highest earnings in the industry. </p>
-                                    <p>Joining Kido’s mission will enable your pre-school to enter a growth trajectory like no other. We offer world-className materials, training, support staff, and marketing partnership to transform your learning space into a high-performance venture. The parents trust us with their children because of our Kïdo Early Years Program, an international program running in preschools and nurseries across the USA, UK, UAE, India, and Hong Kong which follows the strictest health and safety protocols, in line with global best practices.</p>
+                                    <h1 className="banner-head">Looking for a pre-school franchise? </h1>
+                                    <p>With more than 15,000 families served and a globally implemented childcare program, Kido Village is expanding fast in India by setting up micro-preschools as well as home-based pods for children’s education. If you already run a preschool, partner with Kido Village to enter a never-seen-before growth trajectory.</p>
+                                    <p>Based on world class materials, training, support and safety protocols, our vision for preschools is to create trust in the market and enable high-quality outcomes for children across the country.</p>
+                                    <p>Learn more about our offerings and partnership opportunities through a turnkey franchise model.</p>
                                     <div className="pt-3">
-                                    <Link to="/Pre-school" target='_blank' rel="noreferrer" className="my-btn center">Learn more</Link>
+                                    <Link to="/Pre-school" target='_blank' rel="noreferrer" className="my-btn center">I want to start a pre-school</Link>
                                 </div>
                                 </div>
                                 <div className="col-lg-6 pt-5" data-aos="fade-left" data-aos-duration="2000">
@@ -89,11 +91,11 @@ function Home(props) {
                     <section className="What-we-do py-5">
                         <div className="container">
                             <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
-                            <h1 className="banner-head pb-2">What we do</h1>
+                            <h1 className="banner-head pb-2">What is Kido Village?</h1>
                                 <div className="col-lg-10">
-                                    <p>We aim to provide the highest quality, flexible and affordable education and care to children under six everywhere - <span className="we-do-color">in their homes, or around the corner from where they live.</span> </p>
-                                    <p><span className="we-do-color">For as little as ₹1500/month, you can set up a micro-preschool (we call it a Kïdo Village Pod) at home for your children, or children in the neighbourhood.</span> We'll provide the training, curriculum, support, quality control and everything you'll need to be a successful teacher or Pod owner.</p>
-                                    <p>If you're a parent looking for education and care for your child, <span className="we-do-color">find a Pod near you</span>, and you'll be assured of a trained and certified provider in your community at affordable prices. Teaching will be in small groups (max of eight children) to ensure customisation and attention for each child.</p>
+                                    <p>Kido Village is a growing chain of micro preschools and neighbourhood learning pods which aim to provide the the highest quality, flexible and affordable education, and care to children under six everywhere - in their homes, or around the corner from where they live.</p>
+                                    <p>If you are a parent looking for education and care for your child, <span className="we-do-color">find a pod near you,</span> and you will be assured of a trained and certified provider in your community at affordable prices. Teaching will be in small groups (maximum of eight children) to ensure customization and attention for each child.</p>
+                                    <p>If you are interested in teaching, you can set up a micro-preschool (we call it a Kïdo Village Pod) at home for your children, or children in the neighborhood. For as little as ₹1500/month, we'll provide the training, curriculum, support, quality control and everything you'll need to be a successful teacher or Pod owner.</p>
                                     <p>All Kïdo Village teachers and Pods use the Kïdo Early Years Program, an international program running in preschools and nurseries across the USA, UK, UAE, India and Hong Kong, and follow the strictest health and safety protocols, in line with global best practices.</p>
                                 </div>
                             </div>

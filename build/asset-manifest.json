@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.139f91aa.chunk.css",
-    "main.js": "/static/js/main.bc2fa5bf.chunk.js",
-    "main.js.map": "/static/js/main.bc2fa5bf.chunk.js.map",
+    "main.js": "/static/js/main.1a469673.chunk.js",
+    "main.js.map": "/static/js/main.1a469673.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c9bb2e88.js",
     "runtime-main.js.map": "/static/js/runtime-main.c9bb2e88.js.map",
     "static/css/2.ec02d681.chunk.css": "/static/css/2.ec02d681.chunk.css",
@@ -23,9 +23,9 @@
     "static/media/kids-ball.f5e7b0a0.png": "/static/media/kids-ball.f5e7b0a0.png",
     "static/media/parent-banner.88e43b97.jpg": "/static/media/parent-banner.88e43b97.jpg",
     "static/media/parents-banner.b2a617a1.jpg": "/static/media/parents-banner.b2a617a1.jpg",
-    "static/media/pre-schools-banner.4b070d5d.jpg": "/static/media/pre-schools-banner.4b070d5d.jpg",
+    "static/media/pre-schools-banner-new.a5341539.jpg": "/static/media/pre-schools-banner-new.a5341539.jpg",
     "static/media/teacher-banner.e748de2c.jpg": "/static/media/teacher-banner.e748de2c.jpg",
-    "static/media/teachers-banner.b511500a.jpg": "/static/media/teachers-banner.b511500a.jpg",
+    "static/media/teachers-banner-new.4b070d5d.jpg": "/static/media/teachers-banner-new.4b070d5d.jpg",
     "static/media/testi-profile1.222fec55.jpg": "/static/media/testi-profile1.222fec55.jpg"
   },
   "entrypoints": [
@@ -33,6 +33,6 @@
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.ffa735a6.chunk.js",
     "static/css/main.139f91aa.chunk.css",
-    "static/js/main.bc2fa5bf.chunk.js"
+    "static/js/main.1a469673.chunk.js"
   ]
 }
