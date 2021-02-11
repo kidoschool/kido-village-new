@@ -299,6 +299,10 @@ h1.banner-head1{
   border: 1px solid #000;
 }
 
+.contact-banner-img{
+  width: 100%;
+  height: 80vh;
+}
 
 /*--------footer-area start---------*/
 .footer-area{

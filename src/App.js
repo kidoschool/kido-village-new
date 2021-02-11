@@ -6,10 +6,10 @@ import Home from "./pages/Home/Home";
 import Parent from './pages/Parent/Parent';
 import Teacher from './pages/Teacher/Teacher';
 import PreSchool from './pages/PreSchool/PreSchool';
+import Contact from './pages/Contact/Contact';
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./ScrollToTop"
 import './App.css';
-
 
 
 
@@ -26,6 +26,7 @@ function App() {
           <Route exact path="/parent"  component={Parent} />
           <Route exact path="/teacher"  component={Teacher} />
           <Route exact path="/Pre-school"  component={PreSchool} />
+          <Route exact path="/contact"  component={Contact} />
         </Switch>
         <Footer />
         </ScrollToTop>
