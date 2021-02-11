@@ -218,8 +218,8 @@ function Teacher(props) {
             <div className="overlay py-5">
             <div className="container">
                 <div className="row justify-content-center py-5">
-                <h1 className="banner-head text-white pb-2">Ready to begin your journey? Create your Kido pod today</h1>
-                    <div className="col-lg-10 text-center">
+                    <div className="col-lg-12 text-center">
+                    <h1 className="banner-head text-white pb-2">Ready to begin your journey? Create your Kido pod today</h1>    
                     <div className="banner mt-4">
                         <button onClick={openNav} className="btn my-btn center">Sign Up Now</button>
                     </div>

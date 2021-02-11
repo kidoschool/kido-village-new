@@ -69,8 +69,9 @@ function Parent(props) {
                 <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
                 <h1 className="banner-head pb-2">It takes a village to raise a child </h1>
                     <div className="col-lg-10">
-                        <p>At Kido Village, we hope to transform the future of our children by making early interventions in the form of lots of love, care and exceptional education. With our Kido Early Years Program that works as the framework for all our learning spaces, we are creating launchpads for your children under the age of six.</p>
-                        <p>Each Kido Village pod provides: the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning. All our learning spaces are structured around the fundamental values of Kido and offer the highest standards of safety, security, and quality control to ensure that your child gets nothing but the best. </p>
+                        <p>At Kido Village, we hope to transform the future of our children by making early interventions in the form of lots of love, care and exceptional education. </p>
+                        <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment – a Kido Village pod is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods provide the right creative environment that helps learning and development of a young brain.</p>
+                        <p>Each of our pods provide the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning.</p>
                     </div>
                 </div>
             </div>
@@ -260,7 +261,7 @@ function Parent(props) {
                                     <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
                                     </div>
                                     <div className="text-right pt-4">
-                                        <h3>Teachers Name</h3>
+                                        <h3>Parent Name</h3>
                                         <small className="text-primary"><i>-from Bandra</i></small>
                                     </div>
                                 </div>
@@ -278,7 +279,7 @@ function Parent(props) {
                                     <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
                                     </div>
                                     <div className="text-right pt-4">
-                                        <h3>Teachers Name</h3>
+                                        <h3>Parent Name</h3>
                                         <small className="text-primary"><i>-from Bandra</i></small>
                                     </div>
                                 </div>
@@ -296,7 +297,7 @@ function Parent(props) {
                                     <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
                                     </div>
                                     <div className="text-right pt-4">
-                                        <h3>Teachers Name</h3>
+                                        <h3>Parent Name</h3>
                                         <small className="text-primary"><i>-from Bandra</i></small>
                                     </div>
                                 </div>

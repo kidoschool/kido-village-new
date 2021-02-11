@@ -350,6 +350,15 @@ a[rel="noopener"],.gmnoprint{
 
 
 @media screen and (min-width: 1900px) {
+
+  h1,h2,h3,h4,h5,h6 {
+    font-weight: 600;
+    line-height: 1.0;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: capitalize;
+    color: #000;
+  }
+
   .banner-section section{
     min-width: 100%;
     height: auto;
