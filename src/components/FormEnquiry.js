@@ -1,6 +1,50 @@
-import React from 'react';
+import React, {useState} from 'react';
+import $ from 'jquery'
 
 function FormEnquiry(props) {
+
+       //   const [selectState, setSelectState] = useState("");
+       const [selectCity, setSelectCity] = useState("");
+       const [cityData, setCityData] = useState("");
+
+       const handleSelectStateChange = (event)=>{
+         // setSelectState(event.target.value)
+         var st_id = event.target.value;
+
+         var axios = require('axios');
+         var FormData = require('form-data');
+         var data = new FormData();
+         data.append('api', 'get_city_by_state');
+         data.append('filter', '{"state_id":'+st_id+'}');
+
+         var config = {
+         method: 'post',
+         url: 'https://shop.kidovillage.com/kvshop_api/api.php',
+         headers: { 
+            
+         },
+         data : data
+         };
+
+             axios(config)
+             .then((response) => {
+                 setCityData(response.data);
+                 // console.log(response.data);
+             })
+             .catch((error) => console.log(error));  
+       }
+
+       const handleSelectCityChange = (event)=>{
+         setSelectCity(event.target.value)
+       }
+
+       $('#upload_cv').on('change',function(){
+        //get the file name
+        var fileName = $(this).val();
+        //replace the "Choose a file" label
+        var current_path = fileName.split("\\").pop();
+        $(this).next('.custom-file-label').html(current_path);
+    })
 
 
     return(
@@ -8,27 +52,112 @@ function FormEnquiry(props) {
             
             <form className="form" action="" method="POST">
             <div className="form-group">
-            <label for="name">Your Name</label>
+            <label for="name">Name</label>
             <input type="text" className="form-control" name="name" id="name" placeholder="Name"/>
             </div>
             <div className="form-group">
-            <label for="email">Your Email</label>
+            <label for="email">Email</label>
             <input type="email" className="form-control" name="email" id="email" placeholder="Email"/>
             </div>
             <div className="form-group">
-            <label for="phone_no">Your Mobile Number</label>
+            <label for="phone_no">Mobile Number</label>
             <input type="text" className="form-control" name="phone_no" id="phone_no" placeholder="Phone No"/>
             </div>
             <div className="form-group">
-            <label for="date_of_birth">Your Date of Birth</label>
+            <label for="date_of_birth">Date of Birth</label>
             <input type="date" className="form-control" name="date_of_birth" id="date_of_birth" placeholder="Date of Birth"/>
             </div>
             <div className="form-group">
-            <label for="pan_no">Your Pan Number</label>
-            <input type="text" className="form-control" name="pan_no" id="pan_no" placeholder="PAN-No"/>
+            <label for="stateselect">Select State</label>
+            <select name="state" className="form-control" id="state" 
+            onChange={handleSelectStateChange}>
+                <option value="">Select any state</option>
+                <option value="1">ANDHRA PRADESH</option>
+                <option value="2">ASSAM</option>
+                <option value="3">ARUNACHAL PRADESH</option>
+                <option value="4">BIHAR</option>
+                <option value="5">GUJRAT</option>
+                <option value="6">HARYANA</option>
+                <option value="7">HIMACHAL PRADESH</option>
+                <option value="8">JAMMU &amp; KASHMIR</option>
+                <option value="9">KARNATAKA</option>
+                <option value="10">KERALA</option>
+                <option value="11">MADHYA PRADESH</option>
+                <option value="12">MAHARASHTRA</option>
+                <option value="13">MANIPUR</option>
+                <option value="14">MEGHALAYA</option>
+                <option value="15">MIZORAM</option>
+                <option value="16">NAGALAND</option>
+                <option value="17">ORISSA</option>
+                <option value="18">PUNJAB</option>
+                <option value="19">RAJASTHAN</option>
+                <option value="20">SIKKIM</option>
+                <option value="21">TAMIL NADU</option>
+                <option value="22">TRIPURA</option>
+                <option value="23">UTTAR PRADESH</option>
+                <option value="24">WEST BENGAL</option>
+                <option value="25">DELHI</option>
+                <option value="26">GOA</option>
+                <option value="27">PONDICHERY</option>
+                <option value="28">LAKSHDWEEP</option>
+                <option value="29">DAMAN &amp; DIU</option>
+                <option value="30">DADRA &amp; NAGAR</option>
+                <option value="31">CHANDIGARH</option>
+                <option value="32">ANDAMAN &amp; NICOBAR</option>
+                <option value="33">UTTARANCHAL</option>
+                <option value="34">JHARKHAND</option>
+                <option value="35">CHATTISGARH</option>
+            </select>
+        </div>
+        <div className="form-group">
+            <label for="inputEmail4">Select City</label>
+            <select name="city" className="form-control" id="city" 
+            value={selectCity}
+            onChange={handleSelectCityChange}>
+                <option value="">Select any state</option>
+                {Object.entries(cityData).map((item) => {
+                    return(
+                <option value={item[1].name}>{item[1].name}</option>
+                    )
+                    })}
+            </select>
+        </div>
+        <div className="form-group">
+            <label for="pincode">Pincode</label>
+            <input type="text" className="form-control" name="pincode" id="pincode" placeholder="Enter Pincode"/>
+        </div>
+        <div className="form-group">
+            <label for="education_qualification">Education Qualification</label>
+            <select name="education_qualification" className="form-control" id="education_qualification">
+                <option value="">Select Your Qualification</option>
+                <option value="Graduate">Graduate</option> 
+                <option value="Post Graduate">Post Graduate</option>
+                <option value="NTT / ECCE">NTT / ECCE</option>
+                <option value="Undergrad">Undergrad</option>
+            </select>
+        </div>
+        <div className="form-group">
+            <label for="work_experience">Work Experience</label>
+            <select name="work_experience" className="form-control" id="work_experience">
+                <option value="">Select Your work experience</option>
+                <option value="Fresher">Fresher</option> 
+                <option value="Graduate (Non -Teacher)">Graduate (Non -Teacher)</option>
+                <option value="Teacher (1-3 years)">Teacher (1-3 years)</option>
+                <option value="Teacher (3 years +)">Teacher (3 years +)</option>
+            </select>
+        </div>
+        
+        <div className="form-group">
+        <label for="upload_cv">Upload your Cv *</label>
+            <div class="custom-file">
+            <input type="file" class="custom-file-input" name="upload_cv" id="upload_cv"/>
+            <label class="custom-file-label" for="customFile">Choose file</label>
             </div>
-            <button type="submit" name="submit" className="my-btn">Submit</button>
-            </form>	     
+        </div>
+        
+
+    <button type="submit" name="submit" className="my-btn">Submit</button>
+    </form>	     
 
             </>
     )

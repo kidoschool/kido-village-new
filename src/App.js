@@ -7,9 +7,13 @@ import Parent from './pages/Parent/Parent';
 import Teacher from './pages/Teacher/Teacher';
 import PreSchool from './pages/PreSchool/PreSchool';
 import Contact from './pages/Contact/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
+import CookiePolicy from './pages/CookiePolicy/CookiePolicy';
+import WebsitePrivacyNotice from './pages/WebsitePrivacyNotice/WebsitePrivacyNotice';
 import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./ScrollToTop"
 import './App.css';
+
 
 
 
@@ -27,6 +31,9 @@ function App() {
           <Route exact path="/teacher"  component={Teacher} />
           <Route exact path="/Pre-school"  component={PreSchool} />
           <Route exact path="/contact"  component={Contact} />
+          <Route exact path="/privacy-policy"  component={PrivacyPolicy} />
+          <Route exact path="/cookie-policy"  component={CookiePolicy} />
+          <Route exact path="/website-privacy-notice"  component={WebsitePrivacyNotice} />
         </Switch>
         <Footer />
         </ScrollToTop>

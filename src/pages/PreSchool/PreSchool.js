@@ -4,6 +4,7 @@ import PodBanner1 from '../../assets/POD-1.jpg';
 import PodBanner2 from '../../assets/POD-2.jpg';
 import PodBanner3 from '../../assets/POD-3.jpg';
 import FormEnquiry from "../../components/FormEnquiry";
+import testiProfile1 from '../../assets/testi-profile1.jpg';
 import AOS from "aos";
 import $ from "jquery";
 import "aos/dist/aos.css";
@@ -149,8 +150,119 @@ function PreSchool(props) {
             </div>
             </div>
         </section>
+
+
+        <section className="testimonial py-5" style={{backgroundColor : "#F0F0F0"}}>
+            <div className="container">
+                <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+                <h1 className="banner-head pb-4">What Our Teachers Say About Our Kido Village</h1>
+                    <div className="col-lg-10 text-center">
+                    <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+                        <ol className="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div className="carousel-inner">
+                            <div className="carousel-item active">
+                            <div className="row">
+                                <div className="col-lg-4">
+                                    <div className="pic">
+                                        <img src={testiProfile1} width="300" className="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div className="col-lg-7 pt-2">
+                                    <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
+                                    <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
+                                    </div>
+                                    <div className="text-right pt-4">
+                                        <h3>Teachers Name</h3>
+                                        <small className="text-primary"><i>-from Bandra</i></small>
+                                    </div>
+                                </div>
+                           </div>
+                            </div>
+                            <div className="carousel-item">
+                            <div className="row">
+                                <div className="col-lg-4">
+                                    <div className="pic">
+                                        <img src={testiProfile1} width="300" className="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div className="col-lg-7 pt-2">
+                                    <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
+                                    <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
+                                    </div>
+                                    <div className="text-right pt-4">
+                                        <h3>Teachers Name</h3>
+                                        <small className="text-primary"><i>-from Bandra</i></small>
+                                    </div>
+                                </div>
+                           </div>
+                            </div>
+                            <div className="carousel-item">
+                            <div className="row">
+                                <div className="col-lg-4">
+                                    <div className="pic">
+                                        <img src={testiProfile1} width="300" className="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div className="col-lg-7 pt-2">
+                                    <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
+                                    <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
+                                    </div>
+                                    <div className="text-right pt-4">
+                                        <h3>Teachers Name</h3>
+                                        <small className="text-primary"><i>-from Bandra</i></small>
+                                    </div>
+                                </div>
+                           </div>
+                            </div>
+                        </div>
+                        <a className="carousel-control-prev invisible" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="sr-only">Previous</span>
+                        </a>
+                        <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="sr-only">Next</span>
+                        </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section className="video-card py-5">
+            <div className="container">
+            <h1 className="banner-head text-center pb-3">Hear from our Teacher</h1>
+                <div className="row justify-content-center">
+                    <div className="col-lg-12">
+                    <div className="card-deck">
+                        <div className="card" data-aos="zoom-in" data-aos-duration="2000">
+                            <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/I7euUBZq4sw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            {/* <div className="card-body">
+                            <h3 className="card-title">Kïdo Village Pod owner.</h3>
+                            <p className="card-text">Ms Arbin Banu, shares her experience of starting her own micro preschool in provided, she joins the ever expanding group of female eduprenuers who trust Kido Village platform to help them set up their own Micro Preschool from the convenience of their home.</p>
+                            </div> */}
+                        </div>
+                        <div className="card" data-aos="zoom-in" data-aos-duration="2000">
+                        <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/CbyUND4AvPY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            {/* <div className="card-body">
+                            <h3 className="card-title">Parent, Kïdo.</h3>
+                            <p className="card-text">Ms Sameera Reddy, Kïdo Parent talks to India CEO Mr Jeetu Karsan about parenting, Kïdo and more. The talk demonstrates our values, our principles and our commitment to educate young children in the best possible way everywhere.</p>
+                            </div> */}
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
-        <section className="know-more py-5">
+        {/* <section className="know-more py-5">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-10 text-center">
@@ -159,7 +271,7 @@ function PreSchool(props) {
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
 
                    

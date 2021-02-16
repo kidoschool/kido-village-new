@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PodBanner1 from '../../assets/POD-1.jpg';
 import PodBanner2 from '../../assets/POD-2.jpg';
 import PodBanner3 from '../../assets/POD-3.jpg';
 import testiProfile1 from '../../assets/testi-profile1.jpg';
 import FormEnquiry from "../../components/FormEnquiry";
+import Pagination from "react-js-pagination";
 import Map from "../../components/Map/Map";
 import AOS from "aos";
 import $ from "jquery";
@@ -25,6 +26,89 @@ function Parent(props) {
             $( "#mySidenav" ).css( "width", "0" );
           } 
 
+        //   const [selectState, setSelectState] = useState("");
+        //   const [selectCity, setSelectCity] = useState("");
+          const [cityData, setCityData] = useState("");
+          const [teachersPodData, setTeachersPodData] = useState("");
+
+          const handleSelectStateChange = (event)=>{
+            // setSelectState(event.target.value)
+            var st_id = event.target.value;
+
+            var axios = require('axios');
+            var FormData = require('form-data');
+            var data = new FormData();
+            data.append('api', 'get_city_by_state');
+            data.append('filter', '{"state_id":'+st_id+'}');
+
+            var config = {
+            method: 'post',
+            url: 'https://shop.kidovillage.com/kvshop_api/api.php',
+            headers: { 
+               
+            },
+            data : data
+            };
+
+                axios(config)
+                .then((response) => {
+                    setCityData(response.data);
+                    // console.log(response.data);
+                })
+                .catch((error) => console.log(error));  
+          }
+
+          var handleSelectCityChange = (event)=>{
+            var ct_id = event.target.value;
+
+            console.log(ct_id);
+            // setSelectCity(event.target.value)
+            var axios = require('axios');
+            var FormData = require('form-data');
+            var data = new FormData();
+            data.append('api', 'get_pods_by_city');
+
+            if($("#pincode_inp").val().length){
+                data.append('filter', '{"area":'+$("#pincode_inp").val()+'}');
+                $('#city').prop('selectedIndex',0);
+            }else{
+                data.append('filter', '{"city":'+ct_id+'}');
+            }
+
+
+            var config = {
+            method: 'post',
+            url: 'https://shop.kidovillage.com/kvshop_api/api.php',
+            data : data
+            };
+
+            axios(config)
+                .then((response) => {
+                    setTeachersPodData(response.data);
+                    console.log(response.data);
+                })
+                .catch((error) => console.log(error));
+
+          }
+
+        //   const handleSelectCityChange1 = () => {
+        //     handleSelectCityChange();
+        //   }
+
+            const todosPerPage = 4;
+            const [ activePage, setCurrentPage ] = useState( 1 );
+        
+            const indexOfLastTodo  = activePage * todosPerPage;
+            const indexOfFirstTodo = indexOfLastTodo - todosPerPage;
+            const currentTodos     = teachersPodData.slice( indexOfFirstTodo, indexOfLastTodo );
+
+            const handlePageChange1 = ( pageNumber ) => {
+                setCurrentPage( pageNumber )
+             };
+          
+  
+
+           
     return(
         <>
            
@@ -84,11 +168,11 @@ function Parent(props) {
                     <div className="col-lg-10">
                     <div className="search-pod-form bg-white p-4 my-4 border shadow"  data-aos="fade-right" data-aos-duration="2000">
                         <h3>Quick Search</h3>
-                        <form>
                         <div className="form-row">
                             <div className="col-md-3">
                             <label for="stateselect">Select State</label>
-                            <select name="state" className="form-control" id="state">
+                            <select name="state" className="form-control" id="state" 
+                            onChange={handleSelectStateChange}>
                                 <option value="">Select any state</option>
                                 <option value="1">ANDHRA PRADESH</option>
                                 <option value="2">ASSAM</option>
@@ -129,23 +213,32 @@ function Parent(props) {
                             </div>
                             <div className="col-md-3">
                             <label for="inputEmail4">Select City</label>
-                            <input type="text" className="form-control" placeholder="First name"/>
+                            <select name="city" className="form-control" id="city" 
+                            onChange={handleSelectCityChange}>
+                                <option value="0">Select any state</option>
+                                {Object.entries(cityData).map((item) => {
+                                    return(
+                                <option value={item[1].id}>{item[1].name}</option>
+                                    )
+                                    })}
+                            </select>
                             </div>
                             <div className="col-md-3">
                             <label for="inputEmail4">Pin Code</label>
-                            <input type="text" className="form-control" placeholder="Enter Pin Code"/>
+                            <input type="text" className="form-control" id="pincode_inp" placeholder="Enter Pin Code"/>
                             </div>
                             <div className="col-md-3 pod-search-now">
-                            <a href="#" className="btn my-btn center">Search Now</a>
+                            <button className="btn my-btn center" onClick={handleSelectCityChange}>Search Now</button>
                             </div>
                         </div>
                         <div className="sm-text mt-4"><small>Note: You can enter Pin code in above mentioned field. In case if you are not aware about postcode then you can leave the field blank and it will automatically pick your location.</small></div>
-                        </form>
                     </div>
                     </div>
                 </div>
                 <div className="row justify-content-center">
-                    <div className="col-lg-5" data-aos="zoom-out-right" data-aos-duration="2000">
+                    <div className="col-lg-5">
+                    {teachersPodData ? Object.entries(currentTodos).map((item) => {
+                    return(
                     <div className="card my-2 shadow">
                         <div className="row no-gutters">
                             <div className="col-md-4">
@@ -153,61 +246,27 @@ function Parent(props) {
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
-                                    <h4 className="card-title">Title</h4>
+                                    <h4 className="card-title">{item[1].name}</h4>
                                     <p className="card-text">Description</p>
                                     <a href="#" className="my-btn-info center">Schedule a Tour</a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                       )
+                    }): <span className="noTaskAdded p-5"><i>Unfortunately we haven\'t found any matching teachers profile in your area. We will get back to you with more details soon</i></span>}
 
-                    <div className="card my-2 shadow">
-                        <div className="row no-gutters">
-                            <div className="col-md-4">
-                                <img src={PodBanner2} width="200" className="find-pod-img img-fluid" alt=""/>
-                            </div>
-                            <div className="col-md-8">
-                                <div className="card-body">
-                                    <h4 className="card-title">Title</h4>
-                                    <p className="card-text">Description</p>
-                                    <a href="#" className="my-btn-info center">Schedule a Tour</a>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="pagination pt-3">
+                        <Pagination
+                            activePage={ activePage }
+                            itemsCountPerPage={ 4 }
+                            totalItemsCount={ teachersPodData.length }
+                            pageRangeDisplayed={ 4 }
+                            onChange={ handlePageChange1 }
+                        />
                     </div>
-
-                    <div className="card my-2 shadow">
-                        <div className="row no-gutters">
-                            <div className="col-md-4">
-                                <img src={PodBanner3} width="200" className="find-pod-img img-fluid" alt=""/>
-                            </div>
-                            <div className="col-md-8">
-                                <div className="card-body">
-                                    <h4 className="card-title">Title</h4>
-                                    <p className="card-text">Description</p>
-                                    <a href="#" className="my-btn-info center">Schedule a Tour</a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-
-                    <div className="card my-2 shadow">
-                        <div className="row no-gutters">
-                            <div className="col-md-4">
-                                <img src={PodBanner1} width="200" className="find-pod-img img-fluid" alt=""/>
-                            </div>
-                            <div className="col-md-8">
-                                <div className="card-body">
-                                    <h4 className="card-title">Title</h4>
-                                    <p className="card-text">Description</p>
-                                    <a href="#" className="my-btn-info center">Schedule a Tour</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    </div>
-                    <div className="col-lg-5 mt-3" data-aos="zoom-out-left" data-aos-duration="2000">
+                    <div className="col-lg-5 mt-3">
                         <Map/>
                     </div>
                 </div>

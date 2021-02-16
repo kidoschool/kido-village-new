@@ -37,7 +37,7 @@ function Home(props) {
                             <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment – a Kido Village pod is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods provide the right creative environment that helps learning and development of a young brain. </p>
                             <p>Each of our pods provide the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning.</p>
                             <div className="pt-3">
-                            <Link to="/parent" target='_blank' rel="noreferrer" className="my-btn center">I am a parent</Link>
+                            <Link to="/parent" className="my-btn center">I am a parent</Link>
                         </div>
                         </div>
                         <div className="col-lg-6 pt-5" data-aos="fade-left" data-aos-duration="2000">
@@ -60,7 +60,7 @@ function Home(props) {
                                     <p>By becoming a Kido pod owner, you can help shape the future of kids in your community by providing them with high quality education and care, with the backing of Kido! Our internationally recognized model will help you set up a pod in your living space with an investment as little as Rs 6,000 and you can start monetizing it quickly by enrolling kids with complete flexibility.</p>
                                     <p>Simply fill the form on our site and we’ll reach out to you with the next steps for onboarding and help you through the journey – be it education materials or marketing support!</p>
                                     <div className="pt-3">
-                                    <Link to="/teacher" target='_blank' rel="noreferrer" className="my-btn center">I am a teacher </Link>
+                                    <Link to="/teacher" className="my-btn center">I am a teacher </Link>
                                     </div>
                                     </div>
                                 </div>
@@ -77,7 +77,7 @@ function Home(props) {
                                     <p>Based on world class materials, training, support and safety protocols, our vision for preschools is to create trust in the market and enable high-quality outcomes for children across the country.</p>
                                     <p>Learn more about our offerings and partnership opportunities through a turnkey franchise model.</p>
                                     <div className="pt-3">
-                                    <Link to="/Pre-school" target='_blank' rel="noreferrer" className="my-btn center">I want to start a pre-school</Link>
+                                    <Link to="/Pre-school" className="my-btn center">I want to start a pre-school</Link>
                                 </div>
                                 </div>
                                 <div className="col-lg-6 pt-5" data-aos="fade-left" data-aos-duration="2000">

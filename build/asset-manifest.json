@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.05308b86.chunk.css",
-    "main.js": "/static/js/main.4346fee3.chunk.js",
-    "main.js.map": "/static/js/main.4346fee3.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c9bb2e88.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c9bb2e88.js.map",
+    "main.css": "/static/css/main.b20e0451.chunk.css",
+    "main.js": "/static/js/main.d99f6356.chunk.js",
+    "main.js.map": "/static/js/main.d99f6356.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.37c577bf.js",
+    "runtime-main.js.map": "/static/js/runtime-main.37c577bf.js.map",
     "static/css/2.ec02d681.chunk.css": "/static/css/2.ec02d681.chunk.css",
-    "static/js/2.02e619de.chunk.js": "/static/js/2.02e619de.chunk.js",
-    "static/js/2.02e619de.chunk.js.map": "/static/js/2.02e619de.chunk.js.map",
-    "static/js/3.e10f44c0.chunk.js": "/static/js/3.e10f44c0.chunk.js",
-    "static/js/3.e10f44c0.chunk.js.map": "/static/js/3.e10f44c0.chunk.js.map",
+    "static/js/2.0a1a087b.chunk.js": "/static/js/2.0a1a087b.chunk.js",
+    "static/js/2.0a1a087b.chunk.js.map": "/static/js/2.0a1a087b.chunk.js.map",
+    "static/js/3.3884937c.chunk.js": "/static/js/3.3884937c.chunk.js",
+    "static/js/3.3884937c.chunk.js.map": "/static/js/3.3884937c.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.ec02d681.chunk.css.map": "/static/css/2.ec02d681.chunk.css.map",
-    "static/css/main.05308b86.chunk.css.map": "/static/css/main.05308b86.chunk.css.map",
-    "static/js/2.02e619de.chunk.js.LICENSE.txt": "/static/js/2.02e619de.chunk.js.LICENSE.txt",
+    "static/css/main.b20e0451.chunk.css.map": "/static/css/main.b20e0451.chunk.css.map",
+    "static/js/2.0a1a087b.chunk.js.LICENSE.txt": "/static/js/2.0a1a087b.chunk.js.LICENSE.txt",
     "static/media/POD-1.f89442fd.jpg": "/static/media/POD-1.f89442fd.jpg",
     "static/media/POD-2.4082c83c.jpg": "/static/media/POD-2.4082c83c.jpg",
     "static/media/POD-3.970688e8.jpg": "/static/media/POD-3.970688e8.jpg",
@@ -30,10 +30,10 @@
     "static/media/testi-profile1.222fec55.jpg": "/static/media/testi-profile1.222fec55.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.c9bb2e88.js",
+    "static/js/runtime-main.37c577bf.js",
     "static/css/2.ec02d681.chunk.css",
-    "static/js/2.02e619de.chunk.js",
-    "static/css/main.05308b86.chunk.css",
-    "static/js/main.4346fee3.chunk.js"
+    "static/js/2.0a1a087b.chunk.js",
+    "static/css/main.b20e0451.chunk.css",
+    "static/js/main.d99f6356.chunk.js"
   ]
 }

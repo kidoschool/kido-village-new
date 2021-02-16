@@ -13,6 +13,7 @@ function Teacher(props) {
 
     const [monthlyFees, setMonthlyFees] = useState(3000);
     const [noOfStudents, setNoOfStudents] = useState(4);
+    const [noOfBatches, setNoOfBatches] = useState(1);
 
     const handleMonthlyfeeChange = (event)=>{
         setMonthlyFees(event.target.value)
@@ -22,7 +23,12 @@ function Teacher(props) {
         setNoOfStudents(event.target.value)
     }
 
-    var totalFees = monthlyFees * noOfStudents;
+    const handleNoOfBatches = (event)=>{
+        setNoOfBatches(event.target.value)
+    }
+
+
+    var totalFees = monthlyFees * noOfStudents * noOfBatches;
 
     AOS.init();
         /* Set the width of the side navigation to 300px and the left margin of the page content to 250px */
@@ -176,7 +182,9 @@ function Teacher(props) {
                                             </div>
                                             <div className="form-group col-md-6">
                                             <label for="batches">No. of Batches</label>
-                                            <select name="batches" className="form-control" id="batches">
+                                            <select name="batches" className="form-control" id="batches"
+                                              value={noOfBatches}
+                                              onChange={handleNoOfBatches}>
                                                 <option value="1" defaultValue>1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">3</option>
@@ -344,7 +352,7 @@ function Teacher(props) {
 
     <div id="mySidenav" className="sidenav bg-light border-right">
       <div className="p-3">
-          <h5>Send your Enquiry</h5><a href={null} className="closebtn" onClick={closeNav}>&times;</a>
+          <h5>Start your own Micro Preschool</h5><a href={null} className="closebtn" onClick={closeNav}>&times;</a>
           <hr/>
            <FormEnquiry/>
       </div>
