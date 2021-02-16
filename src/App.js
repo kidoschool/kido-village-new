@@ -11,6 +11,9 @@ import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 import CookiePolicy from './pages/CookiePolicy/CookiePolicy';
 import WebsitePrivacyNotice from './pages/WebsitePrivacyNotice/WebsitePrivacyNotice';
 import Footer from "./components/Footer/Footer";
+import { AuthProvider } from './context/Auth';
+import PrivateRoute from './common/guards/PrivateRoute';
+import LoginRegister from "./pages/LoginRegister/LoginRegister";
 import ScrollToTop from "./ScrollToTop"
 import './App.css';
 
@@ -34,10 +37,21 @@ function App() {
           <Route exact path="/privacy-policy"  component={PrivacyPolicy} />
           <Route exact path="/cookie-policy"  component={CookiePolicy} />
           <Route exact path="/website-privacy-notice"  component={WebsitePrivacyNotice} />
+          <AuthProvider>
+          <Route path="/LoginRegister" component={LoginRegister} />
+          </AuthProvider>
         </Switch>
         <Footer />
         </ScrollToTop>
       </Router>
+
+      {/* <AuthProvider>
+      <Router>
+        <Switch>
+          <Route path="/LoginRegister" component={LoginRegister} />
+        </Switch>
+      </Router>
+    </AuthProvider> */}
 </>
   );
 }

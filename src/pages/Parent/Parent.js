@@ -5,6 +5,7 @@ import PodBanner3 from '../../assets/POD-3.jpg';
 import testiProfile1 from '../../assets/testi-profile1.jpg';
 import FormEnquiry from "../../components/FormEnquiry";
 import Pagination from "react-js-pagination";
+import {Link} from "react-router-dom";
 import Map from "../../components/Map/Map";
 import AOS from "aos";
 import $ from "jquery";
@@ -105,6 +106,15 @@ function Parent(props) {
             const handlePageChange1 = ( pageNumber ) => {
                 setCurrentPage( pageNumber )
              };
+
+
+             if(teachersPodData.length){
+                $( "#teacherpodlist" ).css( "display", "block" );
+                $( "#podnotfounderror" ).css( "display", "none" );
+             }else{
+                $( "#teacherpodlist" ).css( "display", "none" );
+                $( "#podnotfounderror" ).css( "display", "block" );
+             }
           
   
 
@@ -235,9 +245,10 @@ function Parent(props) {
                     </div>
                     </div>
                 </div>
+                <div id="teacherpodlist" style={{display: "none"}}>
                 <div className="row justify-content-center">
                     <div className="col-lg-5">
-                    {teachersPodData ? Object.entries(currentTodos).map((item) => {
+                    {Object.entries(currentTodos).map((item) => {
                     return(
                     <div className="card my-2 shadow">
                         <div className="row no-gutters">
@@ -248,13 +259,13 @@ function Parent(props) {
                                 <div className="card-body">
                                     <h4 className="card-title">{item[1].name}</h4>
                                     <p className="card-text">Description</p>
-                                    <a href="#" className="my-btn-info center">Schedule a Tour</a>
+                                    <Link to="/LoginRegister" className="my-btn-info center">Schedule a Tour</Link>
                                 </div>
                             </div>
                         </div>
                     </div>
                        )
-                    }): <span className="noTaskAdded p-5"><i>Unfortunately we haven\'t found any matching teachers profile in your area. We will get back to you with more details soon</i></span>}
+                    }) }
 
                     <div className="pagination pt-3">
                         <Pagination
@@ -269,6 +280,14 @@ function Parent(props) {
                     <div className="col-lg-5 mt-3">
                         <Map/>
                     </div>
+                </div>
+                </div>
+                <div  id="podnotfounderror" style={{display: "none"}}>
+                <div className="row justify-content-center pt-3">
+                    <div className="col-lg-8 text-center">
+                        <span className="noTaskAdded p-5"><i>Unfortunately we haven't found any matching teachers profile in your area. We will get back to you with more details soon</i></span>
+                    </div>
+                </div>
                 </div>
             </div>
         </section>

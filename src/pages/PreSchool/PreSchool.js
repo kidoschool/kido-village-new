@@ -1,5 +1,4 @@
 import React from 'react';
-import {Link} from "react-router-dom";
 import PodBanner1 from '../../assets/POD-1.jpg';
 import PodBanner2 from '../../assets/POD-2.jpg';
 import PodBanner3 from '../../assets/POD-3.jpg';
