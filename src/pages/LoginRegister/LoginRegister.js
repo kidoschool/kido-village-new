@@ -42,7 +42,7 @@ if (currentUser) {
               <h3 className="divider"><span>or</span></h3>
             </div>
               <div className="login-buttons">
-              <button class="btn btn-lg btn-google btn-block text-uppercase btn-outline" onClick={signInWithGoogle}>
+              <button class="btn btn-lg btn-google btn-block text-uppercase btn-outline" onClick={signInWithFacebook}>
               <img src="https://img.icons8.com/color/16/000000/facebook"/> Signup Using Facebook</button> 
               </div>
             </div>
