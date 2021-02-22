@@ -1,10 +1,51 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import ContactBanner from '../../assets/contact-banner.jpg';
+import $ from "jquery";
+import validate from 'jquery-validation';
 
 
 function Contact(props) {
-
+    $(document).ready(function() {
+  
+        $("#validateform").validate({
+                  rules:{
+                      name:{
+                          required:true,
+                          minlength: 2
+                      },
+                      email: {
+                          required: true,
+                          email: true
+                       },
+                       mobile: { 
+                          required:true,
+                          digits: true,
+                          minlength: 10,
+                          maxlength: 10 
+                       },  
+                  },
+      
+                  messages:{
+                    name: {
+                      required: "This field is required",
+                      minlength: "Please enter atleast two character"
+                    },
+                    email: {
+                       required: "This field is required",
+                       email: "Please enter a valid email id",
+                    },
+                    mobile: { 
+                      required: "This field is required",
+                      digits: "Please enter a valid mobile number",
+                      minlength: "Please enter 10 digits only",
+                      maxlength: "Please enter 10 digits only" 
+                    },
+      
+                  }
+              });
+        });
+    
 
 
     return(
@@ -18,7 +59,7 @@ function Contact(props) {
             </section>
 
 
-            <section className="Appointment-section py-5" id="appointment">
+        <section className="Appointment-section py-5" id="appointment">
         <div className="container">
             <header className="text-center mb-5">
                 <h2 className="text-uppercase lined">Contact Us</h2>

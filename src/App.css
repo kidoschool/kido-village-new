@@ -337,6 +337,36 @@ a.wp-rights{
 
 .pagination li:hover:not(.active) {background-color: #ddd; border-radius: 5px;}
 
+
+.divider {
+    width:100%; 
+    text-align:center; 
+    border-bottom: 1px solid #444; 
+    line-height:0.1em; 
+    margin:10px 0 20px; 
+    font-size: 14px;
+}
+
+.divider span{
+  background:#fff;
+  padding:0 10px; 
+}
+
+.btn-google {
+  border-radius: 2px;
+  text-transform: capitalize;
+  font-size: 15px;
+  padding: 10px 19px;
+  cursor: pointer;
+  color: #545454;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 1px #ddd
+}
+
+.t-profile{
+  border-radius: 50%;
+  height: 200px;
+}
 /*--------footer-area start---------*/
 .footer-area{
   background-color: #00356b;

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState ,useEffect} from 'react';
 import PodBanner1 from '../../assets/POD-1.jpg';
 import PodBanner2 from '../../assets/POD-2.jpg';
 import PodBanner3 from '../../assets/POD-3.jpg';
@@ -10,6 +10,7 @@ import Map from "../../components/Map/Map";
 import AOS from "aos";
 import $ from "jquery";
 import "aos/dist/aos.css";
+// import LoginRegister from '../LoginRegister/LoginRegister';
 
 
 function Parent(props) {
@@ -115,6 +116,10 @@ function Parent(props) {
                 $( "#teacherpodlist" ).css( "display", "none" );
                 $( "#podnotfounderror" ).css( "display", "block" );
              }
+
+             useEffect(() => {
+                localStorage.setItem('teachersPodData', JSON.stringify(teachersPodData));
+              });
           
   
 
@@ -248,6 +253,8 @@ function Parent(props) {
                 <div id="teacherpodlist" style={{display: "none"}}>
                 <div className="row justify-content-center">
                     <div className="col-lg-5">
+                    {/* {Object.entries(currentTodos).filter(teacher => teacher[1].status == 1).map(item => {
+                        console.log(item[1].name); */}
                     {Object.entries(currentTodos).map((item) => {
                     return(
                     <div className="card my-2 shadow">
@@ -259,7 +266,7 @@ function Parent(props) {
                                 <div className="card-body">
                                     <h4 className="card-title">{item[1].name}</h4>
                                     <p className="card-text">Description</p>
-                                    <Link to="/LoginRegister" className="my-btn-info center">Schedule a Tour</Link>
+                                    <Link to={{ pathname: `/LoginRegister/${item[1].name}`}}  data-toggle="modal" data-target="#exampleModal" className="my-btn-info center">Schedule a Tour</Link>
                                 </div>
                             </div>
                         </div>

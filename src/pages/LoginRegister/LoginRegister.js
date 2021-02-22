@@ -3,15 +3,28 @@ import { signInWithGoogle,  signInWithFacebook} from '../../config/Fire';
 import { AuthContext } from '../../context/Auth';
 import { withRouter, Redirect, Link } from 'react-router-dom';
 import './LoginRegister.css';
+import $ from 'jquery';
 
 
 function LoginRegister(props) {
 
   const { currentUser } = useContext(AuthContext);
 
-  if (currentUser) {
-    return <Redirect to="/" />;
+  const teachersInfo = JSON.parse(localStorage.getItem("teachersPodData"));
+
+if (currentUser) {
+  // console.log(currentUser);
+  var sel_teach = props.match.params.tname;
+  var red_lnk = "";
+  $.each(teachersInfo, function (k, v) {
+    if(v.name == sel_teach){
+      red_lnk = "/teacher-info/"+encodeURI(sel_teach);
+    }
+  });
+  if(red_lnk.length){
+    return <Redirect to={red_lnk} />
   }
+}
 
 
   return(
@@ -19,20 +32,18 @@ function LoginRegister(props) {
     <div className="authentication">
     <div className="container py-5">
         <div className="row justify-content-center">
-            <div className="col-md-6 col-lg-6">
-            {/* <h1 className="title">KIDO SCHOOL DASHBOARD</h1> */}
+            <div className="col-md-5 col-lg-5 text-center border shadow p-5">
+            <h2 className="title pb-3">Sign Up</h2>
             <div className="login-buttons">
-                <button className="login-provider-button" onClick={signInWithGoogle}>
-                <img src="https://img.icons8.com/ios-filled/50/000000/google-logo.png" alt="google icon"/>
-                <span> Continue with Google</span>
-              </button>
-              </div>
-              <p>--- or ---- </p>
+              <button class="btn btn-lg btn-google btn-block text-uppercase btn-outline" onClick={signInWithGoogle}>
+              <img src="https://img.icons8.com/color/16/000000/google-logo.png"/> Signup Using Google</button> 
+            </div>
+            <div className="or py-3">
+              <h3 className="divider"><span>or</span></h3>
+            </div>
               <div className="login-buttons">
-                <button className="login-provider-button" onClick={signInWithFacebook}>
-                <img src="https://img.icons8.com/ios-filled/50/000000/google-logo.png" alt="google icon"/>
-                <span> Continue with Facebook</span>
-              </button>
+              <button class="btn btn-lg btn-google btn-block text-uppercase btn-outline" onClick={signInWithGoogle}>
+              <img src="https://img.icons8.com/color/16/000000/facebook"/> Signup Using Facebook</button> 
               </div>
             </div>
         </div>

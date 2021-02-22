@@ -38,47 +38,8 @@
 
 
 <script type="text/javascript">
-  $(document).ready(function() {
-  
-    $("#validateform").validate({
-              rules:{
-                  name:{
-                      required:true,
-                      minlength: 2
-                  },
-                  email: {
-                      required: true,
-                      email: true
-                   },
-                   mobile: { 
-                      required:true,
-                      digits: true,
-                      minlength: 10,
-                      maxlength: 10 
-                   },  
-              },
-  
-              messages:{
-                name: {
-                  required: "This field is required",
-                  minlength: "Please enter atleast two character"
-                },
-                email: {
-                   required: "This field is required",
-                   email: "Please enter a valid email id",
-                },
-                mobile: { 
-                  required: "This field is required",
-                  digits: "Please enter a valid mobile number",
-                  minlength: "Please enter 10 digits only",
-                  maxlength: "Please enter 10 digits only" 
-                },
-  
-              }
-          });
-    });
-  </script>
-   <script type="text/javascript">
+ 
+   
 
     //Get the button
  var mybutton = document.getElementById("myBtn");

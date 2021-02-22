@@ -16,6 +16,7 @@ import PrivateRoute from './common/guards/PrivateRoute';
 import LoginRegister from "./pages/LoginRegister/LoginRegister";
 import ScrollToTop from "./ScrollToTop"
 import './App.css';
+import TeachersInfo from './pages/TeachersInfo/TeachersInfo';
 
 
 
@@ -38,7 +39,8 @@ function App() {
           <Route exact path="/cookie-policy"  component={CookiePolicy} />
           <Route exact path="/website-privacy-notice"  component={WebsitePrivacyNotice} />
           <AuthProvider>
-          <Route path="/LoginRegister" component={LoginRegister} />
+          <Route path="/LoginRegister/:tname" component={LoginRegister} />
+          <PrivateRoute path="/teacher-info/:tinfo"  component={TeachersInfo} />
           </AuthProvider>
         </Switch>
         <Footer />
