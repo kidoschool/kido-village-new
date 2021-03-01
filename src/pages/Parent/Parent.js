@@ -6,7 +6,7 @@ import testiProfile1 from '../../assets/testi-profile1.jpg';
 import FormEnquiry from "../../components/FormEnquiry";
 import Pagination from "react-js-pagination";
 import {Link} from "react-router-dom";
-import Map from "../../components/Map/Map";
+import Maps from "../../components/Map/Maps";
 import AOS from "aos";
 import $ from "jquery";
 import "aos/dist/aos.css";
@@ -32,6 +32,7 @@ function Parent(props) {
         //   const [selectCity, setSelectCity] = useState("");
           const [cityData, setCityData] = useState("");
           const [teachersPodData, setTeachersPodData] = useState("");
+          const [mapCenter, SetMapCenter] = useState("");
 
           const handleSelectStateChange = (event)=>{
             // setSelectState(event.target.value)
@@ -86,7 +87,8 @@ function Parent(props) {
 
             axios(config)
                 .then((response) => {
-                    setTeachersPodData(response.data);
+                    setTeachersPodData((response.data).filter(teacher => teacher.status == 1));
+                    SetMapCenter({lat:response.data[0].latitude,lng: response.data[0].longitude});
                     console.log(response.data);
                 })
                 .catch((error) => console.log(error));
@@ -120,7 +122,14 @@ function Parent(props) {
              useEffect(() => {
                 localStorage.setItem('teachersPodData', JSON.stringify(teachersPodData));
               });
-          
+
+            //   var isActiveteacher = {};
+            //   $.each(teachersPodData, function (k, v) {
+            //     if(teachersPodData[1].status == 1){
+            //       return isActiveteacher = v;
+            //     }
+            //   });
+            //   console.log(isActiveteacher);
   
 
            
@@ -285,7 +294,7 @@ function Parent(props) {
                     </div>
                     </div>
                     <div className="col-lg-5 mt-3">
-                        <Map/>
+                    <Maps teacherContents={teachersPodData} map_centre={mapCenter} map_zoom={10} />
                     </div>
                 </div>
                 </div>

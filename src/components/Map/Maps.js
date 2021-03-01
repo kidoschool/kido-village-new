@@ -44,7 +44,7 @@ _mapLoaded(mapProps, map) {
       <div
         style={{
           position: "relative",
-          height: "650px",
+          height: "620px",
           width: "100%",
         }}
       >
