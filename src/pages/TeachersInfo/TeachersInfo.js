@@ -70,7 +70,7 @@ $(document).ready(function() {
 var FormData = require('form-data');
 var data = new FormData();
 data.append('api', 'save_parent');
-data.append('data', '{\n    "name":"'+currentUser.displayName+'",\n    "email":"'+currentUser.email+'",\n    "profile_email":"'+currentUser.email+'",,\n    "google_id":"'+currentUser.uid+'",\n}');
+data.append('data', '{\n    "name":"'+currentUser.displayName+'",\n    "email":"'+currentUser.email+'",\n    "profile_email":"'+currentUser.email+'",\n    "google_id":"'+currentUser.uid+'"\n}');
 
 var config = {
   method: 'post',
