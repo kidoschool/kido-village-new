@@ -8,7 +8,7 @@ import validate from 'jquery-validation';
 function TeachersInfo(props) {
           
     const { currentUser } = useContext(AuthContext);
-    // console.log(JSON.stringify(currentUser));
+    console.log(JSON.stringify(currentUser));
 
   const teachersInfo = JSON.parse(localStorage.getItem("teachersPodData"));
 
@@ -66,11 +66,12 @@ $(document).ready(function() {
   });
 
 
-  var axios = require('axios');
+var axios = require('axios');
 var FormData = require('form-data');
 var data = new FormData();
 data.append('api', 'save_parent');
-data.append('data', '{\n    "name":"'+currentUser.displayName+'",\n    "email":"'+currentUser.email+'",\n    "profile_email":"'+currentUser.email+'",\n    "google_id":"'+currentUser.providerData[0].uid+'"\n}');
+var provider_name = currentUser.providerData[0].providerId == "facebook.com" ? "facebook_id" : "google_id";
+data.append('data', '{\n    "name":"'+currentUser.displayName+'",\n    "email":"'+currentUser.email+'",\n    "profile_email":"'+currentUser.email+'",\n    "'+provider_name+'":"'+currentUser.providerData[0].uid+'"\n}');
 
 var config = {
   method: 'post',
