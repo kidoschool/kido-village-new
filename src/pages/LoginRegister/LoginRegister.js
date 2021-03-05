@@ -24,7 +24,33 @@ if (currentUser) {
   if(red_lnk.length){
     return <Redirect to={red_lnk} />
   }
+
+var axios = require('axios');
+var FormData = require('form-data');
+var data = new FormData();
+data.append('api', 'save_parent');
+data.append('data', '{\n    "name":"'+currentUser.displayName+'",\n    "email":"'+currentUser.email+'",\n    "profile_email":"'+currentUser.email+'",,\n    "google_id":"'+currentUser.uid+'",\n}');
+
+var config = {
+  method: 'post',
+  url: 'https://shop.kidovillage.com/kvshop_api/api.php',
+  headers: { 
+    ...data.getHeaders()
+  },
+  data : data
+};
+
+axios(config)
+.then(function (response) {
+  console.log(JSON.stringify(response.data));
+})
+.catch(function (error) {
+  console.log(error);
+});
 }
+
+
+
 
 
   return(

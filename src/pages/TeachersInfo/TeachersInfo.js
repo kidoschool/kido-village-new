@@ -8,7 +8,7 @@ import validate from 'jquery-validation';
 function TeachersInfo(props) {
           
     const { currentUser } = useContext(AuthContext);
-    // console.log(currentUser.email);
+    console.log(JSON.stringify(currentUser));
 
   const teachersInfo = JSON.parse(localStorage.getItem("teachersPodData"));
 
@@ -188,3 +188,5 @@ $(document).ready(function() {
 
 
 export default TeachersInfo;
+
+
