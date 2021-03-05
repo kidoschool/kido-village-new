@@ -75,9 +75,7 @@ data.append('data', '{\n    "name":"'+currentUser.displayName+'",\n    "email":"
 var config = {
   method: 'post',
   url: 'https://shop.kidovillage.com/kvshop_api/api.php',
-  headers: { 
-    ...data.getHeaders()
-  },
+  headers: {},
   data : data
 };
 
