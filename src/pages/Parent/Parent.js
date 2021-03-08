@@ -188,7 +188,7 @@ function Parent(props) {
         <section className="how-it-works py-5" style={{backgroundColor : "#F0F0F0"}}>
             <div className="container">
                 <div className="row justify-content-center">
-                <h2 className="banner-head pb-2">Find a Kido pod/pre-school near you today</h2>
+                <h2 className="banner-head pb-2">Find a Kido pod / pre-school near you today</h2>
                     <div className="col-lg-10">
                     <div className="search-pod-form bg-white p-4 my-4 border shadow"  data-aos="fade-right" data-aos-duration="2000">
                         <h3>Quick Search</h3>
