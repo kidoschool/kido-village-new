@@ -59,7 +59,7 @@ function Contact(props) {
             </section>
 
 
-        <section className="Appointment-section py-5" id="appointment">
+        <section className="contact-section py-5" id="contact-us">
         <div className="container">
             <header className="text-center mb-5">
                 <h2 className="text-uppercase lined">Contact Us</h2>
