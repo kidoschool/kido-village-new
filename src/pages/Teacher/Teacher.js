@@ -135,7 +135,7 @@ function Teacher(props) {
             </div>
         </section>
 
-        <section className="posible earning py-5" style={{backgroundColor : "#F0F0F0"}}>
+        <section className="posible earning py-5" style={{backgroundColor : "#FFF8E7"}}>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
@@ -237,7 +237,7 @@ function Teacher(props) {
             </div>
         </section>
 
-        <section className="testimonial py-5" style={{backgroundColor : "#F0F0F0"}}>
+        <section className="testimonial py-5" style={{backgroundColor : "#FFF8E7"}}>
             <div className="container">
                 <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
                 <h1 className="banner-head pb-4">What Our Teachers Say About Our Kido Village</h1>

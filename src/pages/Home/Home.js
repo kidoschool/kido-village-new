@@ -47,7 +47,7 @@ function Home(props) {
                     </div>
                     </section>
 
-                    <section className="banner-teacher py-5" style={{backgroundColor : "#F0F0F0"}}>
+                    <section className="banner-teacher py-5" style={{backgroundColor : "#FFF8E7"}}>
                         <div className="container">
                             <div className="teacher row justify-content-center">
                                 <div className="col-lg-6 pt-5" data-aos="fade-right" data-aos-duration="2000">
@@ -117,7 +117,7 @@ function Home(props) {
                         </div>
                     </section>
 
-                    <section className="how-it-works py-5" style={{backgroundColor : "#F0F0F0"}}>
+                    <section className="how-it-works py-5" style={{backgroundColor : "#FFF8E7"}}>
                         <div className="container">
                             <div className="row justify-content-center">
                                 <div className="col-lg-4" data-aos="zoom-out-right" data-aos-duration="2000">
