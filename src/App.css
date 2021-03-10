@@ -48,6 +48,10 @@ a {color: #444; text-decoration: none;  transition: 0.3s; cursor: pointer;}
 .error{
   color: red;
 }
+
+.bg-red{
+  background-color: #FFF8E7;
+}
 /*--------section header start---------*/
 
 .nav-link{color: #fff!important; font-size: 0.8em; font-family: 'Montserrat', sans-serif; font-weight: 600;}
@@ -437,8 +441,9 @@ a[rel="noopener"],.gmnoprint{
   }
 
   h1.banner-head{
-    font-family: 'Sriracha', cursive;
-    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    line-height: 9vh;
     }
 
     .carousel-caption {
