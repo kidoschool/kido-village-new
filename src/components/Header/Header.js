@@ -21,7 +21,7 @@ function Header(props){
                 <NavLink className="nav-link pl-4" activeclassname="selected" to="/home2">About</NavLink>
               </li> */}
               <li className="nav-item">
-                <NavLink className="nav-link pl-4" to="/parent">Parents</NavLink>
+                <NavLink className="nav-link active pl-4" to="/parent">Parents</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link pl-4" to="/teacher">Teachers</NavLink>

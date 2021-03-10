@@ -4,6 +4,9 @@ import validate from 'jquery-validation';
 
 function FormEnquiry(props) {
 
+      const latlongListing = JSON.parse(localStorage.getItem("latlongList"));
+      // console.log(latlongListing["400055"]);
+
        //   const [selectState, setSelectState] = useState("");
        const [selectCity, setSelectCity] = useState("");
        const [cityData, setCityData] = useState("");
@@ -130,50 +133,65 @@ function FormEnquiry(props) {
         });
 
 
-      //   $(function () {
-      //     'use strict';
-          
-      //     $('#form_submit').on('click', function (event) {
-      //         var data;
+        $('#upload_cv').on('change',function(){
+          //get the file name
+          var fileName = $(this).val();
+          //replace the "Choose a file" label
+          var current_path = fileName.split("\\").pop();
+          $(this).next('.custom-file-label').html(current_path);
+      })
+
+
+            const formSubmit = (event)=>{
+              var data;
               
-      //         event.stopPropagation();
-      //         event.preventDefault();
-      //         var form = new FormData();
-      //         form.append("api", "upload_file");
-      //         $("#upload_cv")[0].files.length ? form.append("CV", $("#upload_cv")[0].files[0]) : false;
-      //         form.append("name", $("#name").val());
-      //         form.append("email", $("#email").val());
-      //         form.append("contact", $("#contact").val());
-      //         form.append("date_of_birth", $("#date_of_birth").val());
-      //         form.append("state", $("#state").val());
-      //         form.append("city", $("#city").val());
-      //         form.append("area", $("#area").val());
-      //         form.append("education_qualification", $("#education_qualification").val());
-      //         form.append("work_experience", $("#work_experience").val());
+              event.stopPropagation();
+              event.preventDefault();
+              var form = new FormData();
+              form.append("api", "upload_file");
+              
+              // $("#upload_cv")[0].files.length ? form.append("CV", $("#upload_cv")[0].files[0]) : false;
+
+              if(document.getElementById("upload_cv").files.length){
+                form.append("CV", document.getElementById("upload_cv").files[0]);
+              }
+
+              form.append("name", $("#name").val());
+              form.append("email", $("#email").val());
+              form.append("contact", $("#contact").val());
+              form.append("date_of_birth", $("#date_of_birth").val());
+              form.append("state", $("#state").val());
+              form.append("city", $("#city").val());
+              form.append("area", $("#area").val());
+              form.append("education_qualification", $("#education_qualification").val());
+              form.append("work_experience", $("#work_experience").val());
+              form.append("location_type", "APPROXIMATE");
+              form.append("latitude", latlongListing[$("#area").val()].lat);
+              form.append("longitude", latlongListing[$("#area").val()].long);
+
+
       
-      //         var settings = {
-      //         "url": "https://shop.kidovillage.com/kvshop_api/api.php",
-      //         "method": "POST",
-      //         "timeout": 0,
-      //         "processData": false,
-      //         "mimeType": "multipart/form-data",
-      //         "contentType": false,
-      //         "data": form,
-      //         success: function (response) {
-      //             window.location = "thankyou-msg.html";
-      //             // alert("completed");
-      //         },
-      //         error: function (xhr, ajaxOptions, thrownError) {
-      //             alert(xhr.status);
-      //             alert(thrownError);
-      //         }
-      //         };
+              var settings = {
+              "url": "https://shop.kidovillage.com/kvshop_api/api.php",
+              "method": "POST",
+              "timeout": 0,
+              "processData": false,
+              "mimeType": "multipart/form-data",
+              "contentType": false,
+              "data": form,
+              success: function (response) {
+                  // window.location = "thankyou-msg.html";
+                  alert("completed");
+              },
+              error: function (xhr, ajaxOptions, thrownError) {
+                  alert(xhr.status);
+                  alert(thrownError);
+              }
+              };
       
-      //         $.ajax(settings);
+              $.ajax(settings);
       
-      //     });
-          
-      // });
+          }
     
 
 
@@ -253,7 +271,7 @@ function FormEnquiry(props) {
             </select>
         </div>
         <div className="form-group">
-            <label for="area">Area</label>
+            <label for="area">Pincode</label>
             <input type="text" className="form-control" name="area" id="area" placeholder="Enter Area"/>
         </div>
         <div className="form-group">
@@ -279,14 +297,14 @@ function FormEnquiry(props) {
         
         <div className="form-group">
         <label for="upload_cv">Upload your Cv *</label>
-            <div class="custom-file">
-            <input type="file" class="custom-file-input" name="upload_cv" id="upload_cv"/>
-            <label class="custom-file-label" for="customFile">Choose file</label>
+            <div className="custom-file">
+            <input type="file" className="custom-file-input" name="upload_cv" id="upload_cv"/>
+            <label className="custom-file-label" for="customFile">Choose file</label>
             </div>
         </div>
         
 
-    <button type="submit" name="submit" className="my-btn">Submit</button>
+    <button type="submit" name="submit" onClick={formSubmit} className="my-btn">Submit</button>
     </form>	     
 
             </>
