@@ -176,7 +176,7 @@ function Parent(props) {
             </div>
         </section>
 
-        <section className="how-it-works py-5" style={{backgroundColor : "#FFF8E7"}}>
+        <section className="how-it-works py-5 bg-red">
             <div className="container">
                 <div className="row justify-content-center">
                 <h2 className="banner-head pb-2">Find a Kido pod / pre-school near you today</h2>
@@ -322,7 +322,7 @@ function Parent(props) {
         </section>
 
 
-        <section className="testimonial py-5" style={{backgroundColor : "#FFF8E7"}}>
+        <section className="testimonial py-5 bg-red">
             <div className="container">
                 <div className="row justify-content-center">
                 <h1 className="banner-head pb-4">What Our Parents Say About Our Kido Village</h1>
