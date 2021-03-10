@@ -32,7 +32,7 @@ function Home(props) {
             <section className="banner-parent py-5" style={{backgroundColor : "#fff"}}>
                 <div className="container">
                     <div className="parent row justify-content-center">
-                        <div className="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+                        <div className="col-lg-6">
                             <h1 className="banner-head">Give your child the best in early education and care!</h1>
                             <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment – a Kido Village pod is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods provide the right creative environment that helps learning and development of a young brain. </p>
                             <p>Each of our pods provide the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning.</p>
@@ -40,7 +40,7 @@ function Home(props) {
                             <Link to="/parent" className="my-btn center">I am a parent</Link>
                         </div>
                         </div>
-                        <div className="col-lg-6 pt-5" data-aos="fade-left" data-aos-duration="2000">
+                        <div className="col-lg-6 pt-5">
                             <img src={ParentsBanner} className="img-fluid" alt="ParentsBanner"/>
                         </div>
                     </div>
@@ -50,13 +50,13 @@ function Home(props) {
                     <section className="banner-teacher py-5" style={{backgroundColor : "#FFF8E7"}}>
                         <div className="container">
                             <div className="teacher row justify-content-center">
-                                <div className="col-lg-6 pt-5" data-aos="fade-right" data-aos-duration="2000">
+                                <div className="col-lg-6 pt-5">
                                     <img src={TeachersBanner} className="img-fluid" alt="TeachersBanner" />
                                 </div>
                                 <div className="col-lg-6">
                                     <h1 className="banner-head">Looking to start your own pre-school?</h1>
                                     <i><strong>Become a Kido entrepreneur and help us reinvent early years education!</strong></i>
-                                    <div data-aos="fade-left" data-aos-duration="2000">
+                                    <div>
                                     <p>By becoming a Kido pod owner, you can help shape the future of kids in your community by providing them with high quality education and care, with the backing of Kido! Our internationally recognized model will help you set up a pod in your living space with an investment as little as Rs 6,000 and you can start monetizing it quickly by enrolling kids with complete flexibility.</p>
                                     <p>Simply fill the form on our site and we’ll reach out to you with the next steps for onboarding and help you through the journey – be it education materials or marketing support!</p>
                                     <div className="pt-3">
@@ -71,7 +71,7 @@ function Home(props) {
                     <section className="banner-pre-school py-5" style={{backgroundColor : "#fff"}}>
                         <div className="container">
                             <div className="pre-school row justify-content-center">
-                                <div className="col-lg-6" data-aos="fade-right" data-aos-duration="2000">
+                                <div className="col-lg-6">
                                     <h1 className="banner-head">Looking for a pre-school franchise? </h1>
                                     <p>With more than 15,000 families served and a globally implemented childcare program, Kido Village is expanding fast in India by setting up micro-preschools as well as home-based pods for children’s education. If you already run a preschool, partner with Kido Village to enter a never-seen-before growth trajectory.</p>
                                     <p>Based on world class materials, training, support and safety protocols, our vision for preschools is to create trust in the market and enable high-quality outcomes for children across the country.</p>
@@ -80,7 +80,7 @@ function Home(props) {
                                     <Link to="/Pre-school" className="my-btn center">I want to start a pre-school</Link>
                                 </div>
                                 </div>
-                                <div className="col-lg-6 pt-5" data-aos="fade-left" data-aos-duration="2000">
+                                <div className="col-lg-6 pt-5">
                                     <img src={PreschoolsBanner} className="img-fluid" alt="PreschoolsBanner"/>
                                 </div>
                             </div>
@@ -88,9 +88,9 @@ function Home(props) {
                     </section>
 
 
-                    <section className="What-we-do py-5">
+                    <section className="What-we-do py-5" style={{backgroundColor : "#FFF8E7"}}>
                         <div className="container">
-                            <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+                            <div className="row justify-content-center">
                             <h1 className="banner-head pb-2">What is Kido Village?</h1>
                                 <div className="col-lg-10">
                                     <p>Kido Village is a growing chain of micro preschools and neighbourhood learning pods which aim to provide the the highest quality, flexible and affordable education, and care to children under six everywhere - in their homes, or around the corner from where they live.</p>
@@ -120,11 +120,11 @@ function Home(props) {
                     <section className="how-it-works py-5" style={{backgroundColor : "#FFF8E7"}}>
                         <div className="container">
                             <div className="row justify-content-center">
-                                <div className="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
+                                <div className="col-lg-4">
                                 <h1 className="banner-head pb-2">How It Works</h1>
                                     <p>It's simple. If you want to set up a Kïdo Village Pod in your home, just sign up one the website and we'll be in touch with the next steps. If you're a parent, you can search and select a Pod near you, schedule tours and find one that suits you! Watch the video for an overview of how Kïdo Village works!</p>
                                 </div>
-                                <div className="offset-lg-1 col-lg-5" data-aos="fade-up" data-aos-duration="2000">
+                                <div className="offset-lg-1 col-lg-5">
                                 <iframe width="480" height="265" src="https://www.youtube.com/embed/HB4Pn1BftpQ" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </div>
                             </div>
@@ -137,14 +137,14 @@ function Home(props) {
                             <div className="row justify-content-center">
                                 <div className="col-lg-12">
                                 <div className="card-deck">
-                                    <div className="card" data-aos="fade-up" data-aos-duration="2000">
+                                    <div className="card">
                                         <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/Ncl3CgduXCg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                         {/* <div className="card-body">
                                         <h3 className="card-title">Kïdo Village Pod owner.</h3>
                                         <p className="card-text">Ms Arbin Banu, shares her experience of starting her own micro preschool in provided, she joins the ever expanding group of female eduprenuers who trust Kido Village platform to help them set up their own Micro Preschool from the convenience of their home.</p>
                                         </div> */}
                                     </div>
-                                    <div className="card" data-aos="fade-up" data-aos-duration="2000">
+                                    <div className="card">
                                     <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/vglc5eR8HTM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                         {/* <div className="card-body">
                                         <h3 className="card-title">Parent, Kïdo.</h3>

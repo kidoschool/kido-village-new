@@ -32,7 +32,7 @@ a {color: #444; text-decoration: none;  transition: 0.3s; cursor: pointer;}
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: #962A30;
+    background-color: #963330;
     color: #fff;
     cursor: pointer;
   }
@@ -42,7 +42,7 @@ a {color: #444; text-decoration: none;  transition: 0.3s; cursor: pointer;}
   }
 
   .text-primary{
-    color: #962A30!important;
+    color: #963330!important;
   }
 
 .error{
@@ -51,7 +51,7 @@ a {color: #444; text-decoration: none;  transition: 0.3s; cursor: pointer;}
 /*--------section header start---------*/
 
 .nav-link{color: #fff!important; font-size: 0.8em; font-family: 'Montserrat', sans-serif; font-weight: 600;}
-.bg-color{background: #962A30!important; }
+.bg-color{background: #963330!important; }
 
 @media screen and (max-width: 480px) {
     .home_nav{padding-left: 8px;}
@@ -139,7 +139,7 @@ h1.banner-head{
 }
 
 a.my-btn {
-  background-color: #962A30;
+  background-color: #963330;
     color: #fff;
     border: none;
     font-size: 0.8em;
@@ -158,7 +158,7 @@ a.my-btn:hover {
 }
 
 a.my-btn-info {
-  background-color: #962A30;
+  background-color: #963330;
     color: #fff;
     border: none;
     font-size: 0.7em;
@@ -177,7 +177,7 @@ a.my-btn-info:hover {
 }
 
 button.my-btn {
-  background-color: #962A30;
+  background-color: #963330;
     color: #fff;
     border: none;
     font-size: 0.8em;
@@ -196,14 +196,14 @@ button.my-btn:hover {
 }
 
 
-.What-we-do{
+/* .What-we-do{
   background-image: url(../src/assets/what-we-do-bg.jpg);
   background-repeat: no-repeat;
   width: 100%;
   background-position: center;
   background-size: cover;
   height: auto;
-}
+} */
 
 span.we-do-color{
   color: #000;
@@ -265,7 +265,7 @@ h1.banner-head1{
 }
 
 .bg-blue{
-  background-color: #962A30;
+  background-color: #963330;
   height: 100%;
   padding-top: 20%;
 }
@@ -285,7 +285,7 @@ h1.banner-head1{
 }
 
 .carousel-indicators li {
-  background-color: #962A30!important;
+  background-color: #963330!important;
 }
 
 .testimonial .pic:after{
@@ -310,7 +310,7 @@ h1.banner-head1{
 
 a.wp-rights{
   text-decoration: none;
-  color: #962A30;
+  color: #963330;
 }
 
 .pagination {
@@ -327,7 +327,7 @@ a.wp-rights{
 }
 
 .pagination li.active a {
-  background-color: #962A30;
+  background-color: #963330;
   color: #fff;
 }
 
@@ -369,7 +369,7 @@ a.wp-rights{
 }
 /*--------footer-area start---------*/
 .footer-area{
-  background-color: #962A30;
+  background-color: #963330;
 } 
 
 .icon-info i{

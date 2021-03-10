@@ -59,7 +59,7 @@ function FormEnquiry(props) {
                           required: true,
                           email: true
                        },
-                       phone_no: { 
+                       contact: { 
                           required:true,
                           digits: true,
                           minlength: 10,
@@ -74,7 +74,7 @@ function FormEnquiry(props) {
                        city:{
                         required:true
                        }, 
-                       pincode:{
+                       area:{
                         required:true
                        },
                        education_qualification:{
@@ -97,7 +97,7 @@ function FormEnquiry(props) {
                        required: "This field is required",
                        email: "Please enter a valid email id",
                     },
-                    phone_no: { 
+                    contact: { 
                       required: "This field is required",
                       digits: "Please enter a valid mobile number",
                       minlength: "Please enter 10 digits only",
@@ -112,7 +112,7 @@ function FormEnquiry(props) {
                       city: {
                         required: "This field is required",
                       },
-                      pincode: {
+                      area: {
                         required: "This field is required",
                       },
                       education_qualification: {
@@ -128,6 +128,52 @@ function FormEnquiry(props) {
                   }
               });
         });
+
+
+      //   $(function () {
+      //     'use strict';
+          
+      //     $('#form_submit').on('click', function (event) {
+      //         var data;
+              
+      //         event.stopPropagation();
+      //         event.preventDefault();
+      //         var form = new FormData();
+      //         form.append("api", "upload_file");
+      //         $("#upload_cv")[0].files.length ? form.append("CV", $("#upload_cv")[0].files[0]) : false;
+      //         form.append("name", $("#name").val());
+      //         form.append("email", $("#email").val());
+      //         form.append("contact", $("#contact").val());
+      //         form.append("date_of_birth", $("#date_of_birth").val());
+      //         form.append("state", $("#state").val());
+      //         form.append("city", $("#city").val());
+      //         form.append("area", $("#area").val());
+      //         form.append("education_qualification", $("#education_qualification").val());
+      //         form.append("work_experience", $("#work_experience").val());
+      
+      //         var settings = {
+      //         "url": "https://shop.kidovillage.com/kvshop_api/api.php",
+      //         "method": "POST",
+      //         "timeout": 0,
+      //         "processData": false,
+      //         "mimeType": "multipart/form-data",
+      //         "contentType": false,
+      //         "data": form,
+      //         success: function (response) {
+      //             window.location = "thankyou-msg.html";
+      //             // alert("completed");
+      //         },
+      //         error: function (xhr, ajaxOptions, thrownError) {
+      //             alert(xhr.status);
+      //             alert(thrownError);
+      //         }
+      //         };
+      
+      //         $.ajax(settings);
+      
+      //     });
+          
+      // });
     
 
 
@@ -144,8 +190,8 @@ function FormEnquiry(props) {
             <input type="email" className="form-control" name="email" id="email" placeholder="Email"/>
             </div>
             <div className="form-group">
-            <label for="phone_no">Mobile Number</label>
-            <input type="text" className="form-control" name="phone_no" id="phone_no" placeholder="Phone No"/>
+            <label for="contact">Mobile Number</label>
+            <input type="text" className="form-control" name="contact" id="contact" placeholder="Phone No"/>
             </div>
             <div className="form-group">
             <label for="date_of_birth">Date of Birth</label>
@@ -207,8 +253,8 @@ function FormEnquiry(props) {
             </select>
         </div>
         <div className="form-group">
-            <label for="pincode">Pincode</label>
-            <input type="text" className="form-control" name="pincode" id="pincode" placeholder="Enter Pincode"/>
+            <label for="area">Area</label>
+            <input type="text" className="form-control" name="area" id="area" placeholder="Enter Area"/>
         </div>
         <div className="form-group">
             <label for="education_qualification">Education Qualification</label>

@@ -75,7 +75,7 @@ function PreSchool(props) {
 
         <section className="What-we-do py-5">
             <div className="container">
-                <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+                <div className="row justify-content-center">
                 <h1 className="banner-head pb-2">Looking for a pre-school franchise?</h1>
                     <div className="col-lg-10">
                         <p>We are creating a global platform dedicated to delivering the highest quality early years education anywhere in the world. We are integrating advances in pedagogy, technology and design to create unique learning experiences for children. We are looking for partners to scale this up and bring the best quality of care and education to every neighborhood in the country. </p>
@@ -104,7 +104,7 @@ function PreSchool(props) {
 
         <section className="pre-school-video py-5" style={{backgroundColor : "#FFF8E7"}}>
             <div className="container">
-                <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+                <div className="row justify-content-center">
                     <div className="col-lg-10">
                     <iframe width="100%" height="470" src="https://www.youtube.com/embed/QIp1Tne4xFc" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
@@ -113,9 +113,9 @@ function PreSchool(props) {
         </section>
 
         <section className="What-we-do py-5">
-            <div className="container" data-aos="fade-right" data-aos-duration="2000">
+            <div className="container">
            
-                <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+                <div className="row justify-content-center">
                     <div className="col-lg-7">
                         <h1 className="banner-head py-3">Why Kido?</h1>
                         <ul className="k-advantage">
@@ -153,7 +153,7 @@ function PreSchool(props) {
 
         <section className="testimonial py-5" style={{backgroundColor : "#FFF8E7"}}>
             <div className="container">
-                <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+                <div className="row justify-content-center">
                 <h1 className="banner-head pb-4">What Our Teachers Say About Our Kido Village</h1>
                     <div className="col-lg-10 text-center">
                     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
@@ -241,14 +241,14 @@ function PreSchool(props) {
                 <div className="row justify-content-center">
                     <div className="col-lg-12">
                     <div className="card-deck">
-                        <div className="card" data-aos="zoom-in" data-aos-duration="2000">
+                        <div className="card">
                             <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/I7euUBZq4sw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             {/* <div className="card-body">
                             <h3 className="card-title">Kïdo Village Pod owner.</h3>
                             <p className="card-text">Ms Arbin Banu, shares her experience of starting her own micro preschool in provided, she joins the ever expanding group of female eduprenuers who trust Kido Village platform to help them set up their own Micro Preschool from the convenience of their home.</p>
                             </div> */}
                         </div>
-                        <div className="card" data-aos="zoom-in" data-aos-duration="2000">
+                        <div className="card">
                         <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/CbyUND4AvPY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             {/* <div className="card-body">
                             <h3 className="card-title">Parent, Kïdo.</h3>

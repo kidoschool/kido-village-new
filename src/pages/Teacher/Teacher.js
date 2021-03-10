@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import PodBanner1 from '../../assets/POD-8.jpg';
 import PodBanner2 from '../../assets/POD-18.jpg';
 import PodBanner3 from '../../assets/POD-19.jpg';
@@ -7,6 +7,7 @@ import FormEnquiry from "../../components/FormEnquiry";
 import AOS from "aos";
 import $ from "jquery";
 import "aos/dist/aos.css";
+import latlongList from "./pincodes_lat_long.json";
 
 
 function Teacher(props) {
@@ -53,6 +54,10 @@ function Teacher(props) {
                 $('#batches').html('<option value="">Select No. Of Batches</option><option value="1">1</option><option value="2">2</option><option value="3">3</option>');
             }
         });
+
+        useEffect(() => {
+            localStorage.setItem('latlongList', JSON.stringify(latlongList));
+          });
         
 
     return(
@@ -108,7 +113,7 @@ function Teacher(props) {
 
         <section className="What-we-do py-5">
             <div className="container">
-                <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+                <div className="row justify-content-center">
                 <h1 className="banner-head pb-2">Become an early childhood entrepreneur</h1>
                     <div className="col-lg-10">
                         <p>Starting a Kido Village pod is easy. Sign up on the form on our website and we’ll get you started on training modules and help you set up everything from your physical learning space to the marketing materials you will need to enroll children. Not just this, we also provide 24/7 support throughout your journey with us and we’ll help you every step of the way with whatever you need.</p>
@@ -139,11 +144,11 @@ function Teacher(props) {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
-                        <div className="earning" data-aos="fade-up" data-aos-duration="2000">
+                        <div className="earning">
                             <h1 className="banner-head pb-2">Possible Earnings</h1>
                             <p>We've crunched the numbers so you don't have to. This calculator gives an illustration of how much you could earn on a monthly basis depending on how much fees you charge, number of children you take care of at any point in time and the number of batches you want to run. Try it out and see for yourself!</p>
                         </div>
-                        <div className="earning-data border shadow bg-white" data-aos="fade-right" data-aos-duration="2000">
+                        <div className="earning-data border shadow bg-white">
                             <div className="row">
                                 <div className="col-lg-8">
                                 <div className="earning-form p-4">
@@ -211,11 +216,11 @@ function Teacher(props) {
         <section className="how-it-works py-5">
             <div className="container">
                 <div className="row justify-content-center">
-                    <div className="col-lg-4" data-aos="zoom-out-right" data-aos-duration="2000">
+                    <div className="col-lg-4">
                     <h1 className="banner-head pb-2">How It Works</h1>
                         <p>Setting up your own Pod at home is easy. Within a few weeks, you can be all set up and ready to take your first batch of children. Depending on how many children you take, and what you charge, you could be earning ₹50,000 to ₹ 1 lakh+ per month within a couple of months! Watch the video to get a better understanding of the process.</p>
                     </div>
-                    <div className="offset-lg-1 col-lg-5" data-aos="zoom-out-left" data-aos-duration="2000">
+                    <div className="offset-lg-1 col-lg-5">
                     <iframe width="480" height="270" src="https://www.youtube.com/embed/lDNAbdm1Sh8" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                     </div>
                 </div>
@@ -239,7 +244,7 @@ function Teacher(props) {
 
         <section className="testimonial py-5" style={{backgroundColor : "#FFF8E7"}}>
             <div className="container">
-                <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+                <div className="row justify-content-center">
                 <h1 className="banner-head pb-4">What Our Teachers Say About Our Kido Village</h1>
                     <div className="col-lg-10 text-center">
                     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
@@ -327,14 +332,14 @@ function Teacher(props) {
                 <div className="row justify-content-center">
                     <div className="col-lg-12">
                     <div className="card-deck">
-                        <div className="card" data-aos="zoom-in" data-aos-duration="2000">
+                        <div className="card">
                             <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/I7euUBZq4sw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             {/* <div className="card-body">
                             <h3 className="card-title">Kïdo Village Pod owner.</h3>
                             <p className="card-text">Ms Arbin Banu, shares her experience of starting her own micro preschool in provided, she joins the ever expanding group of female eduprenuers who trust Kido Village platform to help them set up their own Micro Preschool from the convenience of their home.</p>
                             </div> */}
                         </div>
-                        <div className="card" data-aos="zoom-in" data-aos-duration="2000">
+                        <div className="card">
                         <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/CbyUND4AvPY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             {/* <div className="card-body">
                             <h3 className="card-title">Parent, Kïdo.</h3>

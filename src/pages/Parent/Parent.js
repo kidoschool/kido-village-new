@@ -165,7 +165,7 @@ function Parent(props) {
 
         <section className="What-we-do py-5">
             <div className="container">
-                <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+                <div className="row justify-content-center">
                 <h1 className="banner-head pb-2">It takes a village to raise a child </h1>
                     <div className="col-lg-10">
                         <p>At Kido Village, we hope to transform the future of our children by making early interventions in the form of lots of love, care and exceptional education. </p>
@@ -181,7 +181,7 @@ function Parent(props) {
                 <div className="row justify-content-center">
                 <h2 className="banner-head pb-2">Find a Kido pod / pre-school near you today</h2>
                     <div className="col-lg-10">
-                    <div className="search-pod-form bg-white p-4 my-4 border shadow"  data-aos="fade-right" data-aos-duration="2000">
+                    <div className="search-pod-form bg-white p-4 my-4 border shadow">
                         <h3>Quick Search</h3>
                         <div className="form-row">
                             <div className="col-md-3">
@@ -300,9 +300,9 @@ function Parent(props) {
         </section>
 
         <section className="What-we-do py-5">
-            <div className="container" data-aos="fade-right" data-aos-duration="2000">
+            <div className="container">
            
-                <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
+                <div className="row justify-content-center">
                     <div className="col-lg-10">
                     <h1 className="banner-head">The Kido advantage </h1>
                     <div className="pb-4"><i>Give your children a head start! </i></div>
@@ -324,8 +324,8 @@ function Parent(props) {
 
         <section className="testimonial py-5" style={{backgroundColor : "#FFF8E7"}}>
             <div className="container">
-                <div className="row justify-content-center" data-aos="fade-up" data-aos-duration="2000">
-                <h1 className="banner-head pb-4">What Our Parent Say About Our Kido Village</h1>
+                <div className="row justify-content-center">
+                <h1 className="banner-head pb-4">What Our Parents Say About Our Kido Village</h1>
                     <div className="col-lg-10 text-center">
                     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                         <ol className="carousel-indicators">
@@ -412,14 +412,14 @@ function Parent(props) {
                 <div className="row justify-content-center">
                     <div className="col-lg-12">
                     <div className="card-deck">
-                        <div className="card" data-aos="zoom-in" data-aos-duration="2000">
+                        <div className="card">
                             <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/I7euUBZq4sw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             {/* <div className="card-body">
                             <h3 className="card-title">Kïdo Village Pod owner.</h3>
                             <p className="card-text">Ms Arbin Banu, shares her experience of starting her own micro preschool in provided, she joins the ever expanding group of female eduprenuers who trust Kido Village platform to help them set up their own Micro Preschool from the convenience of their home.</p>
                             </div> */}
                         </div>
-                        <div className="card" data-aos="zoom-in" data-aos-duration="2000">
+                        <div className="card">
                         <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/CbyUND4AvPY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             {/* <div className="card-body">
                             <h3 className="card-title">Parent, Kïdo.</h3>
