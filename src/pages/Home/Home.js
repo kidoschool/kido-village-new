@@ -120,11 +120,11 @@ function Home(props) {
                     <section className="how-it-works py-5" style={{backgroundColor : "#FFF8E7"}}>
                         <div className="container">
                             <div className="row justify-content-center">
-                                <div className="col-lg-4" data-aos="zoom-out-right" data-aos-duration="2000">
+                                <div className="col-lg-4" data-aos="fade-up" data-aos-duration="2000">
                                 <h1 className="banner-head pb-2">How It Works</h1>
                                     <p>It's simple. If you want to set up a Kïdo Village Pod in your home, just sign up one the website and we'll be in touch with the next steps. If you're a parent, you can search and select a Pod near you, schedule tours and find one that suits you! Watch the video for an overview of how Kïdo Village works!</p>
                                 </div>
-                                <div className="offset-lg-1 col-lg-5" data-aos="zoom-out-left" data-aos-duration="2000">
+                                <div className="offset-lg-1 col-lg-5" data-aos="fade-up" data-aos-duration="2000">
                                 <iframe width="480" height="265" src="https://www.youtube.com/embed/HB4Pn1BftpQ" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </div>
                             </div>
@@ -137,14 +137,14 @@ function Home(props) {
                             <div className="row justify-content-center">
                                 <div className="col-lg-12">
                                 <div className="card-deck">
-                                    <div className="card" data-aos="zoom-in" data-aos-duration="2000">
+                                    <div className="card" data-aos="fade-up" data-aos-duration="2000">
                                         <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/Ncl3CgduXCg" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                         {/* <div className="card-body">
                                         <h3 className="card-title">Kïdo Village Pod owner.</h3>
                                         <p className="card-text">Ms Arbin Banu, shares her experience of starting her own micro preschool in provided, she joins the ever expanding group of female eduprenuers who trust Kido Village platform to help them set up their own Micro Preschool from the convenience of their home.</p>
                                         </div> */}
                                     </div>
-                                    <div className="card" data-aos="zoom-in" data-aos-duration="2000">
+                                    <div className="card" data-aos="fade-up" data-aos-duration="2000">
                                     <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/vglc5eR8HTM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                         {/* <div className="card-body">
                                         <h3 className="card-title">Parent, Kïdo.</h3>

@@ -1,7 +1,7 @@
 import React, {useState ,useEffect} from 'react';
-import PodBanner1 from '../../assets/POD-1.jpg';
-import PodBanner2 from '../../assets/POD-2.jpg';
-import PodBanner3 from '../../assets/POD-3.jpg';
+import PodBanner1 from '../../assets/POD-18.jpg';
+import PodBanner2 from '../../assets/POD-8.jpg';
+import PodBanner3 from '../../assets/POD-19.jpg';
 import testiProfile1 from '../../assets/testi-profile1.jpg';
 import FormEnquiry from "../../components/FormEnquiry";
 import Pagination from "react-js-pagination";
@@ -122,15 +122,6 @@ function Parent(props) {
              useEffect(() => {
                 localStorage.setItem('teachersPodData', JSON.stringify(teachersPodData));
               });
-
-            //   var isActiveteacher = {};
-            //   $.each(teachersPodData, function (k, v) {
-            //     if(teachersPodData[1].status == 1){
-            //       return isActiveteacher = v;
-            //     }
-            //   });
-            //   console.log(isActiveteacher);
-  
 
            
     return(
@@ -269,7 +260,7 @@ function Parent(props) {
                     <div className="card my-2 shadow">
                         <div className="row no-gutters">
                             <div className="col-md-4">
-                                <img src={PodBanner1} width="200"className="find-pod-img img-fluid" alt=""/>
+                                <img src={PodBanner1} width="200" className="find-pod-img img-fluid" alt=""/>
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
