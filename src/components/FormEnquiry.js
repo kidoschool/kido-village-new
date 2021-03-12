@@ -166,6 +166,7 @@ function FormEnquiry(props) {
               form.append("education_qualification", $("#education_qualification").val());
               form.append("work_experience", $("#work_experience").val());
               form.append("location_type", "APPROXIMATE");
+              form.append("country", "1");
               form.append("latitude", latlongListing[$("#area").val()].lat);
               form.append("longitude", latlongListing[$("#area").val()].long);
 
@@ -265,7 +266,7 @@ function FormEnquiry(props) {
                 <option value="">Select any state</option>
                 {Object.entries(cityData).map((item) => {
                     return(
-                <option value={item[1].name}>{item[1].name}</option>
+                <option value={item[1].id}>{item[1].name}</option>
                     )
                     })}
             </select>

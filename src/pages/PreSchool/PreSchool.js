@@ -76,8 +76,8 @@ function PreSchool(props) {
         <section className="What-we-do py-5">
             <div className="container">
                 <div className="row justify-content-center">
-                <h1 className="banner-head pb-2">Looking for a pre-school franchise?</h1>
                     <div className="col-lg-10">
+                    <h1 className="banner-head pb-2">Looking for a pre-school franchise?</h1>
                         <p>We are creating a global platform dedicated to delivering the highest quality early years education anywhere in the world. We are integrating advances in pedagogy, technology and design to create unique learning experiences for children. We are looking for partners to scale this up and bring the best quality of care and education to every neighborhood in the country. </p>
                         <p>Partner with us with your preschool and discover the power of the most comprehensive early years preschool franchise system created anywhere. Our franchise model rests on our ability and commitment to make our franchisees successful.</p>
                         <p>Kido Village offers the best of both worlds - a globally recognized childcare model that has served more than 15,000 families served along with an easy to set up franchise model that enables maximum flexibility with a high growth potential in terms of the business opportunity. </p>
@@ -86,13 +86,17 @@ function PreSchool(props) {
             </div>
         </section>
 
+        <div className="floating-btn text-right banner">
+            <button onClick={openNav} className="my-btn center">GET STARTED</button>
+        </div>
+
 
         <section className="start_journey">
             <div className="overlay py-5">
             <div className="container">
                 <div className="row justify-content-center py-5">
-                <h1 className="banner-head text-white pb-2">Ready to take the plunge? Get in touch with us</h1>
                     <div className="col-lg-10 text-center">
+                    <h1 className="banner-head text-white pb-2">Ready to take the plunge? Get in touch with us</h1>
                     <div className="banner mt-4">
                         <button onClick={openNav} className="btn my-btn center">Get in Touch</button>
                     </div>
@@ -154,8 +158,8 @@ function PreSchool(props) {
         <section className="testimonial py-5 bg-red">
             <div className="container">
                 <div className="row justify-content-center">
-                <h1 className="banner-head pb-4">What Our Teachers Say About Our Kido Village</h1>
                     <div className="col-lg-10 text-center">
+                    <h1 className="banner-head pb-4">What Our Teachers Say About Our Kido Village</h1>
                     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                         <ol className="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>

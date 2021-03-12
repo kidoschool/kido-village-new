@@ -56,7 +56,10 @@ function Footer(props) {
                             <div className="icon-info">
                               <a href="https://www.facebook.com/Kidoeducation" target="_blank" rel="noreferrer"><i className="fab fa-facebook-f pr-3"></i></a>
                               <a href="https://www.instagram.com/kidoschools/" target="_blank" rel="noreferrer"><i className="fab fa-instagram pr-3"></i></a>
-                              <a href="https://www.youtube.com/c/KidoSchools" target="_blank" rel="noreferrer"><i className="fab fa-youtube"></i></a>
+                              <a href="https://www.youtube.com/c/KidoSchools" target="_blank" rel="noreferrer"><i className="fab fa-youtube pr-3"></i></a>
+                              <a href="https://www.linkedin.com/company/kidoed" target="_blank" rel="noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                              
+                    
                             </div>
                         </div>   
                     </div>     

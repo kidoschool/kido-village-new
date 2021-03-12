@@ -4,7 +4,7 @@ import validate from 'jquery-validation';
 
 function PreSchoolForm(props) {
 
-    //   const latlongListing = JSON.parse(localStorage.getItem("latlongList"));
+      const latlongListing = JSON.parse(localStorage.getItem("latlongList"));
 
        //   const [selectState, setSelectState] = useState("");
        const [selectCity, setSelectCity] = useState("");
@@ -66,9 +66,9 @@ function PreSchoolForm(props) {
                        city:{
                         required:true
                        }, 
-                    //    area:{
-                    //     required:true
-                    //    },
+                       area:{
+                        required:true
+                       },
                   },
       
                   messages:{
@@ -92,9 +92,9 @@ function PreSchoolForm(props) {
                       city: {
                         required: "This field is required",
                       },
-                    //   area: {
-                    //     required: "This field is required",
-                    //   },
+                      area: {
+                        required: "This field is required",
+                      },
       
                   }
               });
@@ -114,10 +114,12 @@ function PreSchoolForm(props) {
               form.append("contact", $("#contact").val());
               form.append("state", $("#state").val());
               form.append("city", $("#city").val());
-            //   form.append("area", $("#area").val());
-            //   form.append("location_type", "APPROXIMATE");
-            //   form.append("latitude", latlongListing[$("#area").val()].lat);
-            //   form.append("longitude", latlongListing[$("#area").val()].long);
+              form.append("position_of_teacher", "Preschool");
+              form.append("area", $("#area").val());
+              form.append("location_type", "APPROXIMATE");
+              form.append("country", "1");
+              form.append("latitude", latlongListing[$("#area").val()].lat);
+              form.append("longitude", latlongListing[$("#area").val()].long);
 
 
       
@@ -211,17 +213,16 @@ function PreSchoolForm(props) {
                 <option value="">Select any state</option>
                 {Object.entries(cityData).map((item) => {
                     return(
-                <option value={item[1].name}>{item[1].name}</option>
+                <option value={item[1].id}>{item[1].name}</option>
                     )
                     })}
             </select>
         </div>
-        {/* <div className="form-group">
+        <div className="form-group">
             <label for="area">Pincode</label>
             <input type="text" className="form-control" name="area" id="area" placeholder="Enter Area"/>
-        </div> */}
+        </div>
         
-
     <button type="submit" name="submit" onClick={formSubmit} className="my-btn">Submit</button>
     </form>	     
 

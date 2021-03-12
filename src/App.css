@@ -233,6 +233,14 @@ span.we-do-color{
 }
 /*--------section banner end---------*/
 
+.floating-btn{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 350px;
+  z-index: 99;
+  padding-right: 20px;
+}
+
 .parent-banner-img{
   height: 75vh;
 }
@@ -476,9 +484,35 @@ a[rel="noopener"],.gmnoprint{
   h1.banner-head1 {
     /* font-family: 'Caveat', cursive; */
     text-transform: none;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 800;
   }
+
+  .banner-italic {
+    text-transform: none;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+  .bg-blue {
+    background-color: #962A30;
+    height: 100%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.parent-banner-img {
+  height: 45vh;
+}
+
+.contact-banner-img{
+  height: 45vh;
+}
+
+/* .carousel-caption, .teachers-cap {
+  position: absolute;
+  top: 10%;
+} */
 
 }
 

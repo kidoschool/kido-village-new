@@ -114,8 +114,8 @@ function Teacher(props) {
         <section className="What-we-do py-5">
             <div className="container">
                 <div className="row justify-content-center">
-                <h1 className="banner-head pb-2">Become an early childhood entrepreneur</h1>
                     <div className="col-lg-10">
+                    <h1 className="banner-head pb-2">Become an early childhood entrepreneur</h1>
                         <p>Starting a Kido Village pod is easy. Sign up on the form on our website and we’ll get you started on training modules and help you set up everything from your physical learning space to the marketing materials you will need to enroll children. Not just this, we also provide 24/7 support throughout your journey with us and we’ll help you every step of the way with whatever you need.</p>
                         <p>For all this and more, we charge only 50% of the fee you charge from one child - no matter how many children you take in (you get to keep the rest!). </p>
                         <p>Find out how you can earn Rs 50,000-Rs 1,00,000+ within a couple of months by just enrolling 8 students! </p>
@@ -125,12 +125,19 @@ function Teacher(props) {
         </section>
 
 
+
+        <div className="floating-btn text-right banner">
+            <button onClick={openNav} className="my-btn center">GET STARTED</button>
+        </div>
+        
+
+
         <section className="start_journey">
             <div className="overlay py-5">
             <div className="container">
                 <div className="row justify-content-center py-5">
-                <h1 className="banner-head text-white pb-2">Curious to learn more? Start your journey</h1>
                     <div className="col-lg-10 text-center">
+                    <h1 className="banner-head text-white pb-2">Curious to learn more? Start your journey</h1>
                     <div className="banner mt-4">
                         <button onClick={openNav} className="btn my-btn center">Sign Up Now</button>
                     </div>
@@ -245,8 +252,8 @@ function Teacher(props) {
         <section className="testimonial py-5 bg-red">
             <div className="container">
                 <div className="row justify-content-center">
-                <h1 className="banner-head pb-4">What Our Teachers Say About Our Kido Village</h1>
                     <div className="col-lg-10 text-center">
+                    <h1 className="banner-head pb-4">What Our Teachers Say About Our Kido Village</h1>
                     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                         <ol className="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
