@@ -249,6 +249,25 @@ function Teacher(props) {
             </div>
         </section>
 
+        <section className="What-we-do py-5">
+            <div className="container">
+           
+                <div className="row justify-content-center">
+                    <div className="col-lg-10">
+                    <h1 className="banner-head">Benefits of Kido Village </h1>
+                        <ul className="k-advantage pt-4">
+                            <li>Freedom - Kido Village allows you to be in charge of your own schedule, and focus on your passion for teaching and taking care of young children. Everything you need will be available to you. Work for hours that suit you, start your own Pod and earn your livelihood on your own terms.</li>
+                            <li>Training - You will receive complete training in global best practices in care, health, safety, operations and curriculum. You will also get periodic workshops and guidance calls for continuous development. On successful completion of training, you will be certified as a Kïdo Village Teacher.</li>
+                            <li>Technology - We will give all the technology to help you succeed. The Kïdo app will help you manage your class and your Pod and in communicating with parents. Lesson plans, curriculum, training and quality control checklists will be delivered electronically, so you're always on top of everything.</li>
+                            <li>Marketing - You will have all the marketing support you'll need. Your page on the website to help parents schedule tours directly with you. Marketing materials to market in your neighbourhood and to your network. And city wide and country wide marketing by us at all times.</li>
+                            <li>Great Economics -  Set your own fees and schedule. You'll earn according to the number of children and time you work for. It could easily be ₹50,000/month or even ₹100,000/month+! And the cost to you is minimal, starting at ₹1,500/month. All from your own home!</li>
+                            <li>Quality Assurance - We offer best in class training on quality control, health, safety and operations. Period quality assurance calls and visits, detailed checklists and ongoing support will ensure that your Pod remains operating to the highest standard at all times.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section className="testimonial py-5 bg-red">
             <div className="container">
                 <div className="row justify-content-center">
