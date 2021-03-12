@@ -2,7 +2,7 @@ import React from 'react';
 import PodBanner1 from '../../assets/POD-19.jpg';
 import PodBanner2 from '../../assets/POD-8.jpg';
 import PodBanner3 from '../../assets/POD-18.jpg';
-import FormEnquiry from "../../components/FormEnquiry";
+import PreSchoolForm from "../../components/PreSchoolForm";
 import testiProfile1 from '../../assets/testi-profile1.jpg';
 import AOS from "aos";
 import $ from "jquery";
@@ -36,9 +36,9 @@ function PreSchool(props) {
                         <img src={PodBanner1} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
                         <div className="carousel-caption d-md-block">
                             <h1 className="banner-head1 text-white">Are you a pre-school owner? Get the Kido advantage</h1>
-                            {/* <div className="banner mt-4">
+                            <div className="banner mt-4">
                                 <button onClick={openNav} className="btn my-btn center">GET STARTED</button>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                     <div className="carousel-item">
@@ -46,9 +46,9 @@ function PreSchool(props) {
                         <img src={PodBanner2} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
                         <div className="carousel-caption d-md-block">
                             <h1 className="banner-head1 text-white">Are you a pre-school owner? Get the Kido advantage</h1>
-                            {/* <div className="banner mt-4">
+                            <div className="banner mt-4">
                                 <button onClick={openNav} className="my-btn center">GET STARTED</button>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                     <div className="carousel-item">
@@ -56,9 +56,9 @@ function PreSchool(props) {
                         <img src={PodBanner3} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
                         <div className="carousel-caption d-md-block">
                             <h1 className="banner-head1 text-white">Are you a pre-school owner? Get the Kido advantage</h1>
-                            {/* <div className="banner mt-4">
+                            <div className="banner mt-4">
                                 <button onClick={openNav} className="my-btn center">GET STARTED</button>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -275,11 +275,11 @@ function PreSchool(props) {
 
                    
 
-    <div id="mySidenav" className="sidenav bg-light border-right">
+    <div id="mySidenav" className="sidenav bg-red border-right">
       <div className="p-3">
           <h5>Send your Enquiry</h5><a href={null} className="closebtn" onClick={closeNav}>&times;</a>
           <hr/>
-           <FormEnquiry/>
+           <PreSchoolForm/>
       </div>
     </div>
                     

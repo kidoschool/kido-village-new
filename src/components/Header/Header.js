@@ -1,9 +1,23 @@
 import React from 'react';
 import {withRouter, NavLink} from "react-router-dom";
-import logo from '../../assets/kido-village-logo.png'
+import logo from '../../assets/kido-village-logo.png';
+import $ from "jquery";
 
 
 function Header(props){
+
+  $(document).ready(function () { 
+    $("ul.navbar-nav > li > a").click( 
+      function (e) { 
+        $("ul.navbar-nav > li").removeClass( 
+          "active"); 
+        $("ul.navbar-nav > li > a").css( 
+          "borderBottom", ""); 
+
+        $(this).addClass("active"); 
+        $(this).css('borderBottom', '3px solid white'); 
+    }); 
+}); 
 
     return(
       <>
@@ -17,23 +31,23 @@ function Header(props){
           
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto w-100 justify-content-end clearfix">
-              {/* <li className="nav-item">
-                <NavLink className="nav-link pl-4" activeclassname="selected" to="/home2">About</NavLink>
-              </li> */}
-              <li className="nav-item">
-                <NavLink className="nav-link active pl-4" to="/parent">Parents</NavLink>
+              <li className="nav-item active pl-4">
+                <NavLink className="nav-link" to="/">Home</NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link pl-4" to="/teacher">Teachers</NavLink>
+              <li className="nav-item pl-4">
+                <NavLink className="nav-link" to="/parent">Parents</NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link pl-4" to="/Pre-school">Pre-School</NavLink>
+              <li className="nav-item pl-4">
+                <NavLink className="nav-link" to="/teacher">Teachers</NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link pl-4" to="/home2">FAQs</NavLink>
+              <li className="nav-item pl-4">
+                <NavLink className="nav-link" to="/Pre-school">Pre-School</NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link pl-4" to="/contact">Contact</NavLink>
+              <li className="nav-item pl-4">
+                <NavLink className="nav-link" to="/home2">FAQs</NavLink>
+              </li>
+              <li className="nav-item pl-4">
+                <NavLink className="nav-link" to="/contact">Contact</NavLink>
               </li>
             </ul>
           </div>

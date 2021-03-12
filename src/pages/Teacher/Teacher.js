@@ -355,7 +355,7 @@ function Teacher(props) {
 
                    
 
-    <div id="mySidenav" className="sidenav bg-light border-right">
+    <div id="mySidenav" className="sidenav bg-red border-right">
       <div className="p-3">
           <h5>Start your own Micro Preschool</h5><a href={null} className="closebtn" onClick={closeNav}>&times;</a>
           <hr/>
