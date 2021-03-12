@@ -17,6 +17,7 @@ import LoginRegister from "./pages/LoginRegister/LoginRegister";
 import ScrollToTop from "./ScrollToTop"
 import './App.css';
 import TeachersInfo from './pages/TeachersInfo/TeachersInfo';
+import ThankYou from './components/ThankYou';
 
 
 
@@ -38,6 +39,7 @@ function App() {
           <Route exact path="/privacy-policy"  component={PrivacyPolicy} />
           <Route exact path="/cookie-policy"  component={CookiePolicy} />
           <Route exact path="/website-privacy-notice"  component={WebsitePrivacyNotice} />
+          <Route exact path="/thank-you"  component={ThankYou} />
           <AuthProvider>
           <Route path="/LoginRegister/:tname" component={LoginRegister} />
           <PrivateRoute path="/teacher-info/:tinfo"  component={TeachersInfo} />

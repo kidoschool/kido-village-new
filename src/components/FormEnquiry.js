@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import $ from "jquery";
 import validate from 'jquery-validation';
+import { withRouter, useHistory } from "react-router-dom";
 
 function FormEnquiry(props) {
 
@@ -10,6 +11,8 @@ function FormEnquiry(props) {
        //   const [selectState, setSelectState] = useState("");
        const [selectCity, setSelectCity] = useState("");
        const [cityData, setCityData] = useState("");
+
+       const history = useHistory();
 
        const handleSelectStateChange = (event)=>{
          // setSelectState(event.target.value)
@@ -182,7 +185,8 @@ function FormEnquiry(props) {
               "data": form,
               success: function (response) {
                   // window.location = "thankyou-msg.html";
-                  alert("completed");
+                  history.push('/thank-you');
+                  // alert("completed");
               },
               error: function (xhr, ajaxOptions, thrownError) {
                   alert(xhr.status);
