@@ -68,7 +68,7 @@ function FormEnquiry(props) {
               event.stopPropagation();
               event.preventDefault();
               var form = new FormData();
-              form.append("api", "upload_file");
+              form.append("api", "capture_teacher_lead");
               
               // $("#upload_cv")[0].files.length ? form.append("CV", $("#upload_cv")[0].files[0]) : false;
 
