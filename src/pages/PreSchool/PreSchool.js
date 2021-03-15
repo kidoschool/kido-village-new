@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import PodBanner1 from '../../assets/POD-19.jpg';
 import PodBanner2 from '../../assets/POD-8.jpg';
 import PodBanner3 from '../../assets/POD-18.jpg';
@@ -7,6 +7,8 @@ import testiProfile1 from '../../assets/testi-profile1.jpg';
 import AOS from "aos";
 import $ from "jquery";
 import "aos/dist/aos.css";
+import latlongList from "../Teacher/pincodes_lat_long.json";
+
 
 function PreSchool(props) {
 
@@ -23,6 +25,10 @@ function PreSchool(props) {
             // document.getElementById("mySidenav").style.width = "0";
             $( "#mySidenav" ).css( "width", "0" );
           } 
+
+          useEffect(() => {
+            localStorage.setItem('latlongList', JSON.stringify(latlongList));
+          });
         
 
     return(

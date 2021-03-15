@@ -53,89 +53,6 @@ function FormEnquiry(props) {
         $(this).next('.custom-file-label').html(current_path);
     })
 
-    $(document).ready(function() {
-  
-        $("#validatetsignup").validate({
-                  rules:{
-                      name:{
-                          required:true,
-                          minlength: 2
-                      },
-                      email: {
-                          required: true,
-                          email: true
-                       },
-                       contact: { 
-                          required:true,
-                          digits: true,
-                          minlength: 10,
-                          maxlength: 10 
-                       }, 
-                       date_of_birth:{
-                        required:true
-                       }, 
-                       state:{
-                        required:true
-                       }, 
-                       city:{
-                        required:true
-                       }, 
-                       area:{
-                        required:true
-                       },
-                       education_qualification:{
-                        required:true
-                       },
-                       work_experience:{
-                        required:true
-                       },
-                    //    education_qualification:{
-                    //     required:true
-                    //    },
-                  },
-      
-                  messages:{
-                    name: {
-                      required: "This field is required",
-                      minlength: "Please enter atleast two character"
-                    },
-                    email: {
-                       required: "This field is required",
-                       email: "Please enter a valid email id",
-                    },
-                    contact: { 
-                      required: "This field is required",
-                      digits: "Please enter a valid mobile number",
-                      minlength: "Please enter 10 digits only",
-                      maxlength: "Please enter 10 digits only" 
-                    },
-                    date_of_birth: {
-                        required: "This field is required",
-                      },
-                      state: {
-                        required: "This field is required",
-                      },
-                      city: {
-                        required: "This field is required",
-                      },
-                      area: {
-                        required: "This field is required",
-                      },
-                      education_qualification: {
-                        required: "This field is required",
-                      },
-                      work_experience: {
-                        required: "This field is required",
-                      },
-                    //   city: {
-                    //     required: "This field is required",
-                    //   },
-      
-                  }
-              });
-        });
-
-
         $('#upload_cv').on('change',function(){
           //get the file name
           var fileName = $(this).val();
@@ -197,13 +114,96 @@ function FormEnquiry(props) {
               $.ajax(settings);
       
           }
+
+          $(document).ready(function() {
+  
+            $("#validatetsignup").validate({
+                      rules:{
+                          name:{
+                              required:true,
+                              minlength: 2
+                          },
+                          email: {
+                              required: true,
+                              email: true
+                           },
+                           contact: { 
+                              required:true,
+                              digits: true,
+                              minlength: 10,
+                              maxlength: 10 
+                           }, 
+                           date_of_birth:{
+                            required:true
+                           }, 
+                           state:{
+                            required:true
+                           }, 
+                           city:{
+                            required:true
+                           }, 
+                           area:{
+                            required:true
+                           },
+                           education_qualification:{
+                            required:true
+                           },
+                           work_experience:{
+                            required:true
+                           },
+                        //    education_qualification:{
+                        //     required:true
+                        //    },
+                      },
+          
+                      messages:{
+                        name: {
+                          required: "This field is required",
+                          minlength: "Please enter atleast two character"
+                        },
+                        email: {
+                           required: "This field is required",
+                           email: "Please enter a valid email id",
+                        },
+                        contact: { 
+                          required: "This field is required",
+                          digits: "Please enter a valid mobile number",
+                          minlength: "Please enter 10 digits only",
+                          maxlength: "Please enter 10 digits only" 
+                        },
+                        date_of_birth: {
+                            required: "This field is required",
+                          },
+                          state: {
+                            required: "This field is required",
+                          },
+                          city: {
+                            required: "This field is required",
+                          },
+                          area: {
+                            required: "This field is required",
+                          },
+                          education_qualification: {
+                            required: "This field is required",
+                          },
+                          work_experience: {
+                            required: "This field is required",
+                          },
+                        //   city: {
+                        //     required: "This field is required",
+                        //   },
+          
+                      }
+                  });
+            });
+    
     
 
 
     return(
         <>
             
-            <form onSubmit="" className="form" id="validatetsignup">
+            <form onSubmit={formSubmit} className="form" id="validatetsignup">
             <div className="form-group">
             <label for="name">Name</label>
             <input type="text" className="form-control" name="name" id="name" placeholder="Name"/>
@@ -309,7 +309,7 @@ function FormEnquiry(props) {
         </div>
         
 
-    <button type="submit" name="submit" onClick={formSubmit} className="my-btn">Submit</button>
+    <button type="submit" name="submit" className="my-btn">Submit</button>
     </form>	     
 
             </>

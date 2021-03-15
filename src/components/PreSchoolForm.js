@@ -153,7 +153,7 @@ function PreSchoolForm(props) {
     return(
         <>
             
-            <form onSubmit="" className="form" id="validatetsignup">
+            <form onSubmit={formSubmit} className="form" id="validatetsignup">
             <div className="form-group">
             <label for="name">Name</label>
             <input type="text" className="form-control" name="name" id="name" placeholder="Name"/>
@@ -226,7 +226,7 @@ function PreSchoolForm(props) {
             <input type="text" className="form-control" name="area" id="area" placeholder="Enter Area"/>
         </div>
         
-    <button type="submit" name="submit" onClick={formSubmit} className="my-btn">Submit</button>
+    <button type="submit" name="submit" className="my-btn">Submit</button>
     </form>	     
 
             </>

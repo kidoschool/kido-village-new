@@ -11,7 +11,7 @@ function ThankYou(props) {
                 <div className="row justify-content-center">
                     <div className="col-lg-8 text-center">
                     <h1 className="banner-head py-4">Thank You for filling out the details, we will contact you shortly!</h1>
-                    <div><i>you are 2 steps away from starting up with ypur pod, do you mind filling out a short assessment ? </i></div>
+                    <div><i>you are <b>2 steps</b> away from starting up with your pod, do you mind filling out a short assessment ? </i></div>
                     <div><i>Fill out the assessment form and get started</i></div>
                     <div className="pt-4"><a href={null} className="btn my-btn center">Get Started</a></div>
                     </div>
