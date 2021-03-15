@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/kido-village-new/static/css/main.ff4faef4.chunk.css",
+    "main.js": "/kido-village-new/static/js/main.80b3b2c3.chunk.js",
+    "main.js.map": "/kido-village-new/static/js/main.80b3b2c3.chunk.js.map",
+    "runtime-main.js": "/kido-village-new/static/js/runtime-main.9ee0b045.js",
+    "runtime-main.js.map": "/kido-village-new/static/js/runtime-main.9ee0b045.js.map",
+    "static/css/2.ec02d681.chunk.css": "/kido-village-new/static/css/2.ec02d681.chunk.css",
+    "static/js/2.e95c71d2.chunk.js": "/kido-village-new/static/js/2.e95c71d2.chunk.js",
+    "static/js/2.e95c71d2.chunk.js.map": "/kido-village-new/static/js/2.e95c71d2.chunk.js.map",
+    "static/js/3.d341f73d.chunk.js": "/kido-village-new/static/js/3.d341f73d.chunk.js",
+    "static/js/3.d341f73d.chunk.js.map": "/kido-village-new/static/js/3.d341f73d.chunk.js.map",
+    "index.html": "/kido-village-new/index.html",
+    "static/css/2.ec02d681.chunk.css.map": "/kido-village-new/static/css/2.ec02d681.chunk.css.map",
+    "static/css/main.ff4faef4.chunk.css.map": "/kido-village-new/static/css/main.ff4faef4.chunk.css.map",
+    "static/js/2.e95c71d2.chunk.js.LICENSE.txt": "/kido-village-new/static/js/2.e95c71d2.chunk.js.LICENSE.txt",
+    "static/media/POD-18.e0ab3a21.jpg": "/kido-village-new/static/media/POD-18.e0ab3a21.jpg",
+    "static/media/POD-19.f2b45c1c.jpg": "/kido-village-new/static/media/POD-19.f2b45c1c.jpg",
+    "static/media/POD-8.ad7e1ab6.jpg": "/kido-village-new/static/media/POD-8.ad7e1ab6.jpg",
+    "static/media/App.css": "/kido-village-new/static/media/start-journey-bg.8136355e.jpg",
+    "static/media/contact-banner.338bec77.jpg": "/kido-village-new/static/media/contact-banner.338bec77.jpg",
+    "static/media/kid-play.668ab328.png": "/kido-village-new/static/media/kid-play.668ab328.png",
+    "static/media/kido-village-logo.19e109b7.png": "/kido-village-new/static/media/kido-village-logo.19e109b7.png",
+    "static/media/kids-ball.f5e7b0a0.png": "/kido-village-new/static/media/kids-ball.f5e7b0a0.png",
+    "static/media/parent-banner.88e43b97.jpg": "/kido-village-new/static/media/parent-banner.88e43b97.jpg",
+    "static/media/parents-banner.b2a617a1.jpg": "/kido-village-new/static/media/parents-banner.b2a617a1.jpg",
+    "static/media/pre-schools-banner-new.a5341539.jpg": "/kido-village-new/static/media/pre-schools-banner-new.a5341539.jpg",
+    "static/media/teacher-banner.e748de2c.jpg": "/kido-village-new/static/media/teacher-banner.e748de2c.jpg",
+    "static/media/teachers-banner-new.4b070d5d.jpg": "/kido-village-new/static/media/teachers-banner-new.4b070d5d.jpg",
+    "static/media/testi-profile1.222fec55.jpg": "/kido-village-new/static/media/testi-profile1.222fec55.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9ee0b045.js",
+    "static/css/2.ec02d681.chunk.css",
+    "static/js/2.e95c71d2.chunk.js",
+    "static/css/main.ff4faef4.chunk.css",
+    "static/js/main.80b3b2c3.chunk.js"
+  ]
+}
