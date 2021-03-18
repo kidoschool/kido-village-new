@@ -104,7 +104,7 @@ function Parent(props) {
         
             const indexOfLastTodo  = activePage * todosPerPage;
             const indexOfFirstTodo = indexOfLastTodo - todosPerPage;
-            const currentTodos     = teachersPodData.slice( indexOfFirstTodo, indexOfLastTodo );
+            const listofTeachers     = teachersPodData.slice( indexOfFirstTodo, indexOfLastTodo );
 
             const handlePageChange1 = ( pageNumber ) => {
                 setCurrentPage( pageNumber )
@@ -253,9 +253,9 @@ function Parent(props) {
                 <div id="teacherpodlist" style={{display: "none"}}>
                 <div className="row justify-content-center">
                     <div className="col-lg-5">
-                    {/* {Object.entries(currentTodos).filter(teacher => teacher[1].status == 1).map(item => {
+                    {/* {Object.entries(listofTeachers).filter(teacher => teacher[1].status == 1).map(item => {
                         console.log(item[1].name); */}
-                    {Object.entries(currentTodos).map((item) => {
+                    {Object.entries(listofTeachers).map((item) => {
                     return(
                     <div className="card my-2 shadow">
                         <div className="row no-gutters">

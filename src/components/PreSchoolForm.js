@@ -111,6 +111,14 @@ function PreSchoolForm(props) {
               var form = new FormData();
               form.append("api", "upload_file");
 
+              if(latlongListing[$("#area").val()]){
+                var lat = latlongListing[$("#area").val()].lat;
+                var long = latlongListing[$("#area").val()].long;
+              }else{
+                var lat = "0.00";
+                var long = "0.00";
+              }
+
               form.append("name", $("#name").val());
               form.append("email", $("#email").val());
               form.append("contact", $("#contact").val());
@@ -120,8 +128,8 @@ function PreSchoolForm(props) {
               form.append("area", $("#area").val());
               form.append("location_type", "APPROXIMATE");
               form.append("country", "1");
-              form.append("latitude", latlongListing[$("#area").val()].lat);
-              form.append("longitude", latlongListing[$("#area").val()].long);
+              form.append("latitude", lat);
+              form.append("longitude", long);
 
 
       

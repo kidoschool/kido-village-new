@@ -72,8 +72,17 @@ function FormEnquiry(props) {
               
               // $("#upload_cv")[0].files.length ? form.append("CV", $("#upload_cv")[0].files[0]) : false;
 
-              if(document.getElementById("upload_cv").files.length){
-                form.append("CV", document.getElementById("upload_cv").files[0]);
+              // if(document.getElementById("upload_cv").files.length){
+              //   form.append("CV", document.getElementById("upload_cv").files[0]);
+              // }
+
+
+              if(latlongListing[$("#area").val()]){
+                var lat = latlongListing[$("#area").val()].lat;
+                var long = latlongListing[$("#area").val()].long;
+              }else{
+                var lat = "0.00";
+                var long = "0.00";
               }
 
               form.append("name", $("#name").val());
@@ -87,8 +96,8 @@ function FormEnquiry(props) {
               form.append("work_experience", $("#work_experience").val());
               form.append("location_type", "APPROXIMATE");
               form.append("country", "1");
-              form.append("latitude", latlongListing[$("#area").val()].lat);
-              form.append("longitude", latlongListing[$("#area").val()].long);
+              form.append("latitude", lat);
+              form.append("longitude", long);
 
 
       
@@ -300,13 +309,13 @@ function FormEnquiry(props) {
             </select>
         </div>
         
-        <div className="form-group">
+        {/* <div className="form-group">
         <label for="upload_cv">Upload your Cv *</label>
             <div className="custom-file">
             <input type="file" className="custom-file-input" name="upload_cv" id="upload_cv"/>
             <label className="custom-file-label" for="customFile">Choose file</label>
             </div>
-        </div>
+        </div> */}
         
 
     <button type="submit" name="submit" className="my-btn">Submit</button>
