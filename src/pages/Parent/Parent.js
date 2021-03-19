@@ -87,6 +87,7 @@ function Parent(props) {
 
             axios(config)
                 .then((response) => {
+                    setCurrentPage(1)
                     setTeachersPodData((response.data).filter(teacher => teacher.status == 1));
                     SetMapCenter({lat:response.data[0].latitude,lng: response.data[0].longitude});
                     console.log(response.data);
@@ -169,8 +170,8 @@ function Parent(props) {
                     <div className="col-lg-10">
                         <h1 className="banner-head pb-2">It takes a village to raise a child </h1>
                         <p>At Kido Village, we hope to transform the future of our children by making early interventions in the form of lots of love, care and exceptional education. </p>
-                        <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment – a Kido Village pod is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods provide the right creative environment that helps learning and development of a young brain.</p>
-                        <p>Each of our pods provide the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning.</p>
+                        <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment Kido Village Pod / Preschool is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods provide the right creative environment that helps learning and development of a young brain.</p>
+                        <p>Each of our pods / Preschool provide the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning.</p>
                     </div>
                 </div>
             </div>
@@ -253,19 +254,17 @@ function Parent(props) {
                 <div id="teacherpodlist" style={{display: "none"}}>
                 <div className="row justify-content-center">
                     <div className="col-lg-5">
-                    {/* {Object.entries(listofTeachers).filter(teacher => teacher[1].status == 1).map(item => {
-                        console.log(item[1].name); */}
                     {Object.entries(listofTeachers).map((item) => {
                     return(
                     <div className="card my-2 shadow">
                         <div className="row no-gutters">
                             <div className="col-md-4">
-                                <img src={PodBanner1} width="200" className="find-pod-img img-fluid" alt=""/>
+                                <img src={"https://kidovillage.com/"+item[1].place_image_1} width="200" className="find-pod-img img-fluid" alt=""/>
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
                                     <h4 className="card-title">{item[1].name}</h4>
-                                    <p className="card-text">Description</p>
+                                    <p className="card-text text-primary">{item[1].position_of_teacher === "" ? "Pod" : item[1].position_of_teacher}</p>
                                     <Link to={{ pathname: `/LoginRegister/${item[1].name}`}}  data-toggle="modal" data-target="#exampleModal" className="my-btn-info center">Schedule a Tour</Link>
                                 </div>
                             </div>
@@ -408,7 +407,7 @@ function Parent(props) {
 
         <section className="video-card py-5">
             <div className="container">
-            <h1 className="banner-head text-center pb-3">Hear from our Parent</h1>
+            <h1 className="banner-head text-center pb-3">Hear from our Parents</h1>
                 <div className="row justify-content-center">
                     <div className="col-lg-12">
                     <div className="card-deck">

@@ -143,7 +143,7 @@ function PreSchoolForm(props) {
               "data": form,
               success: function (response) {
                   // window.location = "thankyou-msg.html";
-                  history.push('/thank-you');
+                  history.push('/thankyou');
                   // alert("completed");
               },
               error: function (xhr, ajaxOptions, thrownError) {

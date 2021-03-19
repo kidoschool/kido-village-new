@@ -354,7 +354,7 @@ function Teacher(props) {
 
         <section className="video-card py-5">
             <div className="container">
-            <h1 className="banner-head text-center pb-3">Hear from our Teacher</h1>
+            <h1 className="banner-head text-center pb-3">Hear from our Teachers</h1>
                 <div className="row justify-content-center">
                     <div className="col-lg-12">
                     <div className="card-deck">

@@ -318,7 +318,7 @@ function FormEnquiry(props) {
         </div> */}
         
 
-    <button type="submit" name="submit" className="my-btn">Submit</button>
+    <button type="submit" name="submit" className="btn my-btn">Submit</button>
     </form>	     
 
             </>
