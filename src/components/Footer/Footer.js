@@ -26,7 +26,7 @@ function Footer(props) {
                                   <div className="col-lg-3">
                                 <li><Link className="" to="/">Home</Link></li>
                                   <li><Link className="" to="/parent">Parents</Link></li>
-                                  <li><Link className="" to="/teacher">Teachers</Link></li>
+                                  <li><Link className="" to="/pods">Pods</Link></li>
                                   </div>
                                   <div className="col-lg-7">
                                   <li><Link className="" to="/Pre-school">Pre-School</Link></li>

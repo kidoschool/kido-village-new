@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import ContactBanner from '../../assets/contact-banner.jpg';
+import ContactBanner from '../../assets/contact-us-banner.jpg';
 import $ from "jquery";
 import validate from 'jquery-validation';
 

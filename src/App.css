@@ -11,7 +11,7 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 600;
     line-height: 1.5;
     font-family: 'Montserrat', sans-serif;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     color: #000;
 }
 h1, .h1 {font-size: 1.9em;}
@@ -425,6 +425,10 @@ a[rel="noopener"],.gmnoprint{
   visibility: hidden;
 }
 
+
+a.fap-text{
+  text-decoration: none;
+}
 /*--------footer-area end---------*/
 
 

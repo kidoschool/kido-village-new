@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
-import PodBanner1 from '../../assets/POD-19.jpg';
+import PodBanner1 from '../../assets/POD-18.jpg';
 import PodBanner2 from '../../assets/POD-8.jpg';
-import PodBanner3 from '../../assets/POD-18.jpg';
+import PodBanner3 from '../../assets/POD-19.jpg';
 import PreSchoolForm from "../../components/PreSchoolForm";
 import testiProfile1 from '../../assets/testi-profile1.jpg';
 import AOS from "aos";
@@ -130,7 +130,7 @@ function PreSchool(props) {
                         <h1 className="banner-head py-3">Why Kido?</h1>
                         <ul className="k-advantage">
                             <li>Trusted by over 15,000 families</li>
-                            <li>Lowest franchise fee in the industry - 5% for Kido vs up to 25% elsewhere</li>
+                            <li>Lowest franchise fee in the industry - less than 5% for Kido vs up to 25% elsewhere</li>
                             <li>Over 5,000 marketing templates to help you build the business</li>
                             <li>Comprehensive App Suite that takes cares of everything from enquiries to pedagogy</li>
                             <li>Quality control assurance through a comprehensive app-based model</li>
@@ -165,7 +165,7 @@ function PreSchool(props) {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-10 text-center">
-                    <h1 className="banner-head pb-4">What Our Teachers Say About Our Kido Village</h1>
+                    <h1 className="banner-head pb-4">Our Testimonials</h1>
                     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                         <ol className="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -247,19 +247,20 @@ function PreSchool(props) {
 
         <section className="video-card py-5">
             <div className="container">
-            <h1 className="banner-head text-center pb-3">Hear from our Teachers</h1>
+            <h1 className="banner-head text-center pb-3">Hear from our teachers / parents</h1>
                 <div className="row justify-content-center">
                     <div className="col-lg-12">
                     <div className="card-deck">
                         <div className="card">
-                            <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/I7euUBZq4sw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                            <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/-HsoPi2Amc4" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             {/* <div className="card-body">
                             <h3 className="card-title">Kïdo Village Pod owner.</h3>
                             <p className="card-text">Ms Arbin Banu, shares her experience of starting her own micro preschool in provided, she joins the ever expanding group of female eduprenuers who trust Kido Village platform to help them set up their own Micro Preschool from the convenience of their home.</p>
                             </div> */}
                         </div>
                         <div className="card">
-                        <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/CbyUND4AvPY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/vglc5eR8HTM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
                             {/* <div className="card-body">
                             <h3 className="card-title">Parent, Kïdo.</h3>
                             <p className="card-text">Ms Sameera Reddy, Kïdo Parent talks to India CEO Mr Jeetu Karsan about parenting, Kïdo and more. The talk demonstrates our values, our principles and our commitment to educate young children in the best possible way everywhere.</p>

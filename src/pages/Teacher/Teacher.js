@@ -272,7 +272,7 @@ function Teacher(props) {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-10 text-center">
-                    <h1 className="banner-head pb-4">What Our Teachers Say About Our Kido Village</h1>
+                    <h1 className="banner-head pb-4">What our teachers say about our kido village</h1>
                     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                         <ol className="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -354,7 +354,7 @@ function Teacher(props) {
 
         <section className="video-card py-5">
             <div className="container">
-            <h1 className="banner-head text-center pb-3">Hear from our Teachers</h1>
+            <h1 className="banner-head text-center pb-3">Hear from our teachers</h1>
                 <div className="row justify-content-center">
                     <div className="col-lg-12">
                     <div className="card-deck">

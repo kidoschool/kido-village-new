@@ -3,6 +3,8 @@ import $ from "jquery";
 import Maps from "../../components/Map/Maps";
 import { AuthContext } from '../../context/Auth';
 import validate from 'jquery-validation';
+import tProfile from '../../assets/t-pod1.jpg';
+
 
 
 function TeachersInfo(props) {
@@ -95,19 +97,24 @@ axios(config)
 
         <section className="main_banner">
             <div id="carouselExampleControls" className="carousel slide carousel-fade" data-ride="carousel">
+                <ol className="carousel-indicators">
+                    <li data-target="#carouselExampleControls" data-slide-to="0" className="active"></li>
+                    <li data-target="#carouselExampleControls" data-slide-to="1"></li>
+                    {/* <li data-target="#carouselExampleControls" data-slide-to="2"></li> */}
+                </ol>
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <div className="overlay1"></div>
+                        {/* <div className="overlay1"></div> */}
                         <img src={"https://kidovillage.com/"+selectedTeacher.place_image_1} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
                         <div className="carousel-caption d-md-block">
-                            <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1>
+                            {/* <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1> */}
                         </div>
                     </div>
                     <div className="carousel-item">
-                        <div className="overlay1"></div>
+                        {/* <div className="overlay1"></div> */}
                         <img src={"https://kidovillage.com/"+selectedTeacher.place_image_2} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
                         <div className="carousel-caption d-md-block">
-                            <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1>
+                            {/* <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1> */}
                         </div>
                     </div>
                 </div>
@@ -127,9 +134,9 @@ axios(config)
             <div className="row justify-content-center">
                 <div className="col-lg-6 text-center">
                 <h1 className="title">{sel_teach}</h1>
-                <div className="t-profile-img py-4">
+                {/* <div className="t-profile-img py-4">
                     <img src={"https://kidovillage.com/"+selectedTeacher.upload_image} width="200" className="t-profile img-fluid" alt="teacher-profile"/>
-                </div>
+                </div> */}
                     <p>{selectedTeacher.address1}</p>
                     <i>{selectedTeacher.email}</i>
                 </div>

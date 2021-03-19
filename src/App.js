@@ -32,7 +32,7 @@ function App() {
           <Route exact path="/"  component={Home} />
           {/* <Route exact path="/home2"  component={HomeOld} /> */}
           <Route exact path="/parent"  component={Parent} />
-          <Route exact path="/teacher"  component={Teacher} />
+          <Route exact path="/pods"  component={Teacher} />
           <Route exact path="/Pre-school"  component={PreSchool} />
           <Route exact path="/contact"  component={Contact} />
           <Route exact path="/privacy-policy"  component={PrivacyPolicy} />

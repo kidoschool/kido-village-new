@@ -10,6 +10,7 @@ import Maps from "../../components/Map/Maps";
 import AOS from "aos";
 import $ from "jquery";
 import "aos/dist/aos.css";
+import ComingSoon from '../../assets/ComingSoon.jpg';
 // import LoginRegister from '../LoginRegister/LoginRegister';
 
 
@@ -170,8 +171,8 @@ function Parent(props) {
                     <div className="col-lg-10">
                         <h1 className="banner-head pb-2">It takes a village to raise a child </h1>
                         <p>At Kido Village, we hope to transform the future of our children by making early interventions in the form of lots of love, care and exceptional education. </p>
-                        <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment Kido Village Pod / Preschool is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods provide the right creative environment that helps learning and development of a young brain.</p>
-                        <p>Each of our pods / Preschool provide the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning.</p>
+                        <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment Kido Village pod / preschool is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods / preschool provide the right creative environment that helps learning and development of a young brain.</p>
+                        <p>Each of our pods / preschool provide the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning.</p>
                     </div>
                 </div>
             </div>
@@ -259,7 +260,8 @@ function Parent(props) {
                     <div className="card my-2 shadow">
                         <div className="row no-gutters">
                             <div className="col-md-4">
-                                <img src={"https://kidovillage.com/"+item[1].place_image_1} width="200" className="find-pod-img img-fluid" alt=""/>
+                                {/* <img src={"https://kidovillage.com/"+item[1].place_image_1} width="200" className="find-pod-img img-fluid" alt=""/> */}
+                                <img src={ComingSoon} width="200" className="find-pod-img img-fluid" alt=""/>
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
@@ -325,7 +327,7 @@ function Parent(props) {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-10 text-center">
-                    <h1 className="banner-head pb-4">What Our Parents Say About Our Kido Village</h1>
+                    <h1 className="banner-head pb-4">What our parents say about our kido village</h1>
                     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                         <ol className="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -407,7 +409,7 @@ function Parent(props) {
 
         <section className="video-card py-5">
             <div className="container">
-            <h1 className="banner-head text-center pb-3">Hear from our Parents</h1>
+            <h1 className="banner-head text-center pb-3">Hear from our parents</h1>
                 <div className="row justify-content-center">
                     <div className="col-lg-12">
                     <div className="card-deck">
@@ -419,7 +421,8 @@ function Parent(props) {
                             </div> */}
                         </div>
                         <div className="card">
-                        <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/CbyUND4AvPY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                        <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/vglc5eR8HTM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+
                             {/* <div className="card-body">
                             <h3 className="card-title">Parent, Kïdo.</h3>
                             <p className="card-text">Ms Sameera Reddy, Kïdo Parent talks to India CEO Mr Jeetu Karsan about parenting, Kïdo and more. The talk demonstrates our values, our principles and our commitment to educate young children in the best possible way everywhere.</p>
