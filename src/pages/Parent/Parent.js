@@ -256,12 +256,12 @@ function Parent(props) {
                 <div className="row justify-content-center">
                     <div className="col-lg-5">
                     {Object.entries(listofTeachers).map((item) => {
+                        var podThumb = item[1].place_image_1 == "uploads/profile/85/place_image_1/POD-20-1612257536.jpg" ? "https://kidovillage.com/uploads/profile/85/coming_soon.jpg" : "https://kidovillage.com/"+item[1].place_image_1;
                     return(
                     <div className="card my-2 shadow">
                         <div className="row no-gutters">
                             <div className="col-md-4">
-                                {/* <img src={"https://kidovillage.com/"+item[1].place_image_1} width="200" className="find-pod-img img-fluid" alt=""/> */}
-                                <img src={ComingSoon} width="200" className="find-pod-img img-fluid" alt=""/>
+                                <img src={podThumb} width="200" className="find-pod-img img-fluid" alt=""/>
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
@@ -344,11 +344,11 @@ function Parent(props) {
                                 </div>
                                 <div className="col-lg-7 pt-2">
                                     <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
-                                    <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
+                                    <i>The thing I love the most about Kido Village is that the pod owner truly cares about and loves my children. I could think of no better place to give my kids a head start in life.</i>
                                     </div>
                                     <div className="text-right pt-4">
-                                        <h3>Parent Name</h3>
-                                        <small className="text-primary"><i>-from Bandra</i></small>
+                                        <h3>Roshni thakkar</h3>
+                                        <small className="text-primary"><i>-from Goregaon</i></small>
                                     </div>
                                 </div>
                            </div>
@@ -362,11 +362,11 @@ function Parent(props) {
                                 </div>
                                 <div className="col-lg-7 pt-2">
                                     <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
-                                    <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
+                                    <i>It was our first time enrolling our son in a pod so we were nervous at first, but the Kido Village Pod owner was so incredible that she soon made us feel comfortable. Our son is excited every morning about going to the Pod. He’s becoming more social and educated each day. We are very thankful to have discovered Kido Village. We highly recommend this concept.</i>
                                     </div>
                                     <div className="text-right pt-4">
-                                        <h3>Parent Name</h3>
-                                        <small className="text-primary"><i>-from Bandra</i></small>
+                                        <h3>Shraddha gupta</h3>
+                                        <small className="text-primary"><i>-from Borivali</i></small>
                                     </div>
                                 </div>
                            </div>
@@ -380,11 +380,11 @@ function Parent(props) {
                                 </div>
                                 <div className="col-lg-7 pt-2">
                                     <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
-                                    <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
+                                    <i>My child has learned so much from the Kido Village program. The minute he started at Kido Village, which was at 18 months, we saw changes in his independence and confidence. He loves his pod owner and talks about her to this day.</i>
                                     </div>
                                     <div className="text-right pt-4">
-                                        <h3>Parent Name</h3>
-                                        <small className="text-primary"><i>-from Bandra</i></small>
+                                        <h3>Ankit sharma</h3>
+                                        <small className="text-primary"><i>-from Hoskote</i></small>
                                     </div>
                                 </div>
                            </div>

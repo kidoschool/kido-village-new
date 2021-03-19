@@ -289,10 +289,10 @@ function Teacher(props) {
                                 </div>
                                 <div className="col-lg-7 pt-2">
                                     <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
-                                    <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
+                                    <i>Teaching children has always been my passion since I was a little girl. Kido Village has given me confidence to start my own pod and equip me with all the training and guidance on how to setup my own pod with international standards.</i>
                                     </div>
                                     <div className="text-right pt-4">
-                                        <h3>Teachers Name</h3>
+                                        <h3>Debjani Chatterjee</h3>
                                         <small className="text-primary"><i>-from Bandra</i></small>
                                     </div>
                                 </div>
@@ -307,10 +307,10 @@ function Teacher(props) {
                                 </div>
                                 <div className="col-lg-7 pt-2">
                                     <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
-                                    <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
+                                    <i>I recently quit my job because of the wonderful opportunity given to me by Kido Village. I was always passionate about teaching and I wanted to start something of my own. I am very much excited to start my new venture with Kido.</i>
                                     </div>
                                     <div className="text-right pt-4">
-                                        <h3>Teachers Name</h3>
+                                        <h3>Prajakta Subhedar</h3>
                                         <small className="text-primary"><i>-from Bandra</i></small>
                                     </div>
                                 </div>
@@ -325,10 +325,10 @@ function Teacher(props) {
                                 </div>
                                 <div className="col-lg-7 pt-2">
                                     <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
-                                    <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
+                                    <i>I always wanted to start my own business. Thanks to Kido Village for providing me this wonderful opportunity to start my own pod. I am so excited to be a part of this venture as Kido Village is trying to bring back the schooling experience to the pre-schoolers in their neighbourhood.</i>
                                     </div>
                                     <div className="text-right pt-4">
-                                        <h3>Teachers Name</h3>
+                                        <h3>Harika</h3>
                                         <small className="text-primary"><i>-from Bandra</i></small>
                                     </div>
                                 </div>

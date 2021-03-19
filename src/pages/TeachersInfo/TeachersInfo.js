@@ -137,7 +137,7 @@ axios(config)
                 {/* <div className="t-profile-img py-4">
                     <img src={"https://kidovillage.com/"+selectedTeacher.upload_image} width="200" className="t-profile img-fluid" alt="teacher-profile"/>
                 </div> */}
-                    <p>{selectedTeacher.address1}</p>
+                    <p>{selectedTeacher.about_teacher}</p>
                     <i>{selectedTeacher.email}</i>
                 </div>
             </div>
