@@ -2,7 +2,9 @@ import React, {useState ,useEffect} from 'react';
 import PodBanner1 from '../../assets/POD-18.jpg';
 import PodBanner2 from '../../assets/POD-8.jpg';
 import PodBanner3 from '../../assets/POD-19.jpg';
-import testiProfile1 from '../../assets/testi-profile1.jpg';
+import testiProfile1 from '../../assets/parent1.png';
+import testiProfile2 from '../../assets/parent3.png';
+import testiProfile3 from '../../assets/parent2.png';
 import FormEnquiry from "../../components/FormEnquiry";
 import Pagination from "react-js-pagination";
 import {Link} from "react-router-dom";
@@ -10,8 +12,6 @@ import Maps from "../../components/Map/Maps";
 import AOS from "aos";
 import $ from "jquery";
 import "aos/dist/aos.css";
-import ComingSoon from '../../assets/ComingSoon.jpg';
-// import LoginRegister from '../LoginRegister/LoginRegister';
 
 
 function Parent(props) {
@@ -357,7 +357,7 @@ function Parent(props) {
                             <div className="row">
                                 <div className="col-lg-4">
                                     <div className="pic">
-                                        <img src={testiProfile1} width="300" className="img-fluid"/>
+                                        <img src={testiProfile2} width="300" className="img-fluid"/>
                                     </div>
                                 </div>
                                 <div className="col-lg-7 pt-2">
@@ -375,7 +375,7 @@ function Parent(props) {
                             <div className="row">
                                 <div className="col-lg-4">
                                     <div className="pic">
-                                        <img src={testiProfile1} width="300" className="img-fluid"/>
+                                        <img src={testiProfile3} width="300" className="img-fluid"/>
                                     </div>
                                 </div>
                                 <div className="col-lg-7 pt-2">

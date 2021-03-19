@@ -2,7 +2,9 @@ import React, {useEffect, useState} from 'react';
 import PodBanner1 from '../../assets/POD-8.jpg';
 import PodBanner2 from '../../assets/POD-18.jpg';
 import PodBanner3 from '../../assets/POD-19.jpg';
-import testiProfile1 from '../../assets/testi-profile1.jpg';
+import testiProfile1 from '../../assets/devjani.png';
+import testiProfile2 from '../../assets/prajikta.png';
+import testiProfile3 from '../../assets/Shalini.jpg';
 import FormEnquiry from "../../components/FormEnquiry";
 import AOS from "aos";
 import $ from "jquery";
@@ -293,7 +295,7 @@ function Teacher(props) {
                                     </div>
                                     <div className="text-right pt-4">
                                         <h3>Debjani Chatterjee</h3>
-                                        <small className="text-primary"><i>-from Bandra</i></small>
+                                        <small className="text-primary"><i>-from pune</i></small>
                                     </div>
                                 </div>
                            </div>
@@ -302,7 +304,7 @@ function Teacher(props) {
                             <div className="row">
                                 <div className="col-lg-4">
                                     <div className="pic">
-                                        <img src={testiProfile1} width="300" className="img-fluid"/>
+                                        <img src={testiProfile2} width="300" className="img-fluid"/>
                                     </div>
                                 </div>
                                 <div className="col-lg-7 pt-2">
@@ -311,7 +313,7 @@ function Teacher(props) {
                                     </div>
                                     <div className="text-right pt-4">
                                         <h3>Prajakta Subhedar</h3>
-                                        <small className="text-primary"><i>-from Bandra</i></small>
+                                        <small className="text-primary"><i>-from Thane</i></small>
                                     </div>
                                 </div>
                            </div>
@@ -320,16 +322,16 @@ function Teacher(props) {
                             <div className="row">
                                 <div className="col-lg-4">
                                     <div className="pic">
-                                        <img src={testiProfile1} width="300" className="img-fluid"/>
+                                        <img src={testiProfile3} width="300" className="img-fluid"/>
                                     </div>
                                 </div>
                                 <div className="col-lg-7 pt-2">
                                     <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
-                                    <i>I always wanted to start my own business. Thanks to Kido Village for providing me this wonderful opportunity to start my own pod. I am so excited to be a part of this venture as Kido Village is trying to bring back the schooling experience to the pre-schoolers in their neighbourhood.</i>
+                                    <i>I've taken my passion of teaching to a new level by starting my own micro preschool with the help of Kido Village. The support from the marketing team has been truly great in helping me promote my Kido Village Pod.  I hope to make this  global curriculum easily accessible to all my students in Bhopal.</i>
                                     </div>
                                     <div className="text-right pt-4">
-                                        <h3>Harika</h3>
-                                        <small className="text-primary"><i>-from Bandra</i></small>
+                                        <h3>Shalini</h3>
+                                        <small className="text-primary"><i>-from Bhopal</i></small>
                                     </div>
                                 </div>
                            </div>
