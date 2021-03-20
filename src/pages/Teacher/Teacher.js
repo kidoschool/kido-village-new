@@ -295,7 +295,7 @@ function Teacher(props) {
                                     </div>
                                     <div className="text-right pt-4">
                                         <h3>Debjani Chatterjee</h3>
-                                        <small className="text-primary"><i>-from pune</i></small>
+                                        <small className="text-primary"><i>-from Pune</i></small>
                                     </div>
                                 </div>
                            </div>

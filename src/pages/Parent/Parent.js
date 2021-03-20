@@ -293,7 +293,7 @@ function Parent(props) {
                 <div  id="podnotfounderror" style={{display: "none"}}>
                 <div className="row justify-content-center pt-3">
                     <div className="col-lg-8 text-center">
-                        <span className="noTaskAdded p-5"><i>Unfortunately we haven't found any matching teachers profile in your area. We will get back to you with more details soon</i></span>
+                        <span className="noTaskAdded p-5"><i>Unfortunately we haven't found any pod or preschool in your area. We will get back to you with more details soon</i></span>
                     </div>
                 </div>
                 </div>

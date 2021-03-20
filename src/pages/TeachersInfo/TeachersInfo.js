@@ -133,7 +133,7 @@ axios(config)
         <div className="container">
             <div className="row justify-content-center">
                 <div className="col-lg-6 text-center">
-                <h1 className="title">{sel_teach}</h1>
+                <h1 className="title">{sel_teach} Kido Village {selectedTeacher.position_of_teacher === "" ? "Pod" : selectedTeacher.position_of_teacher}</h1>
                 {/* <div className="t-profile-img py-4">
                     <img src={"https://kidovillage.com/"+selectedTeacher.upload_image} width="200" className="t-profile img-fluid" alt="teacher-profile"/>
                 </div> */}

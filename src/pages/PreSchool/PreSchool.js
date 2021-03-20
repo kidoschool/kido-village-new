@@ -3,7 +3,9 @@ import PodBanner1 from '../../assets/POD-18.jpg';
 import PodBanner2 from '../../assets/POD-8.jpg';
 import PodBanner3 from '../../assets/POD-19.jpg';
 import PreSchoolForm from "../../components/PreSchoolForm";
-import testiProfile1 from '../../assets/testi-profile1.jpg';
+import testiProfile1 from '../../assets/devjani.png';
+import testiProfile3 from '../../assets/Shalini.jpg';
+import testiProfile2 from '../../assets/parent2.png';
 import AOS from "aos";
 import $ from "jquery";
 import "aos/dist/aos.css";
@@ -182,11 +184,11 @@ function PreSchool(props) {
                                 </div>
                                 <div className="col-lg-7 pt-2">
                                     <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
-                                    <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
+                                    <i>Teaching children has always been my passion since I was a little girl. Kido Village has given me confidence to start my own pod and equip me with all the training and guidance on how to setup my own pod with international standards.</i>
                                     </div>
                                     <div className="text-right pt-4">
-                                        <h3>Teachers Name</h3>
-                                        <small className="text-primary"><i>-from Bandra</i></small>
+                                        <h3>Debjani Chatterjee</h3>
+                                        <small className="text-primary"><i>-from Pune</i></small>
                                     </div>
                                 </div>
                            </div>
@@ -195,16 +197,16 @@ function PreSchool(props) {
                             <div className="row">
                                 <div className="col-lg-4">
                                     <div className="pic">
-                                        <img src={testiProfile1} width="300" className="img-fluid"/>
+                                        <img src={testiProfile2} width="300" className="img-fluid"/>
                                     </div>
                                 </div>
                                 <div className="col-lg-7 pt-2">
                                     <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
-                                    <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
+                                    <i>My child has learned so much from the Kido Village program. The minute he started at Kido Village, which was at 18 months, we saw changes in his independence and confidence. He loves his pod owner and talks about her to this day.</i>
                                     </div>
                                     <div className="text-right pt-4">
-                                        <h3>Teachers Name</h3>
-                                        <small className="text-primary"><i>-from Bandra</i></small>
+                                        <h3>Ankit sharma</h3>
+                                        <small className="text-primary"><i>-from Hoskote</i></small>
                                     </div>
                                 </div>
                            </div>
@@ -213,16 +215,16 @@ function PreSchool(props) {
                             <div className="row">
                                 <div className="col-lg-4">
                                     <div className="pic">
-                                        <img src={testiProfile1} width="300" className="img-fluid"/>
+                                        <img src={testiProfile3} width="300" className="img-fluid"/>
                                     </div>
                                 </div>
                                 <div className="col-lg-7 pt-2">
                                     <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
-                                    <i>Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit Incididunt anim dolor sint sit.</i>
+                                    <i>I've taken my passion of teaching to a new level by starting my own micro preschool with the help of Kido Village. The support from the marketing team has been truly great in helping me promote my Kido Village Pod.  I hope to make this  global curriculum easily accessible to all my students in Bhopal.</i>
                                     </div>
                                     <div className="text-right pt-4">
-                                        <h3>Teachers Name</h3>
-                                        <small className="text-primary"><i>-from Bandra</i></small>
+                                        <h3>Shalini</h3>
+                                        <small className="text-primary"><i>-from Bhopal</i></small>
                                     </div>
                                 </div>
                            </div>
@@ -272,18 +274,6 @@ function PreSchool(props) {
             </div>
         </section>
         
-        {/* <section className="know-more py-5">
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-lg-10 text-center">
-                    <h1 className="banner-head pb-4">Would you like to know more?</h1>
-                    <Link to="/faq" className="my-btn center">Click here for FAQs</Link>
-                    </div>
-                </div>
-            </div>
-        </section> */}
-
-
                    
 
     <div id="mySidenav" className="sidenav bg-red border-right">
