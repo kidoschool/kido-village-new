@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import $ from "jquery";
 import validate from 'jquery-validation';
+import datetimepicker from 'jquery-datetimepicker';
 import { withRouter, useHistory } from "react-router-dom";
 
 function FormEnquiry(props) {
@@ -205,6 +206,11 @@ function FormEnquiry(props) {
                       }
                   });
             });
+
+
+            if ( $('[type="date"]').prop('type') != 'date' ) {
+              $('[type="date"]').datetimepicker();
+          }
     
     
 
