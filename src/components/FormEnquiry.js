@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import $ from "jquery";
 import validate from 'jquery-validation';
-import datetimepicker from 'jquery-datetimepicker';
 import { withRouter, useHistory } from "react-router-dom";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 function FormEnquiry(props) {
 
@@ -12,6 +13,8 @@ function FormEnquiry(props) {
        //   const [selectState, setSelectState] = useState("");
        const [selectCity, setSelectCity] = useState("");
        const [cityData, setCityData] = useState("");
+
+       const [startDate, setStartDate] = useState("");
 
        const history = useHistory();
 
@@ -208,12 +211,6 @@ function FormEnquiry(props) {
             });
 
 
-            if ( $('[type="date"]').prop('type') != 'date' ) {
-              $('[type="date"]').datetimepicker();
-          }
-    
-    
-
 
     return(
         <>
@@ -233,7 +230,8 @@ function FormEnquiry(props) {
             </div>
             <div className="form-group">
             <label for="date_of_birth">Date of Birth</label>
-            <input type="date" className="form-control" name="date_of_birth" id="date_of_birth" placeholder="Date of Birth"/>
+            <DatePicker selected={startDate} onChange={date => setStartDate(date)}  className="form-control" name="date_of_birth" id="date_of_birth"/>
+            {/* <input type="text" className="form-control" name="date_of_birth" id="date_of_birth" placeholder="Date of Birth"/> */}
             </div>
             <div className="form-group">
             <label for="stateselect">Select State</label>

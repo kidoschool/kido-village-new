@@ -300,7 +300,16 @@ h1.banner-head1{
   background-color: #962A30!important;
 }
 
+.react-datepicker-wrapper {
+  display: initial;
+  padding: 0;
+  border: 0;
+}
 
+a.cookie-href{
+text-decoration: none;
+color: #962A30;
+}
 
 .testimonial .pic:after{
   content: "";

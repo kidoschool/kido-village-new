@@ -4,15 +4,20 @@ import Maps from "../../components/Map/Maps";
 import { AuthContext } from '../../context/Auth';
 import validate from 'jquery-validation';
 import tProfile from '../../assets/t-pod1.jpg';
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 
 
 function TeachersInfo(props) {
           
     const { currentUser } = useContext(AuthContext);
-    console.log(JSON.stringify(currentUser));
+    // console.log(JSON.stringify(currentUser));
 
   const teachersInfo = JSON.parse(localStorage.getItem("teachersPodData"));
+
+  const [startDate, setStartDate] = useState("");
+
 
   var sel_teach = props.match.params.tinfo;
 
@@ -175,7 +180,8 @@ axios(config)
                         <div class="form-row">
                             <div class="form-group col-md-6">
                             <label for="child_dob">Child's DOB</label>
-                            <input type="date" class="form-control" name="child_dob" id="child_dob" />
+                            <DatePicker selected={startDate} onChange={date => setStartDate(date)}  className="form-control" name="child_dob" id="child_dob"/>
+                            {/* <input type="date" class="form-control" name="child_dob" id="child_dob" /> */}
                             </div>
                             <div class="form-group col-md-6">
                             <label for="hours_perday">Hour's per day</label>

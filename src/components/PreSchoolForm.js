@@ -104,57 +104,85 @@ function PreSchoolForm(props) {
 
 
             const formSubmit = (event)=>{
-              var data;
+              // var data;
               
+              // event.stopPropagation();
+              // event.preventDefault();
+              // var form = new FormData();
+              // form.append("api", "upload_file");
+
+              // if(latlongListing[$("#area").val()]){
+              //   var lat = latlongListing[$("#area").val()].lat;
+              //   var long = latlongListing[$("#area").val()].long;
+              // }else{
+              //   var lat = "0.00";
+              //   var long = "0.00";
+              // }
+
+              // form.append("name", $("#name").val());
+              // form.append("email", $("#email").val());
+              // form.append("contact", $("#contact").val());
+              // form.append("state", $("#state").val());
+              // form.append("city", $("#city").val());
+              // form.append("position_of_teacher", "Preschool");
+              // form.append("area", $("#area").val());
+              // form.append("location_type", "APPROXIMATE");
+              // form.append("country", "1");
+              // form.append("latitude", lat);
+              // form.append("longitude", long);
+
+
+      
+              // var settings = {
+              // "url": "https://shop.kidovillage.com/kvshop_api/api.php",
+              // "method": "POST",
+              // "timeout": 0,
+              // "processData": false,
+              // "mimeType": "multipart/form-data",
+              // "contentType": false,
+              // "data": form,
+              // success: function (response) {
+              //     // window.location = "thankyou-msg.html";
+              //     history.push('/thankyou');
+              //     // alert("completed");
+              // },
+              // error: function (xhr, ajaxOptions, thrownError) {
+              //     alert(xhr.status);
+              //     alert(thrownError);
+              // }
+              // };
+      
+              // $.ajax(settings);
+      
+          
+              //email send
               event.stopPropagation();
               event.preventDefault();
+
+              var msg = "Inquiry received form user for Kidovillag Preschool with following details,<br>"
+              +" Name : "+$("#name").val()+"<br>Email : "+$("#email").val()+"<br>Contact No.:"+$("#contact").val()+"<br>State :   "+$("#state").find(":selected").text()+"<br>City :"+$("#city").find(":selected").text()+"<br>Pincode : "+$("#area").text();
+
               var form = new FormData();
-              form.append("api", "upload_file");
+              form.append("api", "send_email");
+              form.append("type", "inquiry");
+              form.append("message", msg);
 
-              if(latlongListing[$("#area").val()]){
-                var lat = latlongListing[$("#area").val()].lat;
-                var long = latlongListing[$("#area").val()].long;
-              }else{
-                var lat = "0.00";
-                var long = "0.00";
-              }
-
-              form.append("name", $("#name").val());
-              form.append("email", $("#email").val());
-              form.append("contact", $("#contact").val());
-              form.append("state", $("#state").val());
-              form.append("city", $("#city").val());
-              form.append("position_of_teacher", "Preschool");
-              form.append("area", $("#area").val());
-              form.append("location_type", "APPROXIMATE");
-              form.append("country", "1");
-              form.append("latitude", lat);
-              form.append("longitude", long);
-
-
-      
               var settings = {
-              "url": "https://shop.kidovillage.com/kvshop_api/api.php",
-              "method": "POST",
-              "timeout": 0,
-              "processData": false,
-              "mimeType": "multipart/form-data",
-              "contentType": false,
-              "data": form,
-              success: function (response) {
-                  // window.location = "thankyou-msg.html";
-                  history.push('/thankyou');
-                  // alert("completed");
-              },
-              error: function (xhr, ajaxOptions, thrownError) {
-                  alert(xhr.status);
-                  alert(thrownError);
-              }
+                "url": "https://shop.kidovillage.com/kvshop_api/api.php",
+                "method": "POST",
+                "timeout": 0,
+                "processData": false,
+                "mimeType": "multipart/form-data",
+                "contentType": false,
+                "data": form
               };
-      
-              $.ajax(settings);
-      
-          }
+
+              $.ajax(settings).done(function (response) {
+                history.push('/thankyou');
+                console.log(response);
+              });
+
+        }
     
 
 
