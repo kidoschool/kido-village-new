@@ -20,7 +20,7 @@ function Footer(props) {
                                   <h4 className="widget-title">GLOBAL OFFICES:</h4>
                                   <ul className="list-unstyled">
                                       <li><b>United Kingdom: </b>Kido Education Oakmoore Court Kingswood Road, Hampton Lovett, Driotwich, Worcestershire WR9 0QH, UK</li>
-                                      <li><b>Singapore: </b>Kido Education (Singapore) Pte. Ltd. Quantm education Pte. Ltd. #06-00 ASO Building, 8 Robinson Road, Singapore</li>
+                                      <li><b>Singapore: </b>Kido Education (Singapore) Pte. Ltd. <br/>Quantm education Pte. Ltd. <br/>#06-00 ASO Building, 8 Robinson Road, Singapore</li>
                                       <li><b>India: </b>KID-O EDUCATION PRIVATE LIMITED 204, 2nd Floor Concrete Heritage, Waroda Road, Off Hill Road, Bandra West</li>
                                   </ul>
                                 </div>
