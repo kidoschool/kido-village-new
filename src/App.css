@@ -440,6 +440,10 @@ a[rel="noopener"],.gmnoprint{
 a.fap-text{
   text-decoration: none;
 }
+
+.quick-links{
+  padding-left: 25px;
+}
 /*--------footer-area end---------*/
 
 
@@ -475,6 +479,15 @@ a.fap-text{
     }
   
 }
+
+
+/* @media screen and (min-width: 750px) {
+
+  .quick-links{
+    padding-left: 0px;
+  }
+  
+} */
 
 @media screen and (max-width: 600px){
   iframe{
@@ -528,6 +541,10 @@ a.fap-text{
   position: absolute;
   top: 10%;
 } */
+
+.quick-links{
+  padding-left: 0px;
+}
 
 }
 

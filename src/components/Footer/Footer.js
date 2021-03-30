@@ -13,16 +13,24 @@ function Footer(props) {
         <section className="footer-area">
           <div className="container">
                 <div className="row py-4">
-                    <div className="col-md-4 my-1">
+                    <div className="col-lg-5 my-1">
                             <div className="footer-widget footer-info pb-3">
-                                <h4 className="widget-title pb-3">OPEN YOUR OWN KIDO POD & PRESCHOOL</h4>
-                                <Link className="logo" to="/"><img src={logo} alt="logo" width="110"/></Link>
+                                {/* <h4 className="widget-title pb-3">OPEN YOUR OWN KIDO POD & PRESCHOOL</h4> */}
+                                <div className="global-offices">
+                                  <h4 className="widget-title">GLOBAL OFFICES:</h4>
+                                  <ul className="list-unstyled">
+                                      <li><b>United Kingdom: </b>Kido Education Oakmoore Court Kingswood Road, Hampton Lovett, Driotwich, Worcestershire WR9 0QH, UK</li>
+                                      <li><b>Singapore: </b>Kido Education (Singapore) Pte. Ltd. Quantm education Pte. Ltd. #06-00 ASO Building, 8 Robinson Road, Singapore</li>
+                                      <li><b>India: </b>KID-O EDUCATION PRIVATE LIMITED 204, 2nd Floor Concrete Heritage, Waroda Road, Off Hill Road, Bandra West</li>
+                                  </ul>
+                                </div>
+                                {/* <Link className="logo" to="/"><img src={logo} alt="logo" width="110"/></Link> */}
                             </div>
                         </div>
-                    <div className="col-md-3 my-1">
+                    <div className="col-lg-3 col-md-3 my-1">
                             <div className="footer-widget footer-info">
-                                <h4 className="widget-title pb-3">QUICK LINKS</h4>
-                                <ul className="list-unstyled row">
+                                <h4 className="widget-title pb-3 quick-links">QUICK LINKS</h4>
+                                <ul className="list-unstyled row justify-content-center">
                                   <div className="col-lg-3">
                                 <li><Link className="" to="/">Home</Link></li>
                                   <li><Link className="" to="/parent">Parents</Link></li>
@@ -36,7 +44,7 @@ function Footer(props) {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-3 my-1">
+                        <div className="col-lg-2 col-md-3 my-1">
                             <div className="footer-widget footer-info">
                             <h4 className="widget-title pb-3">ABOUT KIDO</h4>
                                 <ul className="list-unstyled">
@@ -46,7 +54,7 @@ function Footer(props) {
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-md-2 my-1">
+                        <div className="col-lg-2 col-md-3 my-1">
                             <div className="footer-widget footer-info">
                                 <h4 className="widget-title pb-3">CONTACT</h4>
                                 <ul className="list-unstyled">
