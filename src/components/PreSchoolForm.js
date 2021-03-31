@@ -160,7 +160,7 @@ function PreSchoolForm(props) {
               event.preventDefault();
 
               var msg = "Inquiry received form user for Kidovillag Preschool with following details,<br>"
-              +" Name : "+$("#name").val()+"<br>Email : "+$("#email").val()+"<br>Contact No.:"+$("#contact").val()+"<br>State :   "+$("#state").find(":selected").text()+"<br>City :"+$("#city").find(":selected").text()+"<br>Pincode : "+$("#area").text();
+              +" Name : "+$("#name").val()+"<br>Email : "+$("#email").val()+"<br>Contact No.:"+$("#contact").val()+"<br>State :   "+$("#state").find(":selected").text()+"<br>City :"+$("#city").find(":selected").text()+"<br>Pincode : "+$("#area").val();
 
               var form = new FormData();
               form.append("api", "send_email");
