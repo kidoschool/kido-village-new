@@ -137,13 +137,30 @@ axios(config)
         <section className="about-teacher py-5">
         <div className="container">
             <div className="row justify-content-center">
-                <div className="col-lg-7 text-center">
+                <div className="col-lg-10 text-center">
                 <h1 className="title">{sel_teach}'s Kido Village {selectedTeacher.position_of_teacher === "" ? "Pod" : selectedTeacher.position_of_teacher}</h1>
-                {/* <div className="t-profile-img py-4">
-                    <img src={"https://kidovillage.com/"+selectedTeacher.upload_image} width="200" className="t-profile img-fluid" alt="teacher-profile"/>
-                </div> */}
-                    <p>{selectedTeacher.about_teacher}</p>
-                    <i>{selectedTeacher.email}</i>
+                <div className="t-rating d-flex justify-content-around py-4">
+                    <div class="kido-rating star-rating">
+                        <h4>Kido rating</h4>
+                        <span class="fas fa-star checked" data-rating="1"></span>
+                        <span class="fas fa-star checked" data-rating="2"></span>
+                        <span class="fas fa-star checked" data-rating="3"></span>
+                        <span class="fas fa-star checked" data-rating="4"></span>
+                        <span class="fas fa-star unchecked" data-rating="5"></span>
+                        {/* <input type="hidden" name="whatever1" class="rating-value" value="2.56"/> */}
+                    </div>
+                    <div class="kido-rating star-rating">
+                        <h4>Parent rating</h4>
+                        <span class="fas fa-star checked" data-rating="1"></span>
+                        <span class="fas fa-star checked" data-rating="2"></span>
+                        <span class="fas fa-star checked" data-rating="3"></span>
+                        <span class="fas fa-star unchecked" data-rating="4"></span>
+                        <span class="fas fa-star unchecked" data-rating="5"></span>
+                        {/* <input type="hidden" name="whatever1" class="rating-value" value="2.56"/> */}
+                    </div>
+                </div>
+                    <p className="border shadow p-4">{selectedTeacher.about_teacher}</p>
+                    <p>Enquire now for pod : <i className="text-danger">{selectedTeacher.email}</i></p>
                 </div>
             </div>
         </div>

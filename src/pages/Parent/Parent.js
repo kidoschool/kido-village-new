@@ -171,8 +171,8 @@ function Parent(props) {
                     <div className="col-lg-10">
                         <h1 className="banner-head pb-2">It takes a village to raise a child </h1>
                         <p>At Kido Village, we hope to transform the future of our children by making early interventions in the form of lots of love, care and exceptional education. </p>
-                        <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment Kido Village pod / preschool is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods / preschool provide the right creative environment that helps learning and development of a young brain.</p>
-                        <p>Each of our pods / preschool provide the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning.</p>
+                        <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment Kido Village pod is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods provide the right creative environment that helps learning and development of a young brain.</p>
+                        <p>Each of our pods provide the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning.</p>
                     </div>
                 </div>
             </div>
@@ -182,7 +182,7 @@ function Parent(props) {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
-                    <h2 className="banner-head pb-2">Find a Kido pod / pre-school near you today</h2>
+                    <h2 className="banner-head pb-2">Find a Kido pod near you today</h2>
                     <div className="search-pod-form bg-white p-4 my-4 border shadow">
                         <h3>Quick Search</h3>
                         <div className="form-row">
@@ -257,11 +257,14 @@ function Parent(props) {
                     <div className="col-lg-5">
                     {Object.entries(listofTeachers).map((item) => {
                         var podThumb = item[1].place_image_1 == "uploads/profile/85/place_image_1/POD-20-1612257536.jpg" ? "https://kidovillage.com/uploads/profile/85/coming_soon.jpg" : "https://kidovillage.com/"+item[1].place_image_1;
-                    return(
+                        if(item[1].place_image_1 == null) {
+                            podThumb = "https://kidovillage.com/uploads/profile/85/coming_soon.jpg";
+                        } 
+                        return(
                     <div className="card my-2 shadow">
                         <div className="row no-gutters">
                             <div className="col-md-4">
-                                <img src={podThumb} width="200" className="find-pod-img img-fluid" alt=""/>
+                                <img src={podThumb} width="200" className="find-pod-img img-fluid" alt="pod-thumnil"/>
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">

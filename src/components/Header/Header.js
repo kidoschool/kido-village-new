@@ -40,9 +40,9 @@ function Header(props){
               <li className="nav-item pl-4">
                 <NavLink className="nav-link" to="/pods">Pods</NavLink>
               </li>
-              <li className="nav-item pl-4">
+              {/* <li className="nav-item pl-4">
                 <NavLink className="nav-link" to="/Pre-school">Pre-School</NavLink>
-              </li>
+              </li> */}
               <li className="nav-item pl-4">
                 <a className="nav-link" href="/kido-village-faq/faq.html">FAQs</a>
               </li>

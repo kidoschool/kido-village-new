@@ -21,7 +21,7 @@ function Footer(props) {
                                   <ul className="list-unstyled">
                                       <li><b>United Kingdom: </b>Kido Education Oakmoore Court Kingswood Road, Hampton Lovett, Driotwich, Worcestershire WR9 0QH, UK</li>
                                       <li><b>Singapore: </b>Kido Education (Singapore) Pte. Ltd. <br/>Quantm education Pte. Ltd. <br/>#06-00 ASO Building, 8 Robinson Road, Singapore</li>
-                                      <li><b>India: </b>KID-O EDUCATION PRIVATE LIMITED 204, 2nd Floor Concrete Heritage, Waroda Road, Off Hill Road, Bandra West</li>
+                                      <li><b>India: </b>KID-O EDUCATION PRIVATE LIMITED 1002, Mohini heights, 5th Road, Ramkrishna Nagar, Khar West, Mumbai-400052</li>
                                   </ul>
                                 </div>
                                 {/* <Link className="logo" to="/"><img src={logo} alt="logo" width="110"/></Link> */}
@@ -37,7 +37,7 @@ function Footer(props) {
                                   <li><Link className="" to="/pods">Pods</Link></li>
                                   </div>
                                   <div className="col-lg-7">
-                                  <li><Link className="" to="/Pre-school">Pre-School</Link></li>
+                                  {/* <li><Link className="" to="/Pre-school">Pre-School</Link></li> */}
                                   <li><a className="" href="/kido-village-faq/faq.html">FAQs</a></li>
                                   <li><Link className="" to="/contact">Contact</Link></li>
                                   </div>

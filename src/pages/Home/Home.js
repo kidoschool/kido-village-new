@@ -34,10 +34,10 @@ function Home(props) {
                     <div className="parent row justify-content-center">
                         <div className="col-lg-6">
                             <h1 className="banner-head">Give your child the best in early education and care!</h1>
-                            <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment, Kido Village Pod / Preschool is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods / preschools provide the right creative environment that helps learning and development of a young brain. </p>
-                            <p>Each of our pods / preschools provide the nurture and trust of a qualified and trained teacher, the excellence of a global education framework and a creative activity led approach to learning.</p>
+                            <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment, Kido Village Pod is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods  provide the right creative environment that helps learning and development of a young brain. </p>
+                            <p>Each of our pods provide the nurture and trust of a qualified and trained teacher, the excellence of a global education framework and a creative activity led approach to learning.</p>
                             <div className="pt-3">
-                            <Link to="/parent" className="my-btn center">Find a Pod / Preschool</Link>
+                            <Link to="/parent" className="my-btn center">Find a Pod</Link>
                         </div>
                         </div>
                         <div className="col-lg-6 pt-5">
@@ -68,7 +68,7 @@ function Home(props) {
                         </div>
                     </section>
 
-                    <section className="banner-pre-school py-5" style={{backgroundColor : "#fff"}}>
+                    {/* <section className="banner-pre-school py-5" style={{backgroundColor : "#fff"}}>
                         <div className="container">
                             <div className="pre-school row justify-content-center">
                                 <div className="col-lg-6">
@@ -85,18 +85,18 @@ function Home(props) {
                                 </div>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
 
 
-                    <section className="What-we-do py-5 bg-red">
+                    <section className="What-we-do py-5">
                         <div className="container">
                             <div className="row justify-content-center">
                             <h1 className="banner-head pb-2">What is Kido Village?</h1>
                                 <div className="col-lg-10">
-                                    <p>Kido Village is a growing chain of preschools and neighbourhood learning pods which aim to provide the the highest quality, flexible and affordable education, and care to children under six everywhere - in their homes, or around the corner from where they live.</p>
-                                    <p>If you are a parent looking for education and care for your child, <Link to="/Parent" className="fap-text"><span className="we-do-color">find a pod / preschool near you,</span> </Link>and you will be assured of a trained and certified provider in your community at affordable prices. Teaching will be in small groups (maximum of eight children) to ensure customization and attention for each child.</p>
+                                    <p>Kido Village is a growing chain of neighbourhood learning pods which aim to provide the the highest quality, flexible and affordable education, and care to children under six everywhere - in their homes, or around the corner from where they live.</p>
+                                    <p>If you are a parent looking for education and care for your child, <Link to="/Parent" className="fap-text"><span className="we-do-color">find a pod near you,</span> </Link>and you will be assured of a trained and certified provider in your community at affordable prices. Teaching will be in small groups (maximum of eight children) to ensure customization and attention for each child.</p>
                                     <p>If you are interested in teaching, you can set up a micro-preschool (we call it a Kïdo Village Pod) at home for your children, or children in the neighborhood. For as little as ₹1500/month, we'll provide the training, curriculum, support, quality control and everything you'll need to be a successful teacher or Pod owner.</p>
-                                    <p>All Kïdo Village Pods and Preschool use the Kïdo Early Years Program, an international program running in preschools and nurseries across the USA, UK, UAE, India and Hong Kong, and follow the strictest health and safety protocols, in line with global best practices.</p>
+                                    <p>All Kïdo Village Pods use the Kïdo Early Years Program, an international program running in nurseries across the USA, UK, UAE, India and Hong Kong, and follow the strictest health and safety protocols, in line with global best practices.</p>
                                 </div>
                             </div>
                         </div>

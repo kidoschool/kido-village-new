@@ -229,7 +229,7 @@ span.we-do-color{
 }
 
 .find-pod-img{
-  height: 150px;
+  height: 143px;
 }
 /*--------section banner end---------*/
 
@@ -389,6 +389,14 @@ a.wp-rights{
 .t-profile{
   border-radius: 50%;
   height: 200px;
+}
+
+.checked {
+  color : #962A30;
+  font-size : 20px;
+}
+.unchecked {
+  font-size : 20px;
 }
 /*--------footer-area start---------*/
 .footer-area{
