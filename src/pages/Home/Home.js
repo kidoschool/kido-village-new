@@ -34,7 +34,7 @@ function Home(props) {
                     <div className="parent row justify-content-center">
                         <div className="col-lg-6">
                             <h1 className="banner-head">Give your child the best in early education and care!</h1>
-                            <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment, Kido Village Pod is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods  provide the right creative environment that helps learning and development of a young brain. </p>
+                            <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely safe environment, Kido Village Pod is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods  provide the right creative environment that helps learning and development of a young brain. </p>
                             <p>Each of our pods provide the nurture and trust of a qualified and trained teacher, the excellence of a global education framework and a creative activity led approach to learning.</p>
                             <div className="pt-3">
                             <Link to="/parent" className="my-btn center">Find a Pod</Link>
@@ -58,7 +58,7 @@ function Home(props) {
                                     <i><strong>Become a Kido entrepreneur and help us reinvent early years education!</strong></i>
                                     <div>
                                     <p>By becoming a Kido pod owner, you can help shape the future of kids in your community by providing them with high quality education and care, with the backing of Kido! Our internationally recognized model will help you set up a pod in your living space with an investment as little as Rs 6,000 and you can start monetizing it quickly by enrolling kids with complete flexibility.</p>
-                                    <p>Simply fill the form on our site and we’ll reach out to you with the next steps for onboarding and help you through the journey – be it education materials or marketing support!</p>
+                                    <p>Simply fill the form on our website and we’ll reach out to you with the next steps for onboarding and help you through the journey – be it education materials or marketing support!</p>
                                     <div className="pt-3">
                                     <Link to="/pods" className="my-btn center">I want to start a Pod </Link>
                                     </div>
