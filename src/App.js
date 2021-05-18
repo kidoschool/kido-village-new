@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from "./components/Header/Header";
 import HomeOld from "./pages/Home/HomeOld";
 import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
 import Parent from './pages/Parent/Parent';
 import Teacher from './pages/Teacher/Teacher';
 import PreSchool from './pages/PreSchool/PreSchool';
@@ -31,6 +32,7 @@ function App() {
         <Switch>
           <Route exact path="/"  component={Home} />
           {/* <Route exact path="/home2"  component={HomeOld} /> */}
+          <Route exact path="/about"  component={About} />
           <Route exact path="/parent"  component={Parent} />
           <Route exact path="/pods"  component={Teacher} />
           <Route exact path="/Pre-school"  component={PreSchool} />

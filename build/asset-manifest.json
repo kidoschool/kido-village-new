@@ -1,24 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.93782c7e.chunk.css",
-    "main.js": "/static/js/main.2af44217.chunk.js",
-    "main.js.map": "/static/js/main.2af44217.chunk.js.map",
+    "main.js": "/static/js/main.07fa37c4.chunk.js",
+    "main.js.map": "/static/js/main.07fa37c4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2e2b0c38.js",
     "runtime-main.js.map": "/static/js/runtime-main.2e2b0c38.js.map",
     "static/css/2.0178e4d2.chunk.css": "/static/css/2.0178e4d2.chunk.css",
-    "static/js/2.c01d8a47.chunk.js": "/static/js/2.c01d8a47.chunk.js",
-    "static/js/2.c01d8a47.chunk.js.map": "/static/js/2.c01d8a47.chunk.js.map",
+    "static/js/2.1a8f3c66.chunk.js": "/static/js/2.1a8f3c66.chunk.js",
+    "static/js/2.1a8f3c66.chunk.js.map": "/static/js/2.1a8f3c66.chunk.js.map",
     "static/js/3.cf2b9a1a.chunk.js": "/static/js/3.cf2b9a1a.chunk.js",
     "static/js/3.cf2b9a1a.chunk.js.map": "/static/js/3.cf2b9a1a.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.0178e4d2.chunk.css.map": "/static/css/2.0178e4d2.chunk.css.map",
     "static/css/main.93782c7e.chunk.css.map": "/static/css/main.93782c7e.chunk.css.map",
-    "static/js/2.c01d8a47.chunk.js.LICENSE.txt": "/static/js/2.c01d8a47.chunk.js.LICENSE.txt",
+    "static/js/2.1a8f3c66.chunk.js.LICENSE.txt": "/static/js/2.1a8f3c66.chunk.js.LICENSE.txt",
     "static/media/POD-18.e0ab3a21.jpg": "/static/media/POD-18.e0ab3a21.jpg",
     "static/media/POD-19.f2b45c1c.jpg": "/static/media/POD-19.f2b45c1c.jpg",
     "static/media/POD-8.ad7e1ab6.jpg": "/static/media/POD-8.ad7e1ab6.jpg",
     "static/media/Shalini.b65feeac.jpg": "/static/media/Shalini.b65feeac.jpg",
     "static/media/App.css": "/static/media/start-journey-bg.8136355e.jpg",
+    "static/media/about_banner1.c4072d1e.jpg": "/static/media/about_banner1.c4072d1e.jpg",
     "static/media/contact-us-banner.2789a4f3.jpg": "/static/media/contact-us-banner.2789a4f3.jpg",
     "static/media/devjani.4d3ec726.png": "/static/media/devjani.4d3ec726.png",
     "static/media/kid-play.668ab328.png": "/static/media/kid-play.668ab328.png",
@@ -31,6 +32,7 @@
     "static/media/parents-banner.b2a617a1.jpg": "/static/media/parents-banner.b2a617a1.jpg",
     "static/media/prajikta.5e2ad60c.png": "/static/media/prajikta.5e2ad60c.png",
     "static/media/pre-schools-banner-new.a5341539.jpg": "/static/media/pre-schools-banner-new.a5341539.jpg",
+    "static/media/school-network-bn.2714c9ff.jpg": "/static/media/school-network-bn.2714c9ff.jpg",
     "static/media/t-pod1.c3fdcfaf.jpg": "/static/media/t-pod1.c3fdcfaf.jpg",
     "static/media/teacher-banner.e748de2c.jpg": "/static/media/teacher-banner.e748de2c.jpg",
     "static/media/teachers-banner-new.4b070d5d.jpg": "/static/media/teachers-banner-new.4b070d5d.jpg"
@@ -38,8 +40,8 @@
   "entrypoints": [
     "static/js/runtime-main.2e2b0c38.js",
     "static/css/2.0178e4d2.chunk.css",
-    "static/js/2.c01d8a47.chunk.js",
+    "static/js/2.1a8f3c66.chunk.js",
     "static/css/main.93782c7e.chunk.css",
-    "static/js/main.2af44217.chunk.js"
+    "static/js/main.07fa37c4.chunk.js"
   ]
 }
