@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.54a038b6.chunk.css",
-    "main.js": "/static/js/main.e435be18.chunk.js",
-    "main.js.map": "/static/js/main.e435be18.chunk.js.map",
+    "main.js": "/static/js/main.fcc2d4c7.chunk.js",
+    "main.js.map": "/static/js/main.fcc2d4c7.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2e2b0c38.js",
     "runtime-main.js.map": "/static/js/runtime-main.2e2b0c38.js.map",
     "static/css/2.0178e4d2.chunk.css": "/static/css/2.0178e4d2.chunk.css",
@@ -20,7 +20,7 @@
     "static/media/Shalini.b65feeac.jpg": "/static/media/Shalini.b65feeac.jpg",
     "static/media/App.css": "/static/media/start-journey-bg.8136355e.jpg",
     "static/media/about_banner1.c4072d1e.jpg": "/static/media/about_banner1.c4072d1e.jpg",
-    "static/media/contact-banner.a1f20839.jpg": "/static/media/contact-banner.a1f20839.jpg",
+    "static/media/contact-banner.31786d7c.jpg": "/static/media/contact-banner.31786d7c.jpg",
     "static/media/devjani.4d3ec726.png": "/static/media/devjani.4d3ec726.png",
     "static/media/kid-play.668ab328.png": "/static/media/kid-play.668ab328.png",
     "static/media/kido-village-logo.19e109b7.png": "/static/media/kido-village-logo.19e109b7.png",
@@ -28,7 +28,7 @@
     "static/media/parent-banner-new.7fb93f41.png": "/static/media/parent-banner-new.7fb93f41.png",
     "static/media/parent-banner.88e43b97.jpg": "/static/media/parent-banner.88e43b97.jpg",
     "static/media/parent-new.a873c946.jpg": "/static/media/parent-new.a873c946.jpg",
-    "static/media/parent1.1a8ae066.png": "/static/media/parent1.1a8ae066.png",
+    "static/media/parent1.eb7423e2.jpg": "/static/media/parent1.eb7423e2.jpg",
     "static/media/parent2.88f2836c.png": "/static/media/parent2.88f2836c.png",
     "static/media/parents-banner.b2a617a1.jpg": "/static/media/parents-banner.b2a617a1.jpg",
     "static/media/pod-banner-new.9b4ae58c.jpg": "/static/media/pod-banner-new.9b4ae58c.jpg",
@@ -44,6 +44,6 @@
     "static/css/2.0178e4d2.chunk.css",
     "static/js/2.1a8f3c66.chunk.js",
     "static/css/main.54a038b6.chunk.css",
-    "static/js/main.e435be18.chunk.js"
+    "static/js/main.fcc2d4c7.chunk.js"
   ]
 }

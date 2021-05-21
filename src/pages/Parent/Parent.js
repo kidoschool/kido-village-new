@@ -3,7 +3,7 @@ import React, {useState ,useEffect} from 'react';
 // import PodBanner2 from '../../assets/POD-8.jpg';
 // import PodBanner3 from '../../assets/POD-19.jpg';
 import ParentBanner1 from '../../assets/parent-banner-new.png';
-import testiProfile1 from '../../assets/parent1.png';
+import testiProfile1 from '../../assets/parent1.jpg';
 import testiProfile2 from '../../assets/parent-new.jpg';
 import testiProfile3 from '../../assets/parent2.png';
 import FormEnquiry from "../../components/FormEnquiry";
@@ -169,13 +169,11 @@ function Parent(props) {
             <section className="banner-parent">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="Banner_item">
                             <div className="overlay-banner"></div>
                             <img src={ParentBanner1} className="parent-banner-img d-block w-100 img-fluid" alt="parent_banner"/>
                             <div className="carousel-caption carousel-caption1 d-md-block">
                                 <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1>
                             </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -381,11 +379,11 @@ function Parent(props) {
                                 </div>
                                 <div className="col-lg-7 pt-2">
                                     <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
-                                    <i>The thing I love the most about Kido Village is that the pod owner truly cares about and loves my children. I could think of no better place to give my kids a head start in life.</i>
+                                    <i>My son has been going to Kido Village for sometime now and has shown great improvement in his speech and problem solving ability. Miss Debjani lead the class in small ratio of 1:5 or 1:06 to give personalised attention to each child movements &amp; learning process.In this pandemic Kido Village is a blessing in disguise</i>
                                     </div>
                                     <div className="text-right pt-4">
-                                        <h3>Roshni thakkar</h3>
-                                        <small className="text-primary"><i>-from Goregaon</i></small>
+                                        <h3>Dr Deepika &amp; Manmeet Sharma</h3>
+                                        <small className="text-primary"><i>-from Pune</i></small>
                                     </div>
                                 </div>
                            </div>
