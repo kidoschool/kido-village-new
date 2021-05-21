@@ -57,7 +57,7 @@ function Home(props) {
                                     <h1 className="banner-head">Aspiring to be financially independent?</h1>
                                     <i><strong>Become a Kido entrepreneur and help us reinvent early years education!</strong></i>
                                     <div>
-                                    <p>By becoming a Kido pod owner, you can help shape the future of kids in your community by providing them with high quality education and care, with the backing of Kido! Our internationally recognized model will help you set up a pod in your living space with an investment as little as Rs 6,000 and you can start monetizing it quickly by enrolling kids with complete flexibility.</p>
+                                    <p>By becoming a Kido pod owner, you can help shape the future of kids in your community by providing them with high quality education and care, with the backing of Kido! Our internationally recognized model will help you set up a pod in your living space with an investment as little as Rs 15000/- and you can start monetizing it quickly by enrolling kids with complete flexibility.</p>
                                     <p>Simply fill the form on our website and we’ll reach out to you with the next steps for onboarding and help you through the journey – be it education materials or marketing support!</p>
                                     <div className="pt-3">
                                     <Link to="/pods" className="my-btn center">I want to start a Pod </Link>
