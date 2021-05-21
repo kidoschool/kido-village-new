@@ -1,9 +1,10 @@
 import React, {useState ,useEffect} from 'react';
-import PodBanner1 from '../../assets/POD-18.jpg';
-import PodBanner2 from '../../assets/POD-8.jpg';
-import PodBanner3 from '../../assets/POD-19.jpg';
+// import PodBanner1 from '../../assets/POD-18.jpg';
+// import PodBanner2 from '../../assets/POD-8.jpg';
+// import PodBanner3 from '../../assets/POD-19.jpg';
+import ParentBanner1 from '../../assets/parent-banner-new.png';
 import testiProfile1 from '../../assets/parent1.png';
-import testiProfile2 from '../../assets/parent3.png';
+import testiProfile2 from '../../assets/parent-new.jpg';
 import testiProfile3 from '../../assets/parent2.png';
 import FormEnquiry from "../../components/FormEnquiry";
 import Pagination from "react-js-pagination";
@@ -129,7 +130,7 @@ function Parent(props) {
     return(
         <>
            
-        <section className="main_banner">
+        {/* <section className="main_banner">
             <div id="carouselExampleControls" className="carousel slide carousel-fade" data-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
@@ -163,7 +164,21 @@ function Parent(props) {
                     <span className="sr-only">Next</span>
                 </a>
             </div>
-        </section>
+        </section> */}
+
+            <section className="banner-parent">
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="Banner_item">
+                            <div className="overlay-banner"></div>
+                            <img src={ParentBanner1} className="parent-banner-img d-block w-100 img-fluid" alt="parent_banner"/>
+                            <div className="carousel-caption carousel-caption1 d-md-block">
+                                <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
         <section className="What-we-do py-5">
             <div className="container">
@@ -171,7 +186,7 @@ function Parent(props) {
                     <div className="col-lg-10">
                         <h1 className="banner-head pb-2">It takes a village to raise a child </h1>
                         <p>At Kido Village, we hope to transform the future of our children by making early interventions in the form of lots of love, care and exceptional education. </p>
-                        <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment Kido Village pod is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods provide the right creative environment that helps learning and development of a young brain.</p>
+                        <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment Kido Village Pod is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods provide the right creative environment that helps learning and development of a young brain.</p>
                         <p>Each of our pods provide the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning.</p>
                     </div>
                 </div>
@@ -182,7 +197,7 @@ function Parent(props) {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
-                    <h2 className="banner-head pb-2">Find a Kido pod near you today</h2>
+                    <h2 className="banner-head pb-2">Find a Kido Village Pod near you today</h2>
                     <div className="search-pod-form bg-white p-4 my-4 border shadow">
                         <h3>Quick Search</h3>
                         <div className="form-row">
@@ -264,7 +279,8 @@ function Parent(props) {
                     <div className="card my-2 shadow">
                         <div className="row no-gutters">
                             <div className="col-md-4">
-                                <img src={podThumb} width="200" className="find-pod-img img-fluid" alt="pod-thumnil"/>
+                            <div style={{backgroundImage: `url(${podThumb})`}} className="find-pod-img1 img-fluid" alt="pod-thumnil"></div>
+                                {/* <img src={podThumb}  className="find-pod-img img-fluid" alt="pod-thumnil"/> */}
                             </div>
                             <div className="col-md-8">
                                 <div className="card-body">
@@ -330,7 +346,7 @@ function Parent(props) {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-10 text-center">
-                    <h1 className="banner-head pb-4">What our parents say about our kido village pods</h1>
+                    <h1 className="banner-head pb-4">What our parents say about Kido Village Pods</h1>
                     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                         <ol className="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -338,7 +354,25 @@ function Parent(props) {
                             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                         </ol>
                         <div className="carousel-inner">
-                            <div className="carousel-item active">
+                        <div className="carousel-item active">
+                            <div className="row">
+                                <div className="col-lg-4">
+                                    <div className="pic">
+                                        <img src={testiProfile2} width="300" className="img-fluid"/>
+                                    </div>
+                                </div>
+                                <div className="col-lg-7 pt-2">
+                                    <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
+                                    <i>My child enjoys coming to school learning new topics. My experience about this school is pretty good. As a parent I have found the teacher very friendly and approachable. it is pleasant to send my child everyday. I would like to particularly mention that I'm impressed  by her ability to address concerns and problems she has always given her valuable advice which has improved my child's interest in studies.</i>
+                                    </div>
+                                    <div className="text-right pt-4">
+                                        <h3>Nidhi  Gilotra &amp; Rakshit Golotra</h3>
+                                        <small className="text-primary"><i>-from Pune</i></small>
+                                    </div>
+                                </div>
+                           </div>
+                            </div>
+                            <div className="carousel-item">
                             <div className="row">
                                 <div className="col-lg-4">
                                     <div className="pic">
@@ -356,24 +390,7 @@ function Parent(props) {
                                 </div>
                            </div>
                             </div>
-                            <div className="carousel-item">
-                            <div className="row">
-                                <div className="col-lg-4">
-                                    <div className="pic">
-                                        <img src={testiProfile2} width="300" className="img-fluid"/>
-                                    </div>
-                                </div>
-                                <div className="col-lg-7 pt-2">
-                                    <div className="testi-content pt-4"><i className="fas fa-quote-left text-primary px-2 fa-2x"></i>
-                                    <i>It was our first time enrolling our son in a pod so we were nervous at first, but the Kido Village Pod owner was so incredible that she soon made us feel comfortable. Our son is excited every morning about going to the Pod. He’s becoming more social and educated each day. We are very thankful to have discovered Kido Village. We highly recommend this concept.</i>
-                                    </div>
-                                    <div className="text-right pt-4">
-                                        <h3>Shraddha gupta</h3>
-                                        <small className="text-primary"><i>-from Borivali</i></small>
-                                    </div>
-                                </div>
-                           </div>
-                            </div>
+                        
                             <div className="carousel-item">
                             <div className="row">
                                 <div className="col-lg-4">
@@ -410,7 +427,7 @@ function Parent(props) {
 
 
 
-        <section className="video-card py-5">
+        {/* <section className="video-card py-5">
             <div className="container">
             <h1 className="banner-head text-center pb-3">Hear from our parents</h1>
                 <div className="row justify-content-center">
@@ -418,24 +435,15 @@ function Parent(props) {
                     <div className="card-deck">
                         <div className="card">
                             <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/I7euUBZq4sw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                            {/* <div className="card-body">
-                            <h3 className="card-title">Kïdo Village Pod owner.</h3>
-                            <p className="card-text">Ms Arbin Banu, shares her experience of starting her own micro preschool in provided, she joins the ever expanding group of female eduprenuers who trust Kido Village platform to help them set up their own Micro Preschool from the convenience of their home.</p>
-                            </div> */}
                         </div>
                         <div className="card">
                         <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/vglc5eR8HTM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-
-                            {/* <div className="card-body">
-                            <h3 className="card-title">Parent, Kïdo.</h3>
-                            <p className="card-text">Ms Sameera Reddy, Kïdo Parent talks to India CEO Mr Jeetu Karsan about parenting, Kïdo and more. The talk demonstrates our values, our principles and our commitment to educate young children in the best possible way everywhere.</p>
-                            </div> */}
                         </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>              
+        </section>               */}
 
         <div id="mySidenav" className="sidenav bg-light border-right">
         <div className="p-3">

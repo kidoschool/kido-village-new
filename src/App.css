@@ -228,8 +228,12 @@ span.we-do-color{
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.find-pod-img{
-  height: 143px;
+.find-pod-img1{
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
 }
 /*--------section banner end---------*/
 
@@ -250,13 +254,27 @@ span.we-do-color{
   width: 100%;
   height: 100%;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: .5;
+}
+
+.overlay-banner {
+  position: absolute;
+  width: 100%;
+  height: 75%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6);
   opacity: .5;
 }
 
 .carousel-caption {
   position: absolute;
   top: 25%;
+}
+
+.carousel-caption1 {
+  position: absolute;
+  top: 35%;
 }
 
 h1.banner-head1{
@@ -324,7 +342,7 @@ color: #962A30;
 
 .contact-banner-img{
   width: 100%;
-  height: 80vh;
+  height: 75vh;
 }
 
 .p-form li{
@@ -397,6 +415,10 @@ a.wp-rights{
 }
 .unchecked {
   font-size : 20px;
+}
+
+.teacher-info-email{
+  text-transform: lowercase;
 }
 /*--------footer-area start---------*/
 .footer-area{
@@ -512,6 +534,14 @@ a.fap-text{
     height: 200px;
   }
 
+  .find-pod-img1{
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+  }
+
   .carousel-caption {
     position: absolute;
     top: 25%;
@@ -552,6 +582,15 @@ a.fap-text{
 
 .quick-links{
   padding-left: 0px;
+}
+
+.overlay-banner {
+  position: absolute;
+  width: 100%;
+  height: 45%;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: .5;
 }
 
 }

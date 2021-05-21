@@ -352,9 +352,9 @@ function About(props){
                         <p>We are founded, managed and owned by a group parents of young children around the world, and their friends. We passionately believe that a high quality early childhood education is the biggest gift any child can get. Since 2014, our preschools and nurseries under two brands - <span className="we-do-color">Kido and Safari Kid International</span> - have served over 15,000 families in London, Houston, Austin, Dubai, Hong Kong, Mumbai and elsewhere. </p>
                         <p>We are now on a mission to bring our international network, our award winning curriculum and our best practices to children everywhere. Earlier in 2020, we launched <span className="we-do-color">Kido Home, our virtual preschool</span> delivering online preschool to children at their homes.</p>
                         <p>With Kido Village, we bring the same expertise to every community,  <span className="we-do-color">enabling entrepreneurs in each community to set up their own micro preschools</span>, run to our standards, with our curriculum and systems. Each Kïdo Village Pod will cater to a maximum of eight children at a time, providing flexible, customised education and care to children in their community. Parents can set up Pods for their own children too, and either teach themselves, or hire a teacher (who we'll be happy to train!).</p>
-                        <div className="d-flex justify-content-around">
+                        <div className="text-center">
                         <a  target="_blank" rel="noopener noreferrer" href="https://kido.school/en/" className="my-btn center">Visit our school </a>
-                        <a  target="_blank" rel="noopener noreferrer" href="https://www.kidohome.net/" className="my-btn center">Visit kido Home </a>
+                        {/* <a  target="_blank" rel="noopener noreferrer" href="https://www.kidohome.net/" className="my-btn center">Visit kido Home </a> */}
                         </div>
                     </div>
                 </div>

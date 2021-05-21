@@ -97,9 +97,9 @@ axios(config)
 
 
 
+
     return(
         <>
-
         <section className="main_banner">
             <div id="carouselExampleControls" className="carousel slide carousel-fade" data-ride="carousel">
                 <ol className="carousel-indicators">
@@ -110,14 +110,15 @@ axios(config)
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         {/* <div className="overlay1"></div> */}
-                        <img src={"https://kidovillage.com/"+selectedTeacher.place_image_1} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
+                        {selectedTeacher.place_image_1 == null ? <img src={"https://kidovillage.com/uploads/profile/85/place_image_1/POD-20-1612257536.jpg"} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/> : <img src={"https://kidovillage.com/"+selectedTeacher.place_image_1} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>}
                         <div className="carousel-caption d-md-block">
                             {/* <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1> */}
                         </div>
                     </div>
                     <div className="carousel-item">
                         {/* <div className="overlay1"></div> */}
-                        <img src={"https://kidovillage.com/"+selectedTeacher.place_image_2} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
+                        {selectedTeacher.place_image_2 == null ? <img src={"https://kidovillage.com/uploads/profile/85/place_image_1/POD-20-1612257536.jpg"} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/> : <img src={"https://kidovillage.com/"+selectedTeacher.place_image_2} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>}
+
                         <div className="carousel-caption d-md-block">
                             {/* <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1> */}
                         </div>
@@ -160,7 +161,7 @@ axios(config)
                     </div>
                 </div>
                     <p className="border shadow p-4">{selectedTeacher.about_teacher}</p>
-                    <p>Enquire now for pod : <i className="text-danger">{selectedTeacher.email}</i></p>
+                    <p>Enquire now for pod : <i className="text-danger teacher-info-email">{selectedTeacher.email}</i></p>
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-import ContactBanner from '../../assets/contact-us-banner.jpg';
+import ContactBanner from '../../assets/contact-banner.jpg';
 import $ from "jquery";
 import validate from 'jquery-validation';
 
@@ -97,7 +97,7 @@ function Contact(props) {
                     <p>+91 9987807102</p>
                     <p>+91 7718860303</p>
                     <div className="icon mb-3"><i className="fa fa-envelope"></i> Mail Us At</div>
-                    <p>village@kido.school</p>
+                    <p>enquiry@kidovillage.com</p>
                 </div>
                 </div>
             </div>

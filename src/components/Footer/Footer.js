@@ -58,7 +58,7 @@ function Footer(props) {
                             <div className="footer-widget footer-info">
                                 <h4 className="widget-title pb-3">CONTACT</h4>
                                 <ul className="list-unstyled">
-                                  <li><Link to="/contact-us">village@kido.school</Link></li>
+                                  <li><Link to="/contact-us">enquiry@kidovillage.com</Link></li>
                                 </ul>
                             </div>
                             <div className="icon-info">

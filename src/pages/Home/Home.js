@@ -95,7 +95,7 @@ function Home(props) {
                                 <div className="col-lg-10">
                                     <p>Kido Village is a growing chain of neighbourhood learning pods which aim to provide the highest quality, flexible and affordable education and care to children under six everywhere - in their homes, or around the corner from where they live.</p>
                                     <p>If you are a parent looking for education and care for your child, <Link to="/Parent" className="fap-text"><span className="we-do-color">find a pod near you,</span> </Link>and you will be assured of a trained and certified provider in your community at affordable prices. Teaching will be in small groups (maximum of eight children) to ensure customization and attention for each child.</p>
-                                    <p>If you are interested in teaching, you can set up a micro-preschool (we call it a Kïdo Village Pod) at home for your children, or children in the neighborhood. For as little as ₹1500/month, we'll provide the training, curriculum, support, quality control and everything you'll need to be a successful teacher or Pod owner.</p>
+                                    <p>If you are interested in teaching, you can <Link to="/pods" className="fap-text"><span className="we-do-color">set up a micro-preschool</span></Link> (we call it a Kïdo Village Pod) at home for your children, or children in the neighborhood. For as little as ₹1500/month, we'll provide the training, curriculum, support, quality control and everything you'll need to be a successful teacher or Pod owner.</p>
                                     <p>All Kïdo Village Pods use the Kïdo Early Years Program, an international program running in nurseries across the USA, UK, UAE, India and Hong Kong, and follow the strictest health and safety protocols, in line with global best practices.</p>
                                 </div>
                             </div>
@@ -133,23 +133,18 @@ function Home(props) {
 
                     <section className="video-card py-5">
                         <div className="container">
-                        <h1 className="banner-head text-center pb-3">Hear from our Parents & Teachers</h1>
+                        <h1 className="banner-head text-center pb-3">Hear from our Kido Village Pod teachers</h1>
                             <div className="row justify-content-center">
                                 <div className="col-lg-12">
                                 <div className="card-deck">
                                     <div className="card">
-                                        <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/-HsoPi2Amc4" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                        {/* <div className="card-body">
-                                        <h3 className="card-title">Kïdo Village Pod owner.</h3>
-                                        <p className="card-text">Ms Arbin Banu, shares her experience of starting her own micro preschool in provided, she joins the ever expanding group of female eduprenuers who trust Kido Village platform to help them set up their own Micro Preschool from the convenience of their home.</p>
-                                        </div> */}
+                                        <iframe className="card-img-top" width="560" height="180" src="https://www.youtube.com/embed/I7euUBZq4sw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                     <div className="card">
-                                    <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/vglc5eR8HTM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                                        {/* <div className="card-body">
-                                        <h3 className="card-title">Parent, Kïdo.</h3>
-                                        <p className="card-text">Ms Sameera Reddy, Kïdo Parent talks to India CEO Mr Jeetu Karsan about parenting, Kïdo and more. The talk demonstrates our values, our principles and our commitment to educate young children in the best possible way everywhere.</p>
-                                        </div> */}
+                                        <iframe className="card-img-top" width="560" height="180" src="https://www.youtube.com/embed/CbyUND4AvPY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                    </div>
+                                    <div className="card">
+                                        <iframe className="card-img-top" width="560" height="180" src="https://www.youtube.com/embed/-HsoPi2Amc4" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                     </div>
                                 </div>

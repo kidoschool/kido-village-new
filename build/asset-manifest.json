@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.93782c7e.chunk.css",
-    "main.js": "/static/js/main.07fa37c4.chunk.js",
-    "main.js.map": "/static/js/main.07fa37c4.chunk.js.map",
+    "main.css": "/static/css/main.54a038b6.chunk.css",
+    "main.js": "/static/js/main.e4374395.chunk.js",
+    "main.js.map": "/static/js/main.e4374395.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2e2b0c38.js",
     "runtime-main.js.map": "/static/js/runtime-main.2e2b0c38.js.map",
     "static/css/2.0178e4d2.chunk.css": "/static/css/2.0178e4d2.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.cf2b9a1a.chunk.js.map": "/static/js/3.cf2b9a1a.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.0178e4d2.chunk.css.map": "/static/css/2.0178e4d2.chunk.css.map",
-    "static/css/main.93782c7e.chunk.css.map": "/static/css/main.93782c7e.chunk.css.map",
+    "static/css/main.54a038b6.chunk.css.map": "/static/css/main.54a038b6.chunk.css.map",
     "static/js/2.1a8f3c66.chunk.js.LICENSE.txt": "/static/js/2.1a8f3c66.chunk.js.LICENSE.txt",
     "static/media/POD-18.e0ab3a21.jpg": "/static/media/POD-18.e0ab3a21.jpg",
     "static/media/POD-19.f2b45c1c.jpg": "/static/media/POD-19.f2b45c1c.jpg",
@@ -20,16 +20,18 @@
     "static/media/Shalini.b65feeac.jpg": "/static/media/Shalini.b65feeac.jpg",
     "static/media/App.css": "/static/media/start-journey-bg.8136355e.jpg",
     "static/media/about_banner1.c4072d1e.jpg": "/static/media/about_banner1.c4072d1e.jpg",
-    "static/media/contact-us-banner.2789a4f3.jpg": "/static/media/contact-us-banner.2789a4f3.jpg",
+    "static/media/contact-banner.a1f20839.jpg": "/static/media/contact-banner.a1f20839.jpg",
     "static/media/devjani.4d3ec726.png": "/static/media/devjani.4d3ec726.png",
     "static/media/kid-play.668ab328.png": "/static/media/kid-play.668ab328.png",
     "static/media/kido-village-logo.19e109b7.png": "/static/media/kido-village-logo.19e109b7.png",
     "static/media/kids-ball.f5e7b0a0.png": "/static/media/kids-ball.f5e7b0a0.png",
+    "static/media/parent-banner-new.7fb93f41.png": "/static/media/parent-banner-new.7fb93f41.png",
     "static/media/parent-banner.88e43b97.jpg": "/static/media/parent-banner.88e43b97.jpg",
+    "static/media/parent-new.a873c946.jpg": "/static/media/parent-new.a873c946.jpg",
     "static/media/parent1.1a8ae066.png": "/static/media/parent1.1a8ae066.png",
     "static/media/parent2.88f2836c.png": "/static/media/parent2.88f2836c.png",
-    "static/media/parent3.34aa69b7.png": "/static/media/parent3.34aa69b7.png",
     "static/media/parents-banner.b2a617a1.jpg": "/static/media/parents-banner.b2a617a1.jpg",
+    "static/media/pod-banner-new.9b4ae58c.jpg": "/static/media/pod-banner-new.9b4ae58c.jpg",
     "static/media/prajikta.5e2ad60c.png": "/static/media/prajikta.5e2ad60c.png",
     "static/media/pre-schools-banner-new.a5341539.jpg": "/static/media/pre-schools-banner-new.a5341539.jpg",
     "static/media/school-network-bn.2714c9ff.jpg": "/static/media/school-network-bn.2714c9ff.jpg",
@@ -41,7 +43,7 @@
     "static/js/runtime-main.2e2b0c38.js",
     "static/css/2.0178e4d2.chunk.css",
     "static/js/2.1a8f3c66.chunk.js",
-    "static/css/main.93782c7e.chunk.css",
-    "static/js/main.07fa37c4.chunk.js"
+    "static/css/main.54a038b6.chunk.css",
+    "static/js/main.e4374395.chunk.js"
   ]
 }

@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from 'react';
-import PodBanner1 from '../../assets/POD-8.jpg';
-import PodBanner2 from '../../assets/POD-18.jpg';
-import PodBanner3 from '../../assets/POD-19.jpg';
+// import PodBanner1 from '../../assets/POD-8.jpg';
+// import PodBanner2 from '../../assets/POD-18.jpg';
+// import PodBanner3 from '../../assets/POD-19.jpg';
+import PodBannerNew from '../../assets/pod-banner-new.jpg';
 import testiProfile1 from '../../assets/devjani.png';
 import testiProfile2 from '../../assets/prajikta.png';
 import testiProfile3 from '../../assets/Shalini.jpg';
@@ -70,7 +71,7 @@ function Teacher(props) {
                 <div className="carousel-inner">
                     <div className="carousel-item active">
                         <div className="overlay1"></div>
-                        <img src={PodBanner1} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
+                        <img src={PodBannerNew} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
                         <div className="carousel-caption d-md-block">
                             <h1 className="banner-head1 text-white">Help us reinvent early years education</h1>
                             <i  className="banner-italic text-white">Become a Kido entrepreneur and help children unlock their potential </i>
@@ -79,7 +80,7 @@ function Teacher(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="carousel-item">
+                    {/* <div className="carousel-item">
                         <div className="overlay1"></div>
                         <img src={PodBanner2} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
                         <div className="carousel-caption d-md-block">
@@ -89,8 +90,8 @@ function Teacher(props) {
                                 <button onClick={openNav} className="my-btn center">GET STARTED</button>
                             </div>
                         </div>
-                    </div>
-                    <div className="carousel-item">
+                    </div> */}
+                    {/* <div className="carousel-item">
                         <div className="overlay1"></div>
                         <img src={PodBanner3} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
                         <div className="carousel-caption d-md-block">
@@ -100,16 +101,16 @@ function Teacher(props) {
                                 <button onClick={openNav} className="my-btn center">GET STARTED</button>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
-                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                {/* <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="sr-only">Previous</span>
                 </a>
                 <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="sr-only">Next</span>
-                </a>
+                </a> */}
             </div>
         </section>
 
@@ -118,7 +119,7 @@ function Teacher(props) {
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
                     <h1 className="banner-head pb-2">Become an early childhood entrepreneur</h1>
-                        <p>Starting a Kido Village pod is easy. Fill in the form on our website and we’ll get you started on training modules and help you set up everything from your physical learning space to the marketing materials you will need to enroll children. Not just this, we also provide 24/7 support throughout your journey with us and we’ll help you every step of the way with whatever you need.</p>
+                        <p>Starting a Kido Village Pod is easy. Fill in the form on our website and we’ll get you started on training modules and help you set up everything from your physical learning space to the marketing materials you will need to enroll children. Not just this, we also provide 24/7 support throughout your journey with us and we’ll help you every step of the way with whatever you need.</p>
                         <p>For all this and more, we charge only 50% of the fee you charge from one child - no matter how many children you take in (you get to keep the rest!). </p>
                         <p>Find out how you can earn Rs 50,000+ within a couple of months by just enrolling 8 students! </p>
                     </div>
@@ -241,7 +242,7 @@ function Teacher(props) {
             <div className="container">
                 <div className="row justify-content-center py-5">
                     <div className="col-lg-12 text-center">
-                    <h1 className="banner-head text-white pb-2">Ready to begin your journey? Create your Kido pod today</h1>    
+                    <h1 className="banner-head text-white pb-2">Ready to begin your journey? Create your Kido Village Pod today</h1>    
                     <div className="banner mt-4">
                         <button onClick={openNav} className="btn my-btn center">Sign Up Now</button>
                     </div>
@@ -263,7 +264,7 @@ function Teacher(props) {
                             <li><strong className="text-dark">Technology</strong> - We will give all the technology to help you succeed. The Kïdo app will help you manage your class and your Pod and in communicating with parents. Lesson plans, curriculum, training and quality control checklists will be delivered electronically, so you're always on top of everything.</li>
                             <li><strong className="text-dark">Marketing</strong> - You will have all the marketing support you'll need. You will have a page on the website to help parents schedule tours directly with you. Marketing materials will be provided to help you market around you neighbourhood, reach out to more people in your network. City wide and country wide marketing will also be done by us at all times to help you increase your network.</li>
                             <li><strong className="text-dark">Great Economics</strong> -  Set your own fees and schedule. You'll earn according to the number of children and time you work for. It could easily be ₹50,000/month or even ₹100,000/month+! And the cost to you is minimal, starting at ₹1,500/month. All from your own home!</li>
-                            <li><strong className="text-dark">Quality Assurance</strong> - We offer best in class training on quality control, health, safety and operations. Period quality assurance calls and visits, detailed checklists and ongoing support will ensure that your Pod remains operating to the highest standard at all times.</li>
+                            <li><strong className="text-dark">Quality Assurance</strong> - We offer best in class training on quality control, health, safety and operations. Periodic quality assurance calls and visits, detailed checklists and ongoing support will ensure that your Pod remains operating to the highest standard at all times.</li>
                         </ul>
                     </div>
                 </div>
@@ -274,7 +275,7 @@ function Teacher(props) {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-10 text-center">
-                    <h1 className="banner-head pb-4">What our teachers say about our kido village</h1>
+                    <h1 className="banner-head pb-4">What our teachers say about Kido Village</h1>
                     <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                         <ol className="carousel-indicators">
                             <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -354,7 +355,7 @@ function Teacher(props) {
 
 
 
-        <section className="video-card py-5">
+        {/* <section className="video-card py-5">
             <div className="container">
             <h1 className="banner-head text-center pb-3">Hear from our teachers</h1>
                 <div className="row justify-content-center">
@@ -362,23 +363,15 @@ function Teacher(props) {
                     <div className="card-deck">
                         <div className="card">
                             <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/I7euUBZq4sw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                            {/* <div className="card-body">
-                            <h3 className="card-title">Kïdo Village Pod owner.</h3>
-                            <p className="card-text">Ms Arbin Banu, shares her experience of starting her own micro preschool in provided, she joins the ever expanding group of female eduprenuers who trust Kido Village platform to help them set up their own Micro Preschool from the convenience of their home.</p>
-                            </div> */}
                         </div>
                         <div className="card">
                         <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/CbyUND4AvPY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                            {/* <div className="card-body">
-                            <h3 className="card-title">Parent, Kïdo.</h3>
-                            <p className="card-text">Ms Sameera Reddy, Kïdo Parent talks to India CEO Mr Jeetu Karsan about parenting, Kïdo and more. The talk demonstrates our values, our principles and our commitment to educate young children in the best possible way everywhere.</p>
-                            </div> */}
                         </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> */}
 
 
                    
