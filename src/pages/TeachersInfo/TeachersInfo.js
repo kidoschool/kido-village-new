@@ -147,7 +147,7 @@ axios(config)
                         <span class="fas fa-star checked" data-rating="2"></span>
                         <span class="fas fa-star checked" data-rating="3"></span>
                         <span class="fas fa-star checked" data-rating="4"></span>
-                        <span class="fas fa-star unchecked" data-rating="5"></span>
+                        <span class="fas fa-star checked" data-rating="5"></span>
                         {/* <input type="hidden" name="whatever1" class="rating-value" value="2.56"/> */}
                     </div>
                     <div class="kido-rating star-rating">
@@ -155,7 +155,7 @@ axios(config)
                         <span class="fas fa-star checked" data-rating="1"></span>
                         <span class="fas fa-star checked" data-rating="2"></span>
                         <span class="fas fa-star checked" data-rating="3"></span>
-                        <span class="fas fa-star unchecked" data-rating="4"></span>
+                        <span class="fas fa-star checked" data-rating="4"></span>
                         <span class="fas fa-star unchecked" data-rating="5"></span>
                         {/* <input type="hidden" name="whatever1" class="rating-value" value="2.56"/> */}
                     </div>
@@ -228,7 +228,7 @@ axios(config)
                 <div className="row justify-content-center">
                     <div className="col-lg-12 text-center">
                     <h1 className="title">Contact</h1>
-                    <p><b>Email:</b><i>{selectedTeacher.email}</i></p>
+                    <p>Enquire now for pod : <i className="text-danger teacher-info-email">{selectedTeacher.email}</i></p>
                     <Maps map_centre={{lat: selectedTeacher.latitude,lng: selectedTeacher.longitude}} teacherContents={[selectedTeacher]} map_zoom={13}/>
                     </div>
                 </div>

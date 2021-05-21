@@ -49,7 +49,7 @@ _mapLoaded(mapProps, map) {
         }}
       >
         <Map onReady={(mapProps, map) => this._mapLoaded(mapProps, map)} google={this.props.google} zoom={this.props.map_zoom}  defaultZoom={1} initialCenter={this.props.map_centre} center={this.props.map_centre} zoomControl={false} mapTypeControl={false} scaleControl={false} fullscreenControl={false} scrollwheel={false} disableDoubleClickZoom={true} >
-        {Object.entries(this.props.centerContents1).map((item,k) => {
+        {Object.entries(this.props.centerContents1["centers"]).map((item,k) => {
             return <Marker icon={icon} position={{lat: item[1].lat, lng: item[1].lng}} onClick={this.onMarkerClick} name={item[1].id  }>
               <InfoWindow marker={item[1].id} visible={this.state.showingInfoWindow} ><div><h3>{this.state.selectedPlace.name}</h3></div></InfoWindow>
               </Marker>

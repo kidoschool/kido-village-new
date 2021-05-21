@@ -382,8 +382,8 @@ function Parent(props) {
                                     <i>My son has been going to Kido Village for sometime now and has shown great improvement in his speech and problem solving ability. Miss Debjani lead the class in small ratio of 1:5 or 1:06 to give personalised attention to each child movements &amp; learning process.In this pandemic Kido Village is a blessing in disguise</i>
                                     </div>
                                     <div className="text-right pt-4">
-                                        <h3>Dr Deepika &amp; Manmeet Sharma</h3>
-                                        <small className="text-primary"><i>-from Pune</i></small>
+                                        <h3>Roshni thakkar</h3>
+                                        <small className="text-primary"><i>-from Bandra</i></small>
                                     </div>
                                 </div>
                            </div>
