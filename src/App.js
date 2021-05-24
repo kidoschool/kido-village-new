@@ -20,6 +20,8 @@ import './App.css';
 import TeachersInfo from './pages/TeachersInfo/TeachersInfo';
 import ThankYou from './components/ThankYou';
 import PreSchoolThankYou from './components/PreSchoolThankYou';
+import ScheduleTourThankYou from './components/ScheduleTourThankYou';
+
 
 
 function App() {
@@ -41,7 +43,8 @@ function App() {
           <Route exact path="/cookie-policy"  component={CookiePolicy} />
           <Route exact path="/website-privacy-notice"  component={WebsitePrivacyNotice} />
           <Route exact path="/thank-you"  component={ThankYou} />
-          <Route exact path="/thankyou"  component={PreSchoolThankYou} />
+          <Route exact path="/thank_you"  component={PreSchoolThankYou} />
+          <Route exact path="/thankyou"  component={ScheduleTourThankYou} />
           <AuthProvider>
           <Route path="/LoginRegister/:tname" component={LoginRegister} />
           <PrivateRoute path="/teacher-info/:tinfo"  component={TeachersInfo} />

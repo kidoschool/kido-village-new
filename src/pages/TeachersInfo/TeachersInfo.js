@@ -6,21 +6,22 @@ import validate from 'jquery-validation';
 import tProfile from '../../assets/t-pod1.jpg';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import { withRouter, useHistory } from "react-router-dom";
 
 
 
 function TeachersInfo(props) {
           
-    const { currentUser } = useContext(AuthContext);
+  const { currentUser } = useContext(AuthContext);
     // console.log(JSON.stringify(currentUser));
 
   const teachersInfo = JSON.parse(localStorage.getItem("teachersPodData"));
 
   const [startDate, setStartDate] = useState("");
 
+  const history = useHistory();
 
   var sel_teach = props.match.params.tinfo;
-
 
   var selectedTeacher = {};
   $.each(teachersInfo, function (k, v) {
@@ -28,11 +29,8 @@ function TeachersInfo(props) {
       return selectedTeacher = v;
     }
   });
-  console.log(selectedTeacher);
+//   console.log(selectedTeacher);
 
-  function tformSubmit(e) {
-    e.preventDefault();
-}
 
 $(document).ready(function() {
   
@@ -94,6 +92,42 @@ axios(config)
 .catch(function (error) {
   console.log(error);
 });
+
+
+const tformSubmit = (event)=>{
+
+    //email send
+    event.stopPropagation();
+    event.preventDefault();
+
+    var msg = "Inquiry received form parent for Kidovillage schedule a tour with following details,<br>"
+    +" Name : "+$("#name").val()+"<br>Email : "+$("#email").val()+"<br>Contact No.:"+$("#phone").val()+"<br>Child Name : "+$("#child_name").val()+"<br>Child DOB : "+$("#child_dob").val()+"<br>Hour's per day : "+$("#hours_perday").val();
+
+    var teacherId  = selectedTeacher.id;
+
+    var form = new FormData();
+    form.append("api", "kv_schedule_tour");
+    form.append("message", msg);
+    form.append("id", teacherId)
+
+    var settings = {
+      "url": "https://shop.kidovillage.com/kvshop_api/api.php",
+      "method": "POST",
+      "timeout": 0,
+      "processData": false,
+      "mimeType": "multipart/form-data",
+      "contentType": false,
+      "data": form
+    };
+
+    $.ajax(settings).done(function (response) {
+      history.push('/thankyou');
+      console.log(response);
+    });
+
+}
+
+
 
 
 
@@ -203,7 +237,7 @@ axios(config)
                             </div>
                             <div class="form-group col-md-6">
                             <label for="hours_perday">Hour's per day</label>
-                                <select name="hours_perday" class="form-control">
+                                <select name="hours_perday" id="hours_perday" class="form-control">
 									<option value="3">3</option>
 									<option value="4">4</option>
 									<option value="5">5</option>

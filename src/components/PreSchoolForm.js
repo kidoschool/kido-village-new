@@ -178,7 +178,7 @@ function PreSchoolForm(props) {
               };
 
               $.ajax(settings).done(function (response) {
-                history.push('/thankyou');
+                history.push('/thank_you');
                 console.log(response);
               });
 

@@ -184,7 +184,7 @@ function Parent(props) {
                     <div className="col-lg-10">
                         <h1 className="banner-head pb-2">It takes a village to raise a child </h1>
                         <p>At Kido Village, we hope to transform the future of our children by making early interventions in the form of lots of love, care and exceptional education. </p>
-                        <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment Kido Village Pod is just the right place for them. Built on our internationally followed Kido Early Years Program, our pods provide the right creative environment that helps learning and development of a young brain.</p>
+                        <p>If you are looking for a nurturing environment for your child where they can learn, play and be cared for in a homely, safe environment Kido Village Pod is just the right place for them. Built on our internationally followed Kido Early Years Program and CENTA® Certification, our pods provide the right creative environment that helps learning and development of a young brain.</p>
                         <p>Each of our pods provide the nurture and trust of a community teacher, the excellence of a global education framework and a creative activity led approach to learning.</p>
                     </div>
                 </div>
