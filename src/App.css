@@ -420,6 +420,11 @@ a.wp-rights{
 .teacher-info-email{
   text-transform: lowercase;
 }
+
+a.centa-link{
+  text-decoration: none;
+  color: #962A30;
+}
 /*--------footer-area start---------*/
 .footer-area{
   background-color: #962A30;

@@ -8,6 +8,7 @@ import Parent from './pages/Parent/Parent';
 import Teacher from './pages/Teacher/Teacher';
 import PreSchool from './pages/PreSchool/PreSchool';
 import Contact from './pages/Contact/Contact';
+import Centa from './pages/Centa/Centa';
 import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
 import CookiePolicy from './pages/CookiePolicy/CookiePolicy';
 import WebsitePrivacyNotice from './pages/WebsitePrivacyNotice/WebsitePrivacyNotice';
@@ -39,6 +40,7 @@ function App() {
           <Route exact path="/pods"  component={Teacher} />
           <Route exact path="/Pre-school"  component={PreSchool} />
           <Route exact path="/contact"  component={Contact} />
+          <Route exact path="/centa"  component={Centa} />
           <Route exact path="/privacy-policy"  component={PrivacyPolicy} />
           <Route exact path="/cookie-policy"  component={CookiePolicy} />
           <Route exact path="/website-privacy-notice"  component={WebsitePrivacyNotice} />
@@ -53,14 +55,6 @@ function App() {
         <Footer />
         </ScrollToTop>
       </Router>
-
-      {/* <AuthProvider>
-      <Router>
-        <Switch>
-          <Route path="/LoginRegister" component={LoginRegister} />
-        </Switch>
-      </Router>
-    </AuthProvider> */}
 </>
   );
 }
