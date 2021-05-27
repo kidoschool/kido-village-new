@@ -119,7 +119,7 @@ function Teacher(props) {
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
                     <h1 className="banner-head pb-2">Become an early childhood entrepreneur</h1>
-                        <p>Starting a Kido Village Pod is easy. Fill in the form on our website and we’ll get you started on training with CENTA® and help you set up everything from your physical learning space to the marketing materials you will need to enroll children. Not just this, we also provide 24/7 support throughout your journey with us and we’ll help you every step of the way with whatever you need.</p>
+                        <p>Starting a Kido Village Pod is easy. Fill in the form on our website and we’ll get you started on training with CENTA<sup>®</sup> and help you set up everything from your physical learning space to the marketing materials you will need to enroll children. Not just this, we also provide 24/7 support throughout your journey with us and we’ll help you every step of the way with whatever you need.</p>
                         <p>For all this and more, we charge only 50% of the fee you charge from one child - no matter how many children you take in (you get to keep the rest!). </p>
                         <p>Find out how you can earn Rs 50,000+ within a couple of months by just enrolling 8 students! </p>
                     </div>
