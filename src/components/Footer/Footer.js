@@ -35,6 +35,7 @@ function Footer(props) {
                                 <li><Link className="" to="/">Home</Link></li>
                                   <li><Link className="" to="/parent">Parents</Link></li>
                                   <li><Link className="" to="/pods">Pods</Link></li>
+                                  <li><Link className="" to="/centa">Centa-Accreditation</Link></li>
                                   </div>
                                   <div className="col-lg-7">
                                   <li><Link className="" to="/about">About</Link></li>
