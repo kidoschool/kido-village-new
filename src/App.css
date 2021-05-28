@@ -425,6 +425,10 @@ a.hiper-link{
   text-decoration: none;
   color: #962A30;
 }
+
+.than-text{
+  font-size: 1.3rem;
+}
 /*--------footer-area start---------*/
 .footer-area{
   background-color: #962A30;

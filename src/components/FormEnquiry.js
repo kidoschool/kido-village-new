@@ -102,6 +102,7 @@ function FormEnquiry(props) {
               form.append("country", "1");
               form.append("latitude", lat);
               form.append("longitude", long);
+              form.append("source", "Website");
 
 
       
@@ -230,7 +231,13 @@ function FormEnquiry(props) {
             </div>
             <div className="form-group">
             <label for="date_of_birth">Date of Birth</label>
-            <DatePicker selected={startDate} onChange={date => setStartDate(date)}  className="form-control" name="date_of_birth" id="date_of_birth"/>
+            <DatePicker selected={startDate} onChange={date => setStartDate(date)}  
+              dateFormat="yyyy-MM-dd"
+              peekNextMonth
+              showMonthDropdown
+              showYearDropdown
+              dropdownMode="select"
+             className="form-control" name="date_of_birth" id="date_of_birth"/>
             {/* <input type="text" className="form-control" name="date_of_birth" id="date_of_birth" placeholder="Date of Birth"/> */}
             </div>
             <div className="form-group">

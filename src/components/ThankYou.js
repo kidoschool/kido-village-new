@@ -10,9 +10,8 @@ function ThankYou(props) {
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-8 text-center">
-                    <h1 className="banner-head py-4">Thank You for filling out the details, we will contact you shortly!</h1>
-                    <div><i>you are <b>2 steps</b> away from starting up with your pod, do you mind filling out a short assessment ? </i></div>
-                    <div><i>Fill out the assessment form and get started</i></div>
+                    <h1 className="banner-head py-4">Thank you for filling out the details, we will contact you shortly!</h1>
+                    <div><i className="than-text">You are <b>2 steps</b> away from starting up with your pod</i></div>
                     <div className="row pt-5 pb-3">
                         <div className="col-lg-4">
                             <div className="steps-details border shadow p-4">
@@ -36,6 +35,7 @@ function ThankYou(props) {
                             </div>
                         </div>
                     </div>
+                    <div className="pt-3 than-text"><i>For step 2 fill out the assessment form</i></div>
                     <div className="pt-4"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdivlDQfWcHLjNS-j_agj3abUaAmwSqi6dbGGgCXYrqpxqIgg/viewform" className="btn my-btn center">Get Started</a></div>
                     </div>
                 </div>
