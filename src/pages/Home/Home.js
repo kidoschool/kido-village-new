@@ -125,7 +125,7 @@ function Home(props) {
                                     <p>It's simple. If you want to set up a Kïdo Village Pod in your home, just sign up on the website and we'll be in touch with the next steps. If you're a parent, you can search and select a Pod near you, schedule tours and find one that suits you! Watch the video for an overview of how Kïdo Village works!</p>
                                 </div>
                                 <div className="offset-lg-1 col-lg-5">
-                                <iframe width="480" height="265" src="https://www.youtube.com/embed/HB4Pn1BftpQ" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                <iframe width="480" height="265" src="https://www.youtube.com/embed/8Fbm_gtltD0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                 </div>
                             </div>
                         </div>
@@ -138,13 +138,13 @@ function Home(props) {
                                 <div className="col-lg-12">
                                 <div className="card-deck">
                                     <div className="card">
-                                        <iframe className="card-img-top" width="560" height="180" src="https://www.youtube.com/embed/I7euUBZq4sw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe className="card-img-top" width="560" height="180" src="https://www.youtube.com/embed/yO6DcWYiGgA" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                     <div className="card">
-                                        <iframe className="card-img-top" width="560" height="180" src="https://www.youtube.com/embed/CbyUND4AvPY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe className="card-img-top" width="560" height="180" src="https://www.youtube.com/embed/llVV2mcAYr0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                     <div className="card">
-                                        <iframe className="card-img-top" width="560" height="180" src="https://www.youtube.com/embed/-HsoPi2Amc4" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                        <iframe className="card-img-top" width="560" height="180" src="https://www.youtube.com/embed/CvFERYoiZgQ" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                                     </div>
                                     </div>
                                 </div>

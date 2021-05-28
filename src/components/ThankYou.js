@@ -36,7 +36,7 @@ function ThankYou(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="pt-4"><a href="https://forms.gle/rMvriReR32bbLkqT6" className="btn my-btn center">Get Started</a></div>
+                    <div className="pt-4"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdivlDQfWcHLjNS-j_agj3abUaAmwSqi6dbGGgCXYrqpxqIgg/viewform" className="btn my-btn center">Get Started</a></div>
                     </div>
                 </div>
             </div>
