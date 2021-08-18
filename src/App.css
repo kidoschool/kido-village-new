@@ -199,6 +199,20 @@ button.my-btn:hover {
     color: #fff;
 }
 
+input.hs-button{
+  background-color: #962A30 !important;
+  color: #fff;
+  border: none;
+  font-size: 0.8em;
+  border-radius: 25px;
+  letter-spacing: .28px;
+  font-weight: bold;
+  padding: 12px 60px;
+  line-height: 128%;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
 
 /* .What-we-do{
   background-image: url(../src/assets/what-we-do-bg.jpg);

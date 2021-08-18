@@ -1,10 +1,23 @@
 import React from 'react';
 import CentaLogo from '../../assets/centaRLogo.jpg';
 import {Link} from "react-router-dom";
-
+import CentaForm from "../../components/CentaForm";
+import $ from "jquery";
 
 
 function Centa(props) {
+
+        /* Set the width of the side navigation to 300px and the left margin of the page content to 250px */
+        function openNav() {
+            // document.getElementById("mySidenav").style.width = "360px";
+            $( "#mySidenav" ).css( "width", "360px" );
+          }
+        
+          /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+          function closeNav() {
+            // document.getElementById("mySidenav").style.width = "0";
+            $( "#mySidenav" ).css( "width", "0" );
+          } 
 
     return(
         <>
@@ -23,12 +36,18 @@ function Centa(props) {
                         </ul>
                         <p className="centa-text">All prospective Pod Partners are required to get a CENTA accreditation as a certified Kido Village Pod Owner at the end of their training program before they can operate their Pods. With a CENTA ECE certification, you are eligible to work in the early childhood education industry anywhere, even if you don’t operate your own Pod.</p>
                         <p className="centa-text">If you are already an early childhood education professional, you may not need to undergo training in ECE. Please discuss with your counselor.</p>
-                        <p className="centa-text">Please <a target="_blank" rel="noopener noreferrer" href="https://signup.kidovillage.com/centa" className="hiper-link">click here</a> for more details, and to register for the training.</p>
+                        <p className="centa-text">Please <a onClick={openNav} className="hiper-link">click here</a> for more details, and to register for the training.</p>
                     </div>
                 </div>
             </div>
         </section>
-        
+                    <div id="mySidenav" className="sidenav bg-red border-right">
+                    <div className="p-3">
+                        <h5>Send your Enquiry</h5><a href={null} className="closebtn" onClick={closeNav}>&times;</a>
+                        <hr/>
+                        <CentaForm/>
+                    </div>
+                    </div>
 
         </>
     )

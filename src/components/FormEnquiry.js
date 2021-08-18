@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import $ from "jquery";
 import validate from 'jquery-validation';
 import { withRouter, useHistory } from "react-router-dom";
+import HubspotForm from 'react-hubspot-form';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -65,21 +66,24 @@ function FormEnquiry(props) {
           $(this).next('.custom-file-label').html(current_path);
       })
 
+      function change_off() {
+        var hubid = "e32ed3ea-9c25-480e-8553-faa1012a043a";
+        var hubiframe = $("#hubspot-form").find("iframe").contents();
+        // hubiframe.find("input").off();
+        
+        hubiframe.find("#firstname-"+hubid).removeAttr("autocomplete");
+        hubiframe.find("#firstname-"+hubid).val("asdgahd");
+        hubiframe.find("#firstname-"+hubid).trigger("change");
+      }
 
-            const formSubmit = (event)=>{
+
+      function formSubmit(event){
               var data;
               
               event.stopPropagation();
               event.preventDefault();
               var form = new FormData();
               form.append("api", "capture_teacher_lead");
-              
-              // $("#upload_cv")[0].files.length ? form.append("CV", $("#upload_cv")[0].files[0]) : false;
-
-              // if(document.getElementById("upload_cv").files.length){
-              //   form.append("CV", document.getElementById("upload_cv").files[0]);
-              // }
-
 
               if(latlongListing[$("#area").val()]){
                 var lat = latlongListing[$("#area").val()].lat;
@@ -89,22 +93,44 @@ function FormEnquiry(props) {
                 var long = "0.00";
               }
 
-              form.append("name", $("#name").val());
-              form.append("email", $("#email").val());
-              form.append("contact", $("#contact").val());
-              form.append("date_of_birth", $("#date_of_birth").val());
-              form.append("state", $("#state").val());
-              form.append("city", $("#city").val());
-              form.append("area", $("#area").val());
-              form.append("education_qualification", $("#education_qualification").val());
-              form.append("work_experience", $("#work_experience").val());
+              var hubid = "e32ed3ea-9c25-480e-8553-faa1012a043a";
+              var name = $("#name").val();
+              var email = $("#email").val();
+              var contact = $("#contact").val();
+              var date_of_birth = $("#date_of_birth").val();
+              var state = $("#state").val();
+              var city = $("#city").val();
+              var area = $("#area").val();
+              var education_qualification = $("#education_qualification").val();
+              var work_experience = $("#work_experience").val();
+              
+              var hubid = "e32ed3ea-9c25-480e-8553-faa1012a043a";
+              var hubiframe = $("#hubspot-form").find("iframe").contents();
+              hubiframe.find("#firstname-"+hubid).val(name);
+              // hubiframe.find("#firstname-"+hubid).trigger("change");
+              // hubiframe.find("#email-"+hubid).val(email).change();
+              // hubiframe.find("#mobilephone-"+hubid).val(contact).change();
+              // hubiframe.find("#date_of_birth-"+hubid).val(date_of_birth);
+              // hubiframe.find("#state-"+hubid).val($("#state option:selected").text());
+              // hubiframe.find("#city-"+hubid).val($("#city option:selected").text());
+              // hubiframe.find("#zip-"+hubid).val(area);
+              // hubiframe.find("#education_qualification-"+hubid).val(education_qualification);
+              // hubiframe.find("#work_experience-"+hubid).val(work_experience);
+
+              form.append("name", name);
+              form.append("email", email);
+              form.append("contact", contact);
+              form.append("date_of_birth", date_of_birth);
+              form.append("state", state);
+              form.append("city", city);
+              form.append("area", area);
+              form.append("education_qualification", education_qualification);
+              form.append("work_experience", work_experience);
               form.append("location_type", "APPROXIMATE");
               form.append("country", "1");
               form.append("latitude", lat);
               form.append("longitude", long);
               form.append("source", "Website");
-
-
       
               var settings = {
               "url": "https://shop.kidovillage.com/kvshop_api/api.php",
@@ -115,9 +141,13 @@ function FormEnquiry(props) {
               "contentType": false,
               "data": form,
               success: function (response) {
-                  // window.location = "thankyou-msg.html";
-                  history.push('/thank-you');
-                  // alert("completed");
+
+                var resp = JSON.parse(response);
+                if(resp.Status == "Success"){
+                  hubiframe.find(".hs-button").trigger("click");
+                }
+                  // history.push('/thank-you');
+                  // console.log(response);
               },
               error: function (xhr, ajaxOptions, thrownError) {
                   alert(xhr.status);
@@ -125,7 +155,7 @@ function FormEnquiry(props) {
               }
               };
       
-              $.ajax(settings);
+              // $.ajax(settings);
       
           }
 
@@ -164,10 +194,7 @@ function FormEnquiry(props) {
                            },
                            work_experience:{
                             required:true
-                           },
-                        //    education_qualification:{
-                        //     required:true
-                        //    },
+                           }
                       },
           
                       messages:{
@@ -202,15 +229,10 @@ function FormEnquiry(props) {
                           },
                           work_experience: {
                             required: "This field is required",
-                          },
-                        //   city: {
-                        //     required: "This field is required",
-                        //   },
-          
+                          }
                       }
                   });
             });
-
 
 
     return(
@@ -238,7 +260,6 @@ function FormEnquiry(props) {
               showYearDropdown
               dropdownMode="select"
              className="form-control" name="date_of_birth" id="date_of_birth"/>
-            {/* <input type="text" className="form-control" name="date_of_birth" id="date_of_birth" placeholder="Date of Birth"/> */}
             </div>
             <div className="form-group">
             <label for="stateselect">Select State</label>
@@ -306,7 +327,7 @@ function FormEnquiry(props) {
                 <option value="Graduate">Graduate</option> 
                 <option value="Post Graduate">Post Graduate</option>
                 <option value="NTT / ECCE">NTT / ECCE</option>
-                <option value="Undergrad">Undergrad</option>
+                <option value="Under Graduate">Under Graduate</option>
             </select>
         </div>
         <div className="form-group">
@@ -314,24 +335,26 @@ function FormEnquiry(props) {
             <select name="work_experience" className="form-control" id="work_experience">
                 <option value="">Select Your work experience</option>
                 <option value="Fresher">Fresher</option> 
-                <option value="Graduate (Non -Teacher)">Graduate (Non -Teacher)</option>
-                <option value="Teacher (1-3 years)">Teacher (1-3 years)</option>
-                <option value="Teacher (3 years +)">Teacher (3 years +)</option>
+                <option value="Graduate (Non-teacher)">Graduate (Non-teacher)</option>
+                <option value="Teacher (1 to 3 years)">Teacher (1 to 3 years)</option>
+                <option value="Teacher (Over 3 years)">Teacher (Over 3 years)</option>
             </select>
         </div>
         
-        {/* <div className="form-group">
-        <label for="upload_cv">Upload your Cv *</label>
-            <div className="custom-file">
-            <input type="file" className="custom-file-input" name="upload_cv" id="upload_cv"/>
-            <label className="custom-file-label" for="customFile">Choose file</label>
-            </div>
-        </div> */}
-        
 
     <button type="submit" name="submit" className="btn my-btn">Submit</button>
-    </form>	     
+    </form>	    
 
+            <div id="hubspot-form" className="visible">
+              <HubspotForm
+                portalId='9397213'
+                formId='e32ed3ea-9c25-480e-8553-faa1012a043a'
+                onSubmit={() => console.log('Submit!')}
+                onReady={change_off()}
+                loading={<div>Loading...</div>}
+                />
+          </div> 
+      
             </>
     )
 }
