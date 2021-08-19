@@ -381,7 +381,7 @@ function Teacher(props) {
           <h5>Start your own Micro Preschool</h5><a href={null} className="closebtn" onClick={closeNav}>&times;</a>
           <hr/>
            <FormEnquiry/>
-           <div id="hs_transit">
+           <div id="hs_transit" className="invisible">
            </div>
       </div>
     </div>

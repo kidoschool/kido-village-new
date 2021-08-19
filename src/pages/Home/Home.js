@@ -157,6 +157,8 @@ function Home(props) {
                         <h5>Send your Enquiry</h5><a href={null} className="closebtn" onClick={closeNav}>&times;</a>
                         <hr/>
                         <FormEnquiry/>
+                        <div id="hs_transit" className="invisible">
+                        </div>
                     </div>
                     </div>
                     
