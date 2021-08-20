@@ -67,21 +67,6 @@ function FormEnquiry(props) {
       })
 
       function change_off(form) {
-        // var hubid = "e32ed3ea-9c25-480e-8553-faa1012a043a";
-        // var hubiframe = $("#hubspot-form").find("iframe").contents();
-        // var hubiframe = $(form).html();
-        // // hubiframe.find("input").off();
-        // console.log(hubiframe.find("body").html());
-        // console.log(   (hubiframe.find("#firstname-"+hubid)).length   );
-        // console.log(hubiframe);        
-        // hubiframe.find("#firstname-"+hubid).removeAttr("autocomplete");
-        // hubiframe.find("#firstname-"+hubid).val("asdgahd");
-        // hubiframe.find("#firstname-"+hubid).trigger("change");
-        // console.log(form);
-        // console.log($("#hubspot-form").find("iframe").length);
-        // var hubid = "e32ed3ea-9c25-480e-8553-faa1012a043a";
-        // var hubiframe = $("#hubspot-form").find("iframe").contents();
-        // $("#hs_transit").append(hubiframe.find("body"));
 
         var hsform_wait_ifrm = setInterval(function(){
           var hubid = "e32ed3ea-9c25-480e-8553-faa1012a043a";
@@ -96,31 +81,6 @@ function FormEnquiry(props) {
               clearInterval(hsform_wait_ifrm);
           }
         }, 300);
-      }
-
-      function test_click() {
-        var hubid = "e32ed3ea-9c25-480e-8553-faa1012a043a";
-        var name = "Fuazan Falke";
-        var email = "fuazan@gmail.com";
-        var contact = "723673276";
-        var date_of_birth = "22/11/2011";
-        var state = "Maha";
-        var city = "mum";
-        var area = "34273";
-        var education_qualification = "Graduate";
-        var work_experience = "Fresher";
-
-        var hubiframe = $("#hs_transit");
-        $("#firstname-"+hubid).val(name);
-        $("#email-"+hubid).val(email);
-        $("#mobilephone-"+hubid).val(contact);
-        $("#date_of_birth-"+hubid).val(date_of_birth);
-        $("#state-"+hubid).val(state);
-        $("#city-"+hubid).val(city);
-        $("#zip-"+hubid).val(area);
-        $("#education_qualification-"+hubid).val(education_qualification);
-        $("#work_experience-"+hubid).val(work_experience);
-        hubiframe.find(".hs-button").trigger("click");
       }
 
       function formSubmit(event){
@@ -203,7 +163,7 @@ function FormEnquiry(props) {
                 if(resp.Status == "Success"){
                   hubiframe.find(".hs-button").trigger("click");
                 }
-                  // history.push('/thank-you');
+                  history.push('/thank-you');
                   console.log(response);
               },
               error: function (xhr, ajaxOptions, thrownError) {
