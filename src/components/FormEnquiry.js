@@ -162,8 +162,8 @@ function FormEnquiry(props) {
                 var resp = JSON.parse(response);
                 if(resp.Status == "Success"){
                   hubiframe.find(".hs-button").trigger("click");
+                  setTimeout(function(){ history.push('/thank-you'); }, 2000);
                 }
-                  history.push('/thank-you');
                   console.log(response);
               },
               error: function (xhr, ajaxOptions, thrownError) {
