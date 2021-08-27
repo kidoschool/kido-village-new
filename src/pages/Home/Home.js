@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
 import ParentsBanner from '../../assets/parents-banner.jpg';
 import TeachersBanner from '../../assets/teachers-banner-new.jpg';
@@ -7,6 +7,8 @@ import FormEnquiry from "../../components/FormEnquiry";
 import AOS from "aos";
 import $ from "jquery";
 import "aos/dist/aos.css";
+import latlongList from "../Teacher/pincodes_lat_long.json";
+
 
 
 function Home(props) {
@@ -25,6 +27,9 @@ function Home(props) {
             $( "#mySidenav" ).css( "width", "0" );
           } 
 
+          useEffect(() => {
+            localStorage.setItem('latlongList', JSON.stringify(latlongList));
+          });
 
 
     return(

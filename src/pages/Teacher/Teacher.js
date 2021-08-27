@@ -10,7 +10,7 @@ import FormEnquiry from "../../components/FormEnquiry";
 import AOS from "aos";
 import $ from "jquery";
 import "aos/dist/aos.css";
-import latlongList from "./pincodes_lat_long.json";
+// import latlongList from "./pincodes_lat_long.json";
 
 
 function Teacher(props) {
@@ -58,9 +58,9 @@ function Teacher(props) {
             }
         });
 
-        useEffect(() => {
-            localStorage.setItem('latlongList', JSON.stringify(latlongList));
-          });
+        // useEffect(() => {
+        //     localStorage.setItem('latlongList', JSON.stringify(latlongList));
+        //   });
         
 
     return(
