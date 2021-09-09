@@ -94,7 +94,7 @@ function Contact(props) {
                 <div className="col-lg-3">
                 <div className="contact=info pt-4">
                     <div className="icon mb-3"><i className="fa fa-phone"></i> Get in Touch</div>
-                    <p>+91 8779395644</p>
+                    {/* <p>+91 8779395644</p> */}
                     <p>+91 7718860303</p>
                     <div className="icon mb-3"><i className="fa fa-envelope"></i> Mail Us At</div>
                     <p>enquiry@kidovillage.com</p>
