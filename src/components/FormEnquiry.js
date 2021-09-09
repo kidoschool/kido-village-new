@@ -160,6 +160,8 @@ function FormEnquiry(props) {
               success: function (response) {
 
                 var resp = JSON.parse(response);
+                // localStorage.setItem('RegisterTeachersData', JSON.stringify(response));
+
                 if(resp.Status == "Success"){
                   hubiframe.find(".hs-button").trigger("click");
                   setTimeout(function(){ history.push('/thank-you'); }, 2000);
@@ -175,6 +177,7 @@ function FormEnquiry(props) {
               $.ajax(settings);
       
           }
+
 
           $(document).ready(function() {
   
