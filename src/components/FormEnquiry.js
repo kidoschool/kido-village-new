@@ -160,9 +160,9 @@ function FormEnquiry(props) {
               success: function (response) {
 
                 var resp = JSON.parse(response);
-                // localStorage.setItem('RegisterTeachersData', JSON.stringify(response));
 
                 if(resp.Status == "Success"){
+                  // localStorage.setItem('RegisterTeachersData', JSON.stringify(response.data));
                   hubiframe.find(".hs-button").trigger("click");
                   setTimeout(function(){ history.push('/thank-you'); }, 2000);
                 }
@@ -181,7 +181,7 @@ function FormEnquiry(props) {
 
           $(document).ready(function() {
   
-            $("#validatetsignup").validate({
+            $("#e32ed3ea-9c25-480e-8553-faa1012a043a").validate({
                       rules:{
                           name:{
                               required:true,
@@ -258,7 +258,7 @@ function FormEnquiry(props) {
     return(
         <>
             
-            <form onSubmit={formSubmit} className="form" id="validatetsignup">
+            <form onSubmit={formSubmit} className="form" id="e32ed3ea-9c25-480e-8553-faa1012a043a">
             <div className="form-group">
             <label for="name">Name</label>
             <input type="text" className="form-control" name="name" id="name" placeholder="Name"/>
