@@ -1,10 +1,23 @@
 import React from 'react';
+import $ from 'jquery';
 import HubspotForm from 'react-hubspot-form';
 
 
 function ThankYou(props) {
 
-    
+    const RegisterTeachersData = JSON.parse(localStorage.getItem("RegisterTeachersData"));
+
+    var name = RegisterTeachersData.name;
+    var email = RegisterTeachersData.email;
+    var contact = RegisterTeachersData.contact;
+
+    var hubiframe = $("#reactHubspotForm1").find("iframe").contents();
+    var hubid = "ba33ae05-f89d-4f20-ba77-595aee8277c6";
+  
+    hubiframe.find("#firstname-"+hubid).val(name);
+    hubiframe.find("#email-"+hubid).val(email);
+    hubiframe.find("#contact-"+hubid).val(contact);
+
 
     return(
         <>

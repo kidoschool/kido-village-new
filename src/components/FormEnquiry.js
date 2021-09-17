@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import $ from "jquery";
 import validate from 'jquery-validation';
-import { withRouter, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import HubspotForm from 'react-hubspot-form';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
@@ -162,8 +162,8 @@ function FormEnquiry(props) {
                 var resp = JSON.parse(response);
 
                 if(resp.Status == "Success"){
-                  // localStorage.setItem('RegisterTeachersData', JSON.stringify(response.data));
-                  hubiframe.find(".hs-button").trigger("click");
+                  localStorage.setItem('RegisterTeachersData', JSON.stringify({"name" : name, "email" : email, "contact" : contact }));
+                  // hubiframe.find(".hs-button").trigger("click");
                   setTimeout(function(){ history.push('/thank-you'); }, 2000);
                 }
                   console.log(response);

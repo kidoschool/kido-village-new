@@ -1,7 +1,4 @@
 import React, {useState ,useEffect} from 'react';
-// import PodBanner1 from '../../assets/POD-18.jpg';
-// import PodBanner2 from '../../assets/POD-8.jpg';
-// import PodBanner3 from '../../assets/POD-19.jpg';
 import ParentBanner1 from '../../assets/parent-banner-new.png';
 import testiProfile1 from '../../assets/parent1.jpg';
 import testiProfile2 from '../../assets/parent-new.jpg';
@@ -30,8 +27,6 @@ function Parent(props) {
             $( "#mySidenav" ).css( "width", "0" );
           } 
 
-        //   const [selectState, setSelectState] = useState("");
-        //   const [selectCity, setSelectCity] = useState("");
           const [cityData, setCityData] = useState("");
           const [teachersPodData, setTeachersPodData] = useState("");
           const [mapCenter, SetMapCenter] = useState("");
@@ -98,9 +93,6 @@ function Parent(props) {
 
           }
 
-        //   const handleSelectCityChange1 = () => {
-        //     handleSelectCityChange();
-        //   }
 
             const todosPerPage = 4;
             const [ activePage, setCurrentPage ] = useState( 1 );
@@ -129,42 +121,6 @@ function Parent(props) {
            
     return(
         <>
-           
-        {/* <section className="main_banner">
-            <div id="carouselExampleControls" className="carousel slide carousel-fade" data-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <div className="overlay1"></div>
-                        <img src={PodBanner1} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
-                        <div className="carousel-caption d-md-block">
-                            <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="overlay1"></div>
-                        <img src={PodBanner2} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
-                        <div className="carousel-caption d-md-block">
-                            <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1>
-                        </div>
-                    </div>
-                    <div className="carousel-item">
-                        <div className="overlay1"></div>
-                        <img src={PodBanner3} className="parent-banner-img d-block w-100 img-fluid" alt="Responsive image"/>
-                        <div className="carousel-caption d-md-block">
-                            <h1 className="banner-head1 text-white">Give your child the best in early education and care</h1>
-                        </div>
-                    </div>
-                </div>
-                <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="sr-only">Previous</span>
-                </a>
-                <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="sr-only">Next</span>
-                </a>
-            </div>
-        </section> */}
 
             <section className="banner-parent">
                 <div className="container-fluid">
@@ -422,26 +378,6 @@ function Parent(props) {
                 </div>
             </div>
         </section>
-
-
-
-        {/* <section className="video-card py-5">
-            <div className="container">
-            <h1 className="banner-head text-center pb-3">Hear from our parents</h1>
-                <div className="row justify-content-center">
-                    <div className="col-lg-12">
-                    <div className="card-deck">
-                        <div className="card">
-                            <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/I7euUBZq4sw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                        </div>
-                        <div className="card">
-                        <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/vglc5eR8HTM" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>               */}
 
         <div id="mySidenav" className="sidenav bg-light border-right">
         <div className="p-3">
