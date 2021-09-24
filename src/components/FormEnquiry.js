@@ -260,19 +260,19 @@ function FormEnquiry(props) {
             
             <form onSubmit={formSubmit} className="form" id="e32ed3ea-9c25-480e-8553-faa1012a043a">
             <div className="form-group">
-            <label for="name">Name</label>
+            <label for="name">Name <tm className="text-danger">*</tm></label>
             <input type="text" className="form-control" name="name" id="name" placeholder="Name"/>
             </div>
             <div className="form-group">
-            <label for="email">Email</label>
+            <label for="email">Email <tm className="text-danger">*</tm></label>
             <input type="email" className="form-control" name="email" id="email" placeholder="Email"/>
             </div>
             <div className="form-group">
-            <label for="contact">Mobile Number</label>
+            <label for="contact">Mobile Number <tm className="text-danger">*</tm></label>
             <input type="text" className="form-control" name="contact" id="contact" placeholder="Phone No"/>
             </div>
             <div className="form-group">
-            <label for="date_of_birth">Date of Birth</label>
+            <label for="date_of_birth">Date of Birth <tm className="text-danger">*</tm></label>
             <DatePicker selected={startDate} onChange={date => setStartDate(date)}  
               dateFormat="yyyy-MM-dd"
               peekNextMonth
@@ -282,7 +282,7 @@ function FormEnquiry(props) {
              className="form-control" name="date_of_birth" id="date_of_birth"/>
             </div>
             <div className="form-group">
-            <label for="stateselect">Select State</label>
+            <label for="stateselect">Select State <tm className="text-danger">*</tm></label>
             <select name="state" className="form-control" id="state" 
             onChange={handleSelectStateChange}>
                 <option value="">Select any state</option>
@@ -324,7 +324,7 @@ function FormEnquiry(props) {
             </select>
         </div>
         <div className="form-group">
-            <label for="inputEmail4">Select City</label>
+            <label for="inputEmail4">Select City <tm className="text-danger">*</tm></label>
             <select name="city" className="form-control" id="city" 
             value={selectCity}
             onChange={handleSelectCityChange}>
@@ -337,11 +337,11 @@ function FormEnquiry(props) {
             </select>
         </div>
         <div className="form-group">
-            <label for="area">Pincode</label>
+            <label for="area">Pincode <tm className="text-danger">*</tm></label>
             <input type="text" className="form-control" name="area" id="area" placeholder="Enter Area"/>
         </div>
         <div className="form-group">
-            <label for="education_qualification">Education Qualification</label>
+            <label for="education_qualification">Education Qualification <tm className="text-danger">*</tm></label>
             <select name="education_qualification" className="form-control" id="education_qualification">
                 <option value="">Select Your Qualification</option>
                 <option value="Graduate">Graduate</option> 
@@ -351,7 +351,7 @@ function FormEnquiry(props) {
             </select>
         </div>
         <div className="form-group">
-            <label for="work_experience">Work Experience</label>
+            <label for="work_experience">Work Experience <tm className="text-danger">*</tm></label>
             <select name="work_experience" className="form-control" id="work_experience">
                 <option value="">Select Your work experience</option>
                 <option value="Fresher">Fresher</option> 
