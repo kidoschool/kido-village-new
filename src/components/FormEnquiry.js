@@ -268,7 +268,7 @@ function FormEnquiry(props) {
             <input type="email" className="form-control" name="email" id="email" placeholder="Email"/>
             </div>
             <div className="form-group">
-            <label for="contact">Mobile Number <tm className="text-danger"></tm></label>
+            <label for="contact">Mobile Number <tm className="text-danger">*</tm></label>
             <input type="text" className="form-control" name="contact" id="contact" placeholder="Phone No"/>
             </div>
             <div className="form-group">
