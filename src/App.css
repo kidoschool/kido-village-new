@@ -154,6 +154,7 @@ a.my-btn {
     line-height: 128%;
     margin-bottom: 20px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 a.my-btn:hover {

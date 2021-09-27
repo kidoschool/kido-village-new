@@ -38,7 +38,11 @@ function App() {
           <Route exact path="/about"  component={About} />
           <Route exact path="/parent"  component={Parent} />
           <Route exact path="/pods"  component={Teacher} />
-          <Route exact path="/Pre-school"  component={PreSchool} />
+          {/* <Route exact path="/Pre-school"  component={PreSchool} /> */}
+          <Route path='/Pre-school' component={() => { 
+              window.location.href = 'https://www.kidofranchise.com/'; 
+              return null;
+          }}/>
           <Route exact path="/contact"  component={Contact} />
           <Route exact path="/centa"  component={Centa} />
           <Route exact path="/privacy-policy"  component={PrivacyPolicy} />
