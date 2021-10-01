@@ -106,13 +106,21 @@ function Parent(props) {
              };
 
 
-             if(teachersPodData.length){
+             if(teachersPodData.length && cityData.length){
                 $( "#teacherpodlist" ).css( "display", "block" );
                 $( "#podnotfounderror" ).css( "display", "none" );
              }else{
                 $( "#teacherpodlist" ).css( "display", "none" );
                 $( "#podnotfounderror" ).css( "display", "block" );
              }
+
+
+             if($('#city').val() == 0){
+                $( "#podnotfounderror" ).css( "display", "none" );
+             }
+
+             console.log(teachersPodData.length);
+             console.log(cityData.length);
 
              useEffect(() => {
                 localStorage.setItem('teachersPodData', JSON.stringify(teachersPodData));
