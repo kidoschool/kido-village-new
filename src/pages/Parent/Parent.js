@@ -10,7 +10,7 @@ import Maps from "../../components/Map/Maps";
 import AOS from "aos";
 import $ from "jquery";
 import "aos/dist/aos.css";
-
+import cities from "./cities.json";
 
 function Parent(props) {
 
@@ -34,28 +34,28 @@ function Parent(props) {
           const handleSelectStateChange = (event)=>{
             // setSelectState(event.target.value)
             var st_id = event.target.value;
-
-            var axios = require('axios');
-            var FormData = require('form-data');
-            var data = new FormData();
-            data.append('api', 'get_city_by_state');
-            data.append('filter', '{"state_id":'+st_id+'}');
-
-            var config = {
-            method: 'post',
-            url: 'https://shop.kidovillage.com/kvshop_api/api.php',
-            headers: { 
-               
-            },
-            data : data
-            };
-
-                axios(config)
-                .then((response) => {
-                    setCityData(response.data);
-                    // console.log(response.data);
-                })
-                .catch((error) => console.log(error));  
+            setCityData(cities[st_id]);
+            $("#city").val(0);
+            setTeachersPodData([]);
+            // console.log(cities[st_id]);
+            // var axios = require('axios');
+            // var FormData = require('form-data');
+            // var data = new FormData();
+            // data.append('api', 'get_city_by_state');
+            // data.append('filter', '{"state_id":'+st_id+'}');
+            // var config = {
+            // method: 'post',
+            // url: 'https://shop.kidovillage.com/kvshop_api/api.php',
+            // headers: { 
+            // },
+            // data : data
+            // };
+            //     axios(config)
+            //     .then((response) => {
+            //         setCityData(response.data);
+            //         console.log(response.data);
+            //     })
+            //     .catch((error) => console.log(error));  
           }
 
           var handleSelectCityChange = (event)=>{
@@ -209,7 +209,7 @@ function Parent(props) {
                             <label for="inputEmail4">Select City</label>
                             <select name="city" className="form-control" id="city" 
                             onChange={handleSelectCityChange}>
-                                <option value="0">Select any state</option>
+                                <option value="0">Select City</option>
                                 {Object.entries(cityData).map((item) => {
                                     return(
                                 <option value={item[1].id}>{item[1].name}</option>
