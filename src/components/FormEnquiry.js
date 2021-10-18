@@ -4,14 +4,13 @@ import validate from 'jquery-validation';
 import { useHistory } from "react-router-dom";
 import HubspotForm from 'react-hubspot-form';
 import DatePicker from "react-datepicker";
+import cities from "../pages/Parent/cities.json";
 import "react-datepicker/dist/react-datepicker.css";
 
 function FormEnquiry(props) {
 
       const latlongListing = JSON.parse(localStorage.getItem("latlongList"));
-      // console.log(latlongListing["400055"]);
 
-       //   const [selectState, setSelectState] = useState("");
        const [selectCity, setSelectCity] = useState("");
        const [cityData, setCityData] = useState("");
 
@@ -20,30 +19,9 @@ function FormEnquiry(props) {
        const history = useHistory();
 
        const handleSelectStateChange = (event)=>{
-         // setSelectState(event.target.value)
          var st_id = event.target.value;
-
-         var axios = require('axios');
-         var FormData = require('form-data');
-         var data = new FormData();
-         data.append('api', 'get_city_by_state');
-         data.append('filter', '{"state_id":'+st_id+'}');
-
-         var config = {
-         method: 'post',
-         url: 'https://shop.kidovillage.com/kvshop_api/api.php',
-         headers: { 
-            
-         },
-         data : data
-         };
-
-             axios(config)
-             .then((response) => {
-                 setCityData(response.data);
-                 // console.log(response.data);
-             })
-             .catch((error) => console.log(error));  
+         setCityData(cities[st_id]);
+         $("#city").val(0); 
        }
 
        const handleSelectCityChange = (event)=>{
@@ -77,7 +55,6 @@ function FormEnquiry(props) {
               // console.log(hubiframe.find("body script").remove());
               $("#hs_transit").append(hubiframe.find("body").html());
               $("#hubspot-form").find("iframe").remove();
-              // $("#hs_transit").append(`<div class="hbspt-form" id="hbspt-form-1629360041534-9791445167"><form novalidate="" accept-charset="UTF-8" action="https://forms.hsforms.com/submissions/v3/public/submit/formsnext/multipart/9397213/e32ed3ea-9c25-480e-8553-faa1012a043a" enctype="multipart/form-data" id="hsForm_e32ed3ea-9c25-480e-8553-faa1012a043a" method="POST" class="hs-form stacked hs-custom-style hs-form-private hsForm_e32ed3ea-9c25-480e-8553-faa1012a043a hs-form-e32ed3ea-9c25-480e-8553-faa1012a043a hs-form-e32ed3ea-9c25-480e-8553-faa1012a043a_92a27f45-1c5a-46a4-a75d-4359a1b52ba2" data-form-id="e32ed3ea-9c25-480e-8553-faa1012a043a" data-portal-id="9397213" target="target_iframe_e32ed3ea-9c25-480e-8553-faa1012a043a" data-reactid=".hbspt-forms-0"><div class="hs_firstname hs-firstname hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.1:$0"><label id="label-firstname-e32ed3ea-9c25-480e-8553-faa1012a043a" class="" placeholder="Enter your First name" for="firstname-e32ed3ea-9c25-480e-8553-faa1012a043a" data-reactid=".hbspt-forms-0.1:$0.0"><span data-reactid=".hbspt-forms-0.1:$0.0.0">First name</span></label><legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.1:$0.1"></legend><div class="input" data-reactid=".hbspt-forms-0.1:$0.$firstname"><input id="firstname-e32ed3ea-9c25-480e-8553-faa1012a043a" class="hs-input" type="text" name="firstname" value="" placeholder="" autocomplete="given-name" data-reactid=".hbspt-forms-0.1:$0.$firstname.0" inputmode="text"></div></div><div class="hs_email hs-email hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.1:$1"><label id="label-email-e32ed3ea-9c25-480e-8553-faa1012a043a" class="" placeholder="Enter your Email" for="email-e32ed3ea-9c25-480e-8553-faa1012a043a" data-reactid=".hbspt-forms-0.1:$1.0"><span data-reactid=".hbspt-forms-0.1:$1.0.0">Email</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.1:$1.0.1">*</span></label><legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.1:$1.1"></legend><div class="input" data-reactid=".hbspt-forms-0.1:$1.$email"><input id="email-e32ed3ea-9c25-480e-8553-faa1012a043a" class="hs-input" type="email" name="email" required="" placeholder="" value="" autocomplete="email" data-reactid=".hbspt-forms-0.1:$1.$email.0" inputmode="email"></div></div><div class="hs_mobilephone hs-mobilephone hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.1:$2"><label id="label-mobilephone-e32ed3ea-9c25-480e-8553-faa1012a043a" class="" placeholder="Enter your Mobile phone number" for="mobilephone-e32ed3ea-9c25-480e-8553-faa1012a043a" data-reactid=".hbspt-forms-0.1:$2.0"><span data-reactid=".hbspt-forms-0.1:$2.0.0">Mobile phone number</span><span class="hs-form-required" data-reactid=".hbspt-forms-0.1:$2.0.1">*</span></label><legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.1:$2.1"></legend><div class="input" data-reactid=".hbspt-forms-0.1:$2.$mobilephone"><input id="mobilephone-e32ed3ea-9c25-480e-8553-faa1012a043a" class="hs-input" type="tel" name="mobilephone" required="" value="" placeholder="" autocomplete="mobile" data-reactid=".hbspt-forms-0.1:$2.$mobilephone.0" inputmode="tel"></div></div><div class="hs_date_of_birth hs-date_of_birth hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.1:$3"><label id="label-date_of_birth-e32ed3ea-9c25-480e-8553-faa1012a043a" class="" placeholder="Enter your Date of birth" for="date_of_birth-e32ed3ea-9c25-480e-8553-faa1012a043a" data-reactid=".hbspt-forms-0.1:$3.0"><span data-reactid=".hbspt-forms-0.1:$3.0.0">Date of birth</span></label><legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.1:$3.1"></legend><div class="input" data-reactid=".hbspt-forms-0.1:$3.$date_of_birth"><input id="date_of_birth-e32ed3ea-9c25-480e-8553-faa1012a043a" class="hs-input" type="text" name="date_of_birth" value="" placeholder="" data-reactid=".hbspt-forms-0.1:$3.$date_of_birth.0" inputmode="text"></div></div><div class="hs_state hs-state hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.1:$4"><label id="label-state-e32ed3ea-9c25-480e-8553-faa1012a043a" class="" placeholder="Enter your State/Region" for="state-e32ed3ea-9c25-480e-8553-faa1012a043a" data-reactid=".hbspt-forms-0.1:$4.0"><span data-reactid=".hbspt-forms-0.1:$4.0.0">State/Region</span></label><legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.1:$4.1"></legend><div class="input" data-reactid=".hbspt-forms-0.1:$4.$state"><input id="state-e32ed3ea-9c25-480e-8553-faa1012a043a" class="hs-input" type="text" name="state" value="" placeholder="" autocomplete="address-level1" data-reactid=".hbspt-forms-0.1:$4.$state.0" inputmode="text"></div></div><div class="hs_city hs-city hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.1:$5"><label id="label-city-e32ed3ea-9c25-480e-8553-faa1012a043a" class="" placeholder="Enter your City" for="city-e32ed3ea-9c25-480e-8553-faa1012a043a" data-reactid=".hbspt-forms-0.1:$5.0"><span data-reactid=".hbspt-forms-0.1:$5.0.0">City</span></label><legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.1:$5.1"></legend><div class="input" data-reactid=".hbspt-forms-0.1:$5.$city"><input id="city-e32ed3ea-9c25-480e-8553-faa1012a043a" class="hs-input" type="text" name="city" value="" placeholder="" autocomplete="address-level2" data-reactid=".hbspt-forms-0.1:$5.$city.0" inputmode="text"></div></div><div class="hs_zip hs-zip hs-fieldtype-text field hs-form-field" data-reactid=".hbspt-forms-0.1:$6"><label id="label-zip-e32ed3ea-9c25-480e-8553-faa1012a043a" class="" placeholder="Enter your Postal code" for="zip-e32ed3ea-9c25-480e-8553-faa1012a043a" data-reactid=".hbspt-forms-0.1:$6.0"><span data-reactid=".hbspt-forms-0.1:$6.0.0">Postal code</span></label><legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.1:$6.1"></legend><div class="input" data-reactid=".hbspt-forms-0.1:$6.$zip"><input id="zip-e32ed3ea-9c25-480e-8553-faa1012a043a" class="hs-input" type="text" name="zip" value="" placeholder="" data-reactid=".hbspt-forms-0.1:$6.$zip.0" inputmode="text"></div></div><div class="hs_education_qualification hs-education_qualification hs-fieldtype-select field hs-form-field" data-reactid=".hbspt-forms-0.1:$7"><label id="label-education_qualification-e32ed3ea-9c25-480e-8553-faa1012a043a" class="" placeholder="Enter your Education Qualification" for="education_qualification-e32ed3ea-9c25-480e-8553-faa1012a043a" data-reactid=".hbspt-forms-0.1:$7.0"><span data-reactid=".hbspt-forms-0.1:$7.0.0">Education Qualification</span></label><legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.1:$7.1"></legend><div class="input" data-reactid=".hbspt-forms-0.1:$7.$education_qualification"><select id="education_qualification-e32ed3ea-9c25-480e-8553-faa1012a043a" class="hs-input is-placeholder" name="education_qualification" data-reactid=".hbspt-forms-0.1:$7.$education_qualification.0"><option value="" disabled="" selected="" data-reactid=".hbspt-forms-0.1:$7.$education_qualification.0.0">Please Select</option><option value="Graduate" data-reactid=".hbspt-forms-0.1:$7.$education_qualification.0.1:$Graduate">Graduate</option><option value="Post Graduate" data-reactid=".hbspt-forms-0.1:$7.$education_qualification.0.1:$Post Graduate">Post Graduate</option><option value="NTT / ECCE" data-reactid=".hbspt-forms-0.1:$7.$education_qualification.0.1:$NTT / ECCE">NTT / ECCE</option><option value="Under Graduate" data-reactid=".hbspt-forms-0.1:$7.$education_qualification.0.1:$Under Graduate">Under Graduate</option></select></div></div><div class="hs_work_experience hs-work_experience hs-fieldtype-select field hs-form-field" data-reactid=".hbspt-forms-0.1:$8"><label id="label-work_experience-e32ed3ea-9c25-480e-8553-faa1012a043a" class="" placeholder="Enter your Work Experience" for="work_experience-e32ed3ea-9c25-480e-8553-faa1012a043a" data-reactid=".hbspt-forms-0.1:$8.0"><span data-reactid=".hbspt-forms-0.1:$8.0.0">Work Experience</span></label><legend class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.1:$8.1"></legend><div class="input" data-reactid=".hbspt-forms-0.1:$8.$work_experience"><select id="work_experience-e32ed3ea-9c25-480e-8553-faa1012a043a" class="hs-input is-placeholder" name="work_experience" data-reactid=".hbspt-forms-0.1:$8.$work_experience.0"><option value="" disabled="" selected="" data-reactid=".hbspt-forms-0.1:$8.$work_experience.0.0">Please Select</option><option value="Fresher" data-reactid=".hbspt-forms-0.1:$8.$work_experience.0.1:$Fresher">Fresher</option><option value="Graduate (Non-teacher)" data-reactid=".hbspt-forms-0.1:$8.$work_experience.0.1:$Graduate (Non-teacher)">Graduate (Non-teacher)</option><option value="Teacher (1 to 3 years)" data-reactid=".hbspt-forms-0.1:$8.$work_experience.0.1:$Teacher (1 to 3 years)">Teacher (1 to 3 years)</option><option value="Teacher (Over 3 years)" data-reactid=".hbspt-forms-0.1:$8.$work_experience.0.1:$Teacher (Over 3 years)">Teacher (Over 3 years)</option></select></div></div><noscript data-reactid=".hbspt-forms-0.2"></noscript><div class="hs_submit hs-submit" data-reactid=".hbspt-forms-0.5"><div class="hs-field-desc" style="display:none;" data-reactid=".hbspt-forms-0.5.0"></div><div class="actions" data-reactid=".hbspt-forms-0.5.1"><input type="submit" value="Submit" class="hs-button primary large" data-reactid=".hbspt-forms-0.5.1.0"></div></div><noscript data-reactid=".hbspt-forms-0.6"></noscript><input name="hs_context" type="hidden" value="{&quot;rumScriptExecuteTime&quot;:1519.800000000745,&quot;rumServiceResponseTime&quot;:1808.199999999255,&quot;rumFormRenderTime&quot;:9.399999998509884,&quot;rumTotalRenderTime&quot;:161.79999999701977,&quot;rumTotalRequestTime&quot;:283.30000000074506,&quot;lang&quot;:&quot;en&quot;,&quot;embedType&quot;:&quot;REGULAR&quot;,&quot;embedAtTimestamp&quot;:&quot;1629360041232&quot;,&quot;formDefinitionUpdatedAt&quot;:&quot;1629176307025&quot;,&quot;pageUrl&quot;:&quot;http://localhost:3000/pods&quot;,&quot;pageTitle&quot;:&quot;kido-village&quot;,&quot;source&quot;:&quot;FormsNext-static-5.358&quot;,&quot;timestamp&quot;:1629360041235,&quot;userAgent&quot;:&quot;Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36&quot;,&quot;referrer&quot;:&quot;http://localhost:3000/&quot;,&quot;originalEmbedContext&quot;:{&quot;portalId&quot;:&quot;9397213&quot;,&quot;formId&quot;:&quot;e32ed3ea-9c25-480e-8553-faa1012a043a&quot;,&quot;target&quot;:&quot;#hbspt-form-1629360041534-9791445167&quot;,&quot;shellId&quot;:0,&quot;shell&quot;:true,&quot;pageUrl&quot;:&quot;http://localhost:3000/pods&quot;,&quot;pageTitle&quot;:&quot;kido-village&quot;},&quot;formTarget&quot;:&quot;#hbspt-form-1629360041534-9791445167&quot;,&quot;correlationId&quot;:&quot;e7708439-9039-4b7e-a342-a8fb3e5a9d46&quot;,&quot;useRecaptchaEnterprise&quot;:true,&quot;isIframe&quot;:true}" data-reactid=".hbspt-forms-0.7"><iframe name="target_iframe_e32ed3ea-9c25-480e-8553-faa1012a043a" style="display:none;" data-reactid=".hbspt-forms-0.8"></iframe></form></div>`);
               clearInterval(hsform_wait_ifrm);
           }
         }, 300);
@@ -110,18 +87,6 @@ function FormEnquiry(props) {
               
               var hubid = "e32ed3ea-9c25-480e-8553-faa1012a043a";
 
-              // var hubiframe = $("#hubspot-form").find("iframe").contents();
-              // var hubiframe = $("#hs_transit");
-              // hubiframe.find("#firstname-"+hubid).val(name);
-              // hubiframe.find("#email-"+hubid).val(email);
-              // hubiframe.find("#mobilephone-"+hubid).val(contact);
-              // hubiframe.find("#date_of_birth-"+hubid).val(date_of_birth);
-              // hubiframe.find("#state-"+hubid).val($("#state option:selected").text());
-              // hubiframe.find("#city-"+hubid).val($("#city option:selected").text());
-              // hubiframe.find("#zip-"+hubid).val(area);
-              // hubiframe.find("#education_qualification-"+hubid).val(education_qualification);
-              // hubiframe.find("#work_experience-"+hubid).val(work_experience);
-
               var hubiframe = $("#hs_transit");
               $("#firstname-"+hubid).val(name);
               $("#email-"+hubid).val(email);
@@ -133,7 +98,6 @@ function FormEnquiry(props) {
               $("#education_qualification-"+hubid).val(education_qualification);
               $("#work_experience-"+hubid).val(work_experience);
       
-
               form.append("name", name);
               form.append("email", email);
               form.append("contact", contact);
@@ -163,7 +127,7 @@ function FormEnquiry(props) {
 
                 if(resp.Status == "Success"){
                   localStorage.setItem('RegisterTeachersData', JSON.stringify({"name" : name, "email" : email, "contact" : contact }));
-                  // hubiframe.find(".hs-button").trigger("click");
+                  hubiframe.find(".hs-button").trigger("click");
                   setTimeout(function(){ history.push('/thank-you'); }, 2000);
                 }
                   console.log(response);
@@ -258,7 +222,7 @@ function FormEnquiry(props) {
     return(
         <>
             
-            <form onSubmit={formSubmit} className="form" id="e32ed3ea-9c25-480e-8553-faa1012a043a">
+            <form className="form" id="e32ed3ea-9c25-480e-8553-faa1012a043a">
             <div className="form-group">
             <label for="name">Name <tm className="text-danger">*</tm></label>
             <input type="text" className="form-control" name="name" id="name" placeholder="Name"/>
@@ -362,10 +326,9 @@ function FormEnquiry(props) {
         </div>
         
 
-    <button type="submit" name="submit" className="btn my-btn">Submit</button>
+    <button type="button" onClick={formSubmit} name="submit" className="btn my-btn">Submit</button>
     </form>
             <div id="hubspot-form" className="visible">
-            {/* <button type="button" name="submit" onClick={test_click} className="btn my-btn">Test lick</button> */}
               <HubspotForm
                 portalId='9397213'
                 formId='e32ed3ea-9c25-480e-8553-faa1012a043a'

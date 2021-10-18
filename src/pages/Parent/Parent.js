@@ -32,37 +32,14 @@ function Parent(props) {
           const [mapCenter, SetMapCenter] = useState("");
 
           const handleSelectStateChange = (event)=>{
-            // setSelectState(event.target.value)
             var st_id = event.target.value;
             setCityData(cities[st_id]);
             $("#city").val(0);
             setTeachersPodData([]);
-            // console.log(cities[st_id]);
-            // var axios = require('axios');
-            // var FormData = require('form-data');
-            // var data = new FormData();
-            // data.append('api', 'get_city_by_state');
-            // data.append('filter', '{"state_id":'+st_id+'}');
-            // var config = {
-            // method: 'post',
-            // url: 'https://shop.kidovillage.com/kvshop_api/api.php',
-            // headers: { 
-            // },
-            // data : data
-            // };
-            //     axios(config)
-            //     .then((response) => {
-            //         setCityData(response.data);
-            //         console.log(response.data);
-            //     })
-            //     .catch((error) => console.log(error));  
           }
 
           var handleSelectCityChange = (event)=>{
             var ct_id = event.target.value;
-
-            console.log(ct_id);
-            // setSelectCity(event.target.value)
             var axios = require('axios');
             var FormData = require('form-data');
             var data = new FormData();
@@ -387,14 +364,14 @@ function Parent(props) {
             </div>
         </section>
 
-        <div id="mySidenav" className="sidenav bg-light border-right">
+        {/* <div id="mySidenav" className="sidenav bg-light border-right">
         <div className="p-3">
             <h5>Send your Enquiry</h5><a href={null} className="closebtn" onClick={closeNav}>&times;</a>
             <hr/>
             <FormEnquiry/>
         </div>
         </div>
-                    
+                     */}
         </>
     )
 }

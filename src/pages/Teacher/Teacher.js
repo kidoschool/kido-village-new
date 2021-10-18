@@ -352,28 +352,6 @@ function Teacher(props) {
                 </div>
             </div>
         </section>
-
-
-
-        {/* <section className="video-card py-5">
-            <div className="container">
-            <h1 className="banner-head text-center pb-3">Hear from our teachers</h1>
-                <div className="row justify-content-center">
-                    <div className="col-lg-12">
-                    <div className="card-deck">
-                        <div className="card">
-                            <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/I7euUBZq4sw" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                        </div>
-                        <div className="card">
-                        <iframe className="card-img-top" width="560" height="280" src="https://www.youtube.com/embed/CbyUND4AvPY" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> */}
-
-
                    
 
     <div id="mySidenav" className="sidenav bg-red border-right">
