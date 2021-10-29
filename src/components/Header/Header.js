@@ -2,6 +2,7 @@ import React from 'react';
 import {withRouter, NavLink} from "react-router-dom";
 import logo from '../../assets/kido-village-logo1.png';
 import $ from "jquery";
+import { isMobile } from "react-device-detect";
 
 
 function Header(props){
@@ -19,12 +20,21 @@ function Header(props){
     }); 
 }); 
 
+    if(isMobile){
+      $(".nav-link,.dropdown-item").click(function(){
+        if(!$(this).hasClass("dropdown-toggle")){
+          $("#navcolbtn").click();
+        }
+      });
+    }
+
+
     return(
       <>
        <header>
         <nav className="navbar navbar-expand-lg navbar-light bg-light bg-color fixed-top">
-          <NavLink className="navbar-brand pl-4" to="/"><img src={logo} alt="logo" width="120"/></NavLink>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <NavLink className="navbar-brand pl-4" className="nav-link" to="/"><img src={logo} alt="logo" width="120"/></NavLink>
+          <button className="navbar-toggler" id="navcolbtn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
 

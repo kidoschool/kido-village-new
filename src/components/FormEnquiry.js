@@ -142,6 +142,12 @@ function FormEnquiry(props) {
       
           }
 
+          //for email only
+            $.validator.addMethod("emailtest", function(value, element) {
+              return this.optional(element) || /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/i.test(value);
+          })
+
+
 
           $(document).ready(function() {
   
@@ -152,6 +158,7 @@ function FormEnquiry(props) {
                               minlength: 2
                           },
                           email: {
+                              emailtest: true,
                               required: true,
                               email: true
                            },
@@ -189,6 +196,7 @@ function FormEnquiry(props) {
                         email: {
                            required: "This field is required",
                            email: "Please enter a valid email id",
+                           emailtest: "Please enter a valid email address"
                         },
                         contact: { 
                           required: "This field is required",

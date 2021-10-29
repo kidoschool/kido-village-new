@@ -6,6 +6,12 @@ import validate from 'jquery-validation';
 
 
 function Contact(props) {
+
+    //for email only
+    $.validator.addMethod("emailtest", function(value, element) {
+        return this.optional(element) || /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/i.test(value);
+    })
+
     $(document).ready(function() {
   
         $("#validateform").validate({
@@ -15,6 +21,7 @@ function Contact(props) {
                           minlength: 2
                       },
                       email: {
+                          emailtest: true,
                           required: true,
                           email: true
                        },
@@ -34,6 +41,7 @@ function Contact(props) {
                     email: {
                        required: "This field is required",
                        email: "Please enter a valid email id",
+                       emailtest: "Please enter a valid email address"
                     },
                     mobile: { 
                       required: "This field is required",

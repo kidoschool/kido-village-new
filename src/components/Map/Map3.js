@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 import mapIcoUrl from "../../assets/blue-dot.png";
+import { isMobile } from "react-device-detect";
+
 
 export class Map3 extends Component {
   constructor(props) {
@@ -44,7 +46,7 @@ _mapLoaded(mapProps, map) {
       <div
         style={{
           position: "relative",
-          height: "650px",
+          height: isMobile ? "350px" : "650px",
           width: "100%",
         }}
       >

@@ -2,7 +2,7 @@ import React, {useState ,useEffect} from 'react';
 import AboutBanner from '../../assets/about_banner1.jpg';
 import SchoolNetwork from '../../assets/school-network-bn.jpg';
 import Map3 from "../../components/Map/Map3";
-
+import { isMobile } from "react-device-detect";
 
 function About(props){
 
@@ -328,8 +328,11 @@ function About(props){
 
     const teachersInfo = JSON.parse(localStorage.getItem("teachersPodData"));
 
-    const [ map_zoom, setMap_zoom ] = useState("");
-    const [ map_centre, setMap_centre ] = useState({lat: 19,lng: 10});
+      
+    const [ map_centre ] = useState({lat: 19,lng: 10});
+    let map_zoom = 0;
+
+    isMobile ? map_zoom = 1 : map_zoom = 2;
 
 
 
@@ -379,7 +382,7 @@ function About(props){
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-lg-12 text-center">
-                    <Map3 centerContents1={centerContents1} map_centre={map_centre} map_zoom={2}   />
+                    <Map3 centerContents1={centerContents1} map_centre={map_centre} map_zoom={map_zoom}   />
                     </div>
                 </div>
             </div>  
