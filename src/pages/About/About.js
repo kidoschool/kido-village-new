@@ -185,26 +185,6 @@ function About(props){
         
         },
         {
-            "id": 6356,
-            "name": "Kïdo Repulse Bay Nursery & Child Care",
-            "intro": "<h1 class=\"font-h6\">Address</h1><address>Shop G106A - 107A, The Repulse Bay, 109 Repulse Bay Road, Hong Kong</address><h1 class=\"font-h6\">Contact</h1><p><a href=\"mailto:repulsebay@kido.school\">repulsebay@kido.school</a><br><a href=\"tel:+852 2874 3007\">+852 2874 3007</a><br></p>",
-            "img": "https://china.kido.school/assets/images/Repulse-Bay-1400-by-700_01.jpg",
-            "lng": 114.196269,
-            "lat": 22.239194,
-            "city": 6324
-            
-        },
-        {
-            "id": 6327,
-            "name": "Kïdo Pok Fu Lam Kindergarten",
-            "intro": "<h1 class=\"font-h6\">Address</h1><address>L101 Chi Fu Landmark, Chi Fu Fa Yuen, Pok Fu Lam, Hong Kong</address><h1 class=\"font-h6\">Contact</h1><p><a href=\"mailto:infohk@kido.school\">infohk@kido.school</a><br><a href=\"tel:+852 2177 0001\">+852 2177 0001</a><br></p>",
-            "img": "https://china.kido.school/assets/images/POK-FU-LAM-1400-by-700_01-1.jpg",
-            "lng": 114.138765,
-            "lat": 22.257686,
-            "city": 6324
-           
-        },
-        {
             "id": 6261,
             "name": "Kïdo Meydan District One Nursery",
             "intro": "<h1 class=\"font-h6\">Address</h1><address>Unit CC01.03, Nursery Unit, District One, Sheikh Mohammed Bin Rashid Al Maktoum City,<br />\r\n</address><h1 class=\"font-h6\">Contact</h1><p><a href=\"mailto:meydan@kido.school\">meydan@kido.school</a><br><a href=\"tel:+971 50 974 3101\">+971 50 974 3101</a><br></p>",
